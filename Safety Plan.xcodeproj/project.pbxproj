@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C2663571FC50C1600AFC5E1 /* GuideResources2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2663561FC50C1600AFC5E1 /* GuideResources2ViewController.m */; };
+		2C2C856D1D203F5B009E9B3F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2C856B1D203F5B009E9B3F /* AddressBook.framework */; };
+		2C2C856E1D203F5B009E9B3F /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2C856C1D203F5B009E9B3F /* AddressBookUI.framework */; };
+		2C44A9F81B1CBA7C005D208C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44A9F71B1CBA7C005D208C /* main.m */; };
+		2C44A9FB1B1CBA7C005D208C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44A9FA1B1CBA7C005D208C /* AppDelegate.m */; };
+		2C44AA061B1CBA7D005D208C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C44AA051B1CBA7D005D208C /* Images.xcassets */; };
+		2C44AA151B1CBA7D005D208C /* SafetyPlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44AA141B1CBA7D005D208C /* SafetyPlanTests.m */; };
+		2C67D99E1B584FFA00C53652 /* safetyplanlayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */; };
+		2C67D99F1B584FFA00C53652 /* CrisisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D97B1B584FFA00C53652 /* CrisisViewController.m */; };
+		2C67D9A01B584FFA00C53652 /* EditCopingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D97D1B584FFA00C53652 /* EditCopingViewController.m */; };
+		2C67D9A11B584FFA00C53652 /* EditFriendsandFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D97F1B584FFA00C53652 /* EditFriendsandFamilyViewController.m */; };
+		2C67D9A21B584FFA00C53652 /* EditPlacesforDistractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9811B584FFA00C53652 /* EditPlacesforDistractionViewController.m */; };
+		2C67D9A31B584FFA00C53652 /* EditProfessionalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9831B584FFA00C53652 /* EditProfessionalsViewController.m */; };
+		2C67D9A41B584FFA00C53652 /* EditReasonsToLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9851B584FFA00C53652 /* EditReasonsToLiveViewController.m */; };
+		2C67D9A51B584FFA00C53652 /* EditWarningSignsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9871B584FFA00C53652 /* EditWarningSignsViewController.m */; };
+		2C67D9A61B584FFA00C53652 /* GuideCopingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9891B584FFA00C53652 /* GuideCopingViewController.m */; };
+		2C67D9A71B584FFA00C53652 /* GuideOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98B1B584FFA00C53652 /* GuideOverviewViewController.m */; };
+		2C67D9A81B584FFA00C53652 /* GuideRecoveringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98D1B584FFA00C53652 /* GuideRecoveringViewController.m */; };
+		2C67D9A91B584FFA00C53652 /* GuideSafetyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98F1B584FFA00C53652 /* GuideSafetyPlanViewController.m */; };
+		2C67D9AA1B584FFA00C53652 /* SafetyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9911B584FFA00C53652 /* SafetyPlanViewController.m */; };
+		2C67D9AB1B584FFA00C53652 /* SuicideGuidePreventionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9931B584FFA00C53652 /* SuicideGuidePreventionViewController.m */; };
+		2C67D9AC1B584FFA00C53652 /* SuicideGuideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9951B584FFA00C53652 /* SuicideGuideTableViewController.m */; };
+		2C67D9AE1B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9991B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m */; };
+		2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */; };
+		2C67D9B01B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		2C67D9B21B584FFA00C53652 /* safetyplanlaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C44AA0F1B1CBA7D005D208C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C44A9EA1B1CBA7C005D208C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C44A9F11B1CBA7C005D208C;
+			remoteInfo = SafetyPlan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C2663551FC50C1600AFC5E1 /* GuideResources2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideResources2ViewController.h; sourceTree = "<group>"; };
+		2C2663561FC50C1600AFC5E1 /* GuideResources2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideResources2ViewController.m; sourceTree = "<group>"; };
+		2C2C856B1D203F5B009E9B3F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		2C2C856C1D203F5B009E9B3F /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		2C44A9F21B1CBA7C005D208C /* Safety Plan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safety Plan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C44A9F61B1CBA7C005D208C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C44A9F71B1CBA7C005D208C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C44A9F91B1CBA7C005D208C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C44A9FA1B1CBA7C005D208C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C44AA051B1CBA7D005D208C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2C44AA0E1B1CBA7D005D208C /* Safety PlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Safety PlanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C44AA131B1CBA7D005D208C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C44AA141B1CBA7D005D208C /* SafetyPlanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafetyPlanTests.m; sourceTree = "<group>"; };
+		2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = safetyplanlayout.storyboard; sourceTree = "<group>"; };
+		2C67D97A1B584FFA00C53652 /* CrisisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrisisViewController.h; sourceTree = "<group>"; };
+		2C67D97B1B584FFA00C53652 /* CrisisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrisisViewController.m; sourceTree = "<group>"; };
+		2C67D97C1B584FFA00C53652 /* EditCopingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCopingViewController.h; sourceTree = "<group>"; };
+		2C67D97D1B584FFA00C53652 /* EditCopingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCopingViewController.m; sourceTree = "<group>"; };
+		2C67D97E1B584FFA00C53652 /* EditFriendsandFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsandFamilyViewController.h; sourceTree = "<group>"; };
+		2C67D97F1B584FFA00C53652 /* EditFriendsandFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsandFamilyViewController.m; sourceTree = "<group>"; };
+		2C67D9801B584FFA00C53652 /* EditPlacesforDistractionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPlacesforDistractionViewController.h; sourceTree = "<group>"; };
+		2C67D9811B584FFA00C53652 /* EditPlacesforDistractionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPlacesforDistractionViewController.m; sourceTree = "<group>"; };
+		2C67D9821B584FFA00C53652 /* EditProfessionalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfessionalsViewController.h; sourceTree = "<group>"; };
+		2C67D9831B584FFA00C53652 /* EditProfessionalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfessionalsViewController.m; sourceTree = "<group>"; };
+		2C67D9841B584FFA00C53652 /* EditReasonsToLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditReasonsToLiveViewController.h; sourceTree = "<group>"; };
+		2C67D9851B584FFA00C53652 /* EditReasonsToLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditReasonsToLiveViewController.m; sourceTree = "<group>"; };
+		2C67D9861B584FFA00C53652 /* EditWarningSignsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditWarningSignsViewController.h; sourceTree = "<group>"; };
+		2C67D9871B584FFA00C53652 /* EditWarningSignsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditWarningSignsViewController.m; sourceTree = "<group>"; };
+		2C67D9881B584FFA00C53652 /* GuideCopingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideCopingViewController.h; sourceTree = "<group>"; };
+		2C67D9891B584FFA00C53652 /* GuideCopingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideCopingViewController.m; sourceTree = "<group>"; };
+		2C67D98A1B584FFA00C53652 /* GuideOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideOverviewViewController.h; sourceTree = "<group>"; };
+		2C67D98B1B584FFA00C53652 /* GuideOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideOverviewViewController.m; sourceTree = "<group>"; };
+		2C67D98C1B584FFA00C53652 /* GuideRecoveringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideRecoveringViewController.h; sourceTree = "<group>"; };
+		2C67D98D1B584FFA00C53652 /* GuideRecoveringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideRecoveringViewController.m; sourceTree = "<group>"; };
+		2C67D98E1B584FFA00C53652 /* GuideSafetyPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideSafetyPlanViewController.h; sourceTree = "<group>"; };
+		2C67D98F1B584FFA00C53652 /* GuideSafetyPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideSafetyPlanViewController.m; sourceTree = "<group>"; };
+		2C67D9901B584FFA00C53652 /* SafetyPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafetyPlanViewController.h; sourceTree = "<group>"; };
+		2C67D9911B584FFA00C53652 /* SafetyPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafetyPlanViewController.m; sourceTree = "<group>"; };
+		2C67D9921B584FFA00C53652 /* SuicideGuidePreventionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuicideGuidePreventionViewController.h; sourceTree = "<group>"; };
+		2C67D9931B584FFA00C53652 /* SuicideGuidePreventionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuicideGuidePreventionViewController.m; sourceTree = "<group>"; };
+		2C67D9941B584FFA00C53652 /* SuicideGuideTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuicideGuideTableViewController.h; sourceTree = "<group>"; };
+		2C67D9951B584FFA00C53652 /* SuicideGuideTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuicideGuideTableViewController.m; sourceTree = "<group>"; };
+		2C67D9981B584FFA00C53652 /* SuicideSafetyPlanTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuicideSafetyPlanTabViewController.h; sourceTree = "<group>"; };
+		2C67D9991B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuicideSafetyPlanTabViewController.m; sourceTree = "<group>"; };
+		2C67D99A1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		2C67D99C1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = safetyplanlaunch.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C44A9EF1B1CBA7C005D208C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2C856D1D203F5B009E9B3F /* AddressBook.framework in Frameworks */,
+				2C2C856E1D203F5B009E9B3F /* AddressBookUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C44AA0B1B1CBA7D005D208C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C44A9E91B1CBA7C005D208C = {
+			isa = PBXGroup;
+			children = (
+				2C2C856B1D203F5B009E9B3F /* AddressBook.framework */,
+				2C2C856C1D203F5B009E9B3F /* AddressBookUI.framework */,
+				2C44A9F41B1CBA7C005D208C /* SafetyPlan */,
+				2C44AA111B1CBA7D005D208C /* SafetyPlanTests */,
+				2C44A9F31B1CBA7C005D208C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C44A9F31B1CBA7C005D208C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C44A9F21B1CBA7C005D208C /* Safety Plan.app */,
+				2C44AA0E1B1CBA7D005D208C /* Safety PlanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C44A9F41B1CBA7C005D208C /* SafetyPlan */ = {
+			isa = PBXGroup;
+			children = (
+				2CCE8366240F4AC0002729ED /* Storyboards */,
+				2CCE8364240F4A23002729ED /* Top Level Pages */,
+				2CCE8365240F4A9B002729ED /* Guide */,
+				2CCE8367240F4ACF002729ED /* Safety Plan */,
+				2CCE8368240F4B34002729ED /* Backend */,
+				2C44AA051B1CBA7D005D208C /* Images.xcassets */,
+				2C44A9F51B1CBA7C005D208C /* Supporting Files */,
+			);
+			path = SafetyPlan;
+			sourceTree = "<group>";
+		};
+		2C44A9F51B1CBA7C005D208C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C44A9F61B1CBA7C005D208C /* Info.plist */,
+				2C44A9F71B1CBA7C005D208C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C44AA111B1CBA7D005D208C /* SafetyPlanTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C44AA141B1CBA7D005D208C /* SafetyPlanTests.m */,
+				2C44AA121B1CBA7D005D208C /* Supporting Files */,
+			);
+			path = SafetyPlanTests;
+			sourceTree = "<group>";
+		};
+		2C44AA121B1CBA7D005D208C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C44AA131B1CBA7D005D208C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CCE8364240F4A23002729ED /* Top Level Pages */ = {
+			isa = PBXGroup;
+			children = (
+				2C67D9981B584FFA00C53652 /* SuicideSafetyPlanTabViewController.h */,
+				2C67D9991B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m */,
+				2C67D97A1B584FFA00C53652 /* CrisisViewController.h */,
+				2C67D97B1B584FFA00C53652 /* CrisisViewController.m */,
+				2C67D9901B584FFA00C53652 /* SafetyPlanViewController.h */,
+				2C67D9911B584FFA00C53652 /* SafetyPlanViewController.m */,
+				2C67D9941B584FFA00C53652 /* SuicideGuideTableViewController.h */,
+				2C67D9951B584FFA00C53652 /* SuicideGuideTableViewController.m */,
+			);
+			name = "Top Level Pages";
+			sourceTree = "<group>";
+		};
+		2CCE8365240F4A9B002729ED /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				2C2663551FC50C1600AFC5E1 /* GuideResources2ViewController.h */,
+				2C2663561FC50C1600AFC5E1 /* GuideResources2ViewController.m */,
+				2C67D9881B584FFA00C53652 /* GuideCopingViewController.h */,
+				2C67D9891B584FFA00C53652 /* GuideCopingViewController.m */,
+				2C67D98A1B584FFA00C53652 /* GuideOverviewViewController.h */,
+				2C67D98B1B584FFA00C53652 /* GuideOverviewViewController.m */,
+				2C67D98C1B584FFA00C53652 /* GuideRecoveringViewController.h */,
+				2C67D98D1B584FFA00C53652 /* GuideRecoveringViewController.m */,
+				2C67D98E1B584FFA00C53652 /* GuideSafetyPlanViewController.h */,
+				2C67D98F1B584FFA00C53652 /* GuideSafetyPlanViewController.m */,
+				2C67D9871B584FFA00C53652 /* EditWarningSignsViewController.m */,
+				2C67D9921B584FFA00C53652 /* SuicideGuidePreventionViewController.h */,
+				2C67D9931B584FFA00C53652 /* SuicideGuidePreventionViewController.m */,
+			);
+			name = Guide;
+			sourceTree = "<group>";
+		};
+		2CCE8366240F4AC0002729ED /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */,
+				2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		2CCE8367240F4ACF002729ED /* Safety Plan */ = {
+			isa = PBXGroup;
+			children = (
+				2C67D97C1B584FFA00C53652 /* EditCopingViewController.h */,
+				2C67D97D1B584FFA00C53652 /* EditCopingViewController.m */,
+				2C67D97E1B584FFA00C53652 /* EditFriendsandFamilyViewController.h */,
+				2C67D97F1B584FFA00C53652 /* EditFriendsandFamilyViewController.m */,
+				2C67D9801B584FFA00C53652 /* EditPlacesforDistractionViewController.h */,
+				2C67D9811B584FFA00C53652 /* EditPlacesforDistractionViewController.m */,
+				2C67D9821B584FFA00C53652 /* EditProfessionalsViewController.h */,
+				2C67D9831B584FFA00C53652 /* EditProfessionalsViewController.m */,
+				2C67D9841B584FFA00C53652 /* EditReasonsToLiveViewController.h */,
+				2C67D9851B584FFA00C53652 /* EditReasonsToLiveViewController.m */,
+				2C67D9861B584FFA00C53652 /* EditWarningSignsViewController.h */,
+			);
+			name = "Safety Plan";
+			sourceTree = "<group>";
+		};
+		2CCE8368240F4B34002729ED /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				2C67D99A1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.h */,
+				2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */,
+				2C67D99C1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				2C44A9F91B1CBA7C005D208C /* AppDelegate.h */,
+				2C44A9FA1B1CBA7C005D208C /* AppDelegate.m */,
+			);
+			name = Backend;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C44A9F11B1CBA7C005D208C /* Safety Plan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C44AA181B1CBA7D005D208C /* Build configuration list for PBXNativeTarget "Safety Plan" */;
+			buildPhases = (
+				2C44A9EE1B1CBA7C005D208C /* Sources */,
+				2C44A9EF1B1CBA7C005D208C /* Frameworks */,
+				2C44A9F01B1CBA7C005D208C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Safety Plan";
+			productName = SafetyPlan;
+			productReference = 2C44A9F21B1CBA7C005D208C /* Safety Plan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C44AA0D1B1CBA7D005D208C /* Safety PlanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C44AA1B1B1CBA7D005D208C /* Build configuration list for PBXNativeTarget "Safety PlanTests" */;
+			buildPhases = (
+				2C44AA0A1B1CBA7D005D208C /* Sources */,
+				2C44AA0B1B1CBA7D005D208C /* Frameworks */,
+				2C44AA0C1B1CBA7D005D208C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C44AA101B1CBA7D005D208C /* PBXTargetDependency */,
+			);
+			name = "Safety PlanTests";
+			productName = SafetyPlanTests;
+			productReference = 2C44AA0E1B1CBA7D005D208C /* Safety PlanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C44A9EA1B1CBA7C005D208C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = MoodTools;
+				TargetAttributes = {
+					2C44A9F11B1CBA7C005D208C = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = PU7A82KB49;
+					};
+					2C44AA0D1B1CBA7D005D208C = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 2C44A9F11B1CBA7C005D208C;
+					};
+				};
+			};
+			buildConfigurationList = 2C44A9ED1B1CBA7C005D208C /* Build configuration list for PBXProject "Safety Plan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 2C44A9E91B1CBA7C005D208C;
+			productRefGroup = 2C44A9F31B1CBA7C005D208C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C44A9F11B1CBA7C005D208C /* Safety Plan */,
+				2C44AA0D1B1CBA7D005D208C /* Safety PlanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C44A9F01B1CBA7C005D208C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C67D9B21B584FFA00C53652 /* safetyplanlaunch.storyboard in Resources */,
+				2C67D99E1B584FFA00C53652 /* safetyplanlayout.storyboard in Resources */,
+				2C44AA061B1CBA7D005D208C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C44AA0C1B1CBA7D005D208C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C44A9EE1B1CBA7C005D208C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C67D9A91B584FFA00C53652 /* GuideSafetyPlanViewController.m in Sources */,
+				2C44A9FB1B1CBA7C005D208C /* AppDelegate.m in Sources */,
+				2C67D9AE1B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m in Sources */,
+				2C44A9F81B1CBA7C005D208C /* main.m in Sources */,
+				2C67D9AB1B584FFA00C53652 /* SuicideGuidePreventionViewController.m in Sources */,
+				2C67D9AA1B584FFA00C53652 /* SafetyPlanViewController.m in Sources */,
+				2C67D9AC1B584FFA00C53652 /* SuicideGuideTableViewController.m in Sources */,
+				2C67D9A31B584FFA00C53652 /* EditProfessionalsViewController.m in Sources */,
+				2C67D9B01B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				2C67D9A11B584FFA00C53652 /* EditFriendsandFamilyViewController.m in Sources */,
+				2C67D9A71B584FFA00C53652 /* GuideOverviewViewController.m in Sources */,
+				2C2663571FC50C1600AFC5E1 /* GuideResources2ViewController.m in Sources */,
+				2C67D9A21B584FFA00C53652 /* EditPlacesforDistractionViewController.m in Sources */,
+				2C67D9A61B584FFA00C53652 /* GuideCopingViewController.m in Sources */,
+				2C67D9A41B584FFA00C53652 /* EditReasonsToLiveViewController.m in Sources */,
+				2C67D9A01B584FFA00C53652 /* EditCopingViewController.m in Sources */,
+				2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				2C67D99F1B584FFA00C53652 /* CrisisViewController.m in Sources */,
+				2C67D9A51B584FFA00C53652 /* EditWarningSignsViewController.m in Sources */,
+				2C67D9A81B584FFA00C53652 /* GuideRecoveringViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C44AA0A1B1CBA7D005D208C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C44AA151B1CBA7D005D208C /* SafetyPlanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C44AA101B1CBA7D005D208C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C44A9F11B1CBA7C005D208C /* Safety Plan */;
+			targetProxy = 2C44AA0F1B1CBA7D005D208C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C44AA161B1CBA7D005D208C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C44AA171B1CBA7D005D208C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C44AA191B1CBA7D005D208C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 6;
+				INFOPLIST_FILE = SafetyPlan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.4;
+				PRODUCT_NAME = "Safety Plan";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C44AA1A1B1CBA7D005D208C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 6;
+				INFOPLIST_FILE = SafetyPlan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.4;
+				PRODUCT_NAME = "Safety Plan";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C44AA1C1B1CBA7D005D208C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SafetyPlanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Safety PlanTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafetyPlan.app/SafetyPlan";
+			};
+			name = Debug;
+		};
+		2C44AA1D1B1CBA7D005D208C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SafetyPlanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Safety PlanTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafetyPlan.app/SafetyPlan";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C44A9ED1B1CBA7C005D208C /* Build configuration list for PBXProject "Safety Plan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C44AA161B1CBA7D005D208C /* Debug */,
+				2C44AA171B1CBA7D005D208C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C44AA181B1CBA7D005D208C /* Build configuration list for PBXNativeTarget "Safety Plan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C44AA191B1CBA7D005D208C /* Debug */,
+				2C44AA1A1B1CBA7D005D208C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C44AA1B1B1CBA7D005D208C /* Build configuration list for PBXNativeTarget "Safety PlanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C44AA1C1B1CBA7D005D208C /* Debug */,
+				2C44AA1D1B1CBA7D005D208C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C44A9EA1B1CBA7C005D208C /* Project object */;
+}
