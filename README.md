@@ -24,7 +24,7 @@ If you are interested in helping out, please visit the Issues page to see the ou
 
 If you are a **mental health professional**, please feel free to create issues and participate in open issues. If you are unfamiliar with GitHub but still want to contribute, please send us an email at <moodtools@gmail.com>.
 
-If you are a **software developer**, pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change. Keep in mind that we have both an iOS and Android version in separate repos.  
+If you are a **software developer**, pull requests are welcome! Keep in mind that we have both an iOS and Android version in separate repos and please check out the [Contributing Guidelines](contributing.md). 
 
 
 ## 📘&nbsp; License
