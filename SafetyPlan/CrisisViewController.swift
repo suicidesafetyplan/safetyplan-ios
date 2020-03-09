@@ -2,8 +2,6 @@
 //  CrisisViewController.swift
 //  Safety Plan
 //
-//  Created by Shayne Torres on 3/7/20.
-//  Copyright © 2020 MoodTools. All rights reserved.
 //
 
 import Foundation
@@ -153,7 +151,7 @@ class CrisisViewController: UIViewController {
         // instantiate a new alert controller
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         // create the confirm action
-        let confirmAction = UIAlertAction(title: "Yes", style: .default, handler: { _ in
+        let confirmAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
             alertController.dismiss(animated: true, completion: {
                 var contactUrl: URL?
                 // depending on the action type (call vs text) we need to create the URL in different ways
@@ -223,7 +221,7 @@ extension CrisisViewController: UITableViewDataSource, UITableViewDelegate {
             self.showAlert(type: .call, title: "Call", message: "Call \(contact.title)?", phoneNumber: contact.contactNumber)
         case .textCrisisTextLine:
             let contact = ImportantContactInformation.crisisTextLine
-            self.showAlert(type: .text, title: "Text \(contact.title)", message: "Text \(contact.contactNumber)", phoneNumber: contact.contactNumber)
+            self.showAlert(type: .text, title: "Text \(contact.title)?", message: "Text \(contact.contactNumber)", phoneNumber: contact.contactNumber)
         case .callContact(let name, let number):
             self.showAlert(type: .call, title: "Call", message: "Call \(name)?", phoneNumber: number)
         case .findUrgentCare:
