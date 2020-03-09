@@ -15,7 +15,6 @@
 		2C44AA061B1CBA7D005D208C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C44AA051B1CBA7D005D208C /* Images.xcassets */; };
 		2C44AA151B1CBA7D005D208C /* SafetyPlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44AA141B1CBA7D005D208C /* SafetyPlanTests.m */; };
 		2C67D99E1B584FFA00C53652 /* safetyplanlayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */; };
-		2C67D99F1B584FFA00C53652 /* CrisisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D97B1B584FFA00C53652 /* CrisisViewController.m */; };
 		2C67D9A01B584FFA00C53652 /* EditCopingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D97D1B584FFA00C53652 /* EditCopingViewController.m */; };
 		2C67D9A11B584FFA00C53652 /* EditFriendsandFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D97F1B584FFA00C53652 /* EditFriendsandFamilyViewController.m */; };
 		2C67D9A21B584FFA00C53652 /* EditPlacesforDistractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9811B584FFA00C53652 /* EditPlacesforDistractionViewController.m */; };
@@ -33,6 +32,9 @@
 		2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */; };
 		2C67D9B01B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		2C67D9B21B584FFA00C53652 /* safetyplanlaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */; };
+		B8E38D502415C2A000729701 /* CrisisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E38D4F2415C2A000729701 /* CrisisViewController.swift */; };
+		B8E38D532415C2F100729701 /* ImportantContactInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E38D522415C2F100729701 /* ImportantContactInformation.swift */; };
+		B8E38D552415C31F00729701 /* PersonalContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E38D542415C31F00729701 /* PersonalContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +62,6 @@
 		2C44AA131B1CBA7D005D208C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C44AA141B1CBA7D005D208C /* SafetyPlanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafetyPlanTests.m; sourceTree = "<group>"; };
 		2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = safetyplanlayout.storyboard; sourceTree = "<group>"; };
-		2C67D97A1B584FFA00C53652 /* CrisisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrisisViewController.h; sourceTree = "<group>"; };
-		2C67D97B1B584FFA00C53652 /* CrisisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrisisViewController.m; sourceTree = "<group>"; };
 		2C67D97C1B584FFA00C53652 /* EditCopingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCopingViewController.h; sourceTree = "<group>"; };
 		2C67D97D1B584FFA00C53652 /* EditCopingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCopingViewController.m; sourceTree = "<group>"; };
 		2C67D97E1B584FFA00C53652 /* EditFriendsandFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsandFamilyViewController.h; sourceTree = "<group>"; };
@@ -95,6 +95,10 @@
 		2C67D99C1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = safetyplanlaunch.storyboard; sourceTree = "<group>"; };
+		B8E38D4E2415C29F00729701 /* Safety Plan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Safety Plan-Bridging-Header.h"; sourceTree = "<group>"; };
+		B8E38D4F2415C2A000729701 /* CrisisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrisisViewController.swift; sourceTree = "<group>"; };
+		B8E38D522415C2F100729701 /* ImportantContactInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantContactInformation.swift; sourceTree = "<group>"; };
+		B8E38D542415C31F00729701 /* PersonalContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 				2CCE8365240F4A9B002729ED /* Guide */,
 				2CCE8367240F4ACF002729ED /* Safety Plan */,
 				2CCE8368240F4B34002729ED /* Backend */,
+				B8E38D512415C2D900729701 /* Models */,
 				2C44AA051B1CBA7D005D208C /* Images.xcassets */,
 				2C44A9F51B1CBA7C005D208C /* Supporting Files */,
 			);
@@ -180,14 +185,14 @@
 		2CCE8364240F4A23002729ED /* Top Level Pages */ = {
 			isa = PBXGroup;
 			children = (
+				B8E38D4F2415C2A000729701 /* CrisisViewController.swift */,
 				2C67D9981B584FFA00C53652 /* SuicideSafetyPlanTabViewController.h */,
 				2C67D9991B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m */,
-				2C67D97A1B584FFA00C53652 /* CrisisViewController.h */,
-				2C67D97B1B584FFA00C53652 /* CrisisViewController.m */,
 				2C67D9901B584FFA00C53652 /* SafetyPlanViewController.h */,
 				2C67D9911B584FFA00C53652 /* SafetyPlanViewController.m */,
 				2C67D9941B584FFA00C53652 /* SuicideGuideTableViewController.h */,
 				2C67D9951B584FFA00C53652 /* SuicideGuideTableViewController.m */,
+				B8E38D4E2415C29F00729701 /* Safety Plan-Bridging-Header.h */,
 			);
 			name = "Top Level Pages";
 			sourceTree = "<group>";
@@ -252,6 +257,15 @@
 			name = Backend;
 			sourceTree = "<group>";
 		};
+		B8E38D512415C2D900729701 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8E38D522415C2F100729701 /* ImportantContactInformation.swift */,
+				B8E38D542415C31F00729701 /* PersonalContact.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,6 +316,7 @@
 					2C44A9F11B1CBA7C005D208C = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = PU7A82KB49;
+						LastSwiftMigration = 1100;
 					};
 					2C44AA0D1B1CBA7D005D208C = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -358,6 +373,7 @@
 				2C44A9FB1B1CBA7C005D208C /* AppDelegate.m in Sources */,
 				2C67D9AE1B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m in Sources */,
 				2C44A9F81B1CBA7C005D208C /* main.m in Sources */,
+				B8E38D502415C2A000729701 /* CrisisViewController.swift in Sources */,
 				2C67D9AB1B584FFA00C53652 /* SuicideGuidePreventionViewController.m in Sources */,
 				2C67D9AA1B584FFA00C53652 /* SafetyPlanViewController.m in Sources */,
 				2C67D9AC1B584FFA00C53652 /* SuicideGuideTableViewController.m in Sources */,
@@ -371,7 +387,8 @@
 				2C67D9A41B584FFA00C53652 /* EditReasonsToLiveViewController.m in Sources */,
 				2C67D9A01B584FFA00C53652 /* EditCopingViewController.m in Sources */,
 				2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */,
-				2C67D99F1B584FFA00C53652 /* CrisisViewController.m in Sources */,
+				B8E38D532415C2F100729701 /* ImportantContactInformation.swift in Sources */,
+				B8E38D552415C31F00729701 /* PersonalContact.swift in Sources */,
 				2C67D9A51B584FFA00C53652 /* EditWarningSignsViewController.m in Sources */,
 				2C67D9A81B584FFA00C53652 /* GuideRecoveringViewController.m in Sources */,
 			);
@@ -482,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 6;
@@ -491,6 +509,9 @@
 				MARKETING_VERSION = 1.4;
 				PRODUCT_NAME = "Safety Plan";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SafetyPlan/Safety Plan-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -499,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 6;
@@ -508,6 +530,8 @@
 				MARKETING_VERSION = 1.4;
 				PRODUCT_NAME = "Safety Plan";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SafetyPlan/Safety Plan-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -515,6 +539,7 @@
 		2C44AA1C1B1CBA7D005D208C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -534,6 +559,7 @@
 		2C44AA1D1B1CBA7D005D208C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
