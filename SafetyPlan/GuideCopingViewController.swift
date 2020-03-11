@@ -15,7 +15,7 @@ class GuideCopingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.copingTextView .scrollRangeToVisible(NSMakeRange(0, 0))
+        self.copingTextView.scrollRangeToVisible(NSMakeRange(0, 0))
         self.copingTextView.contentSize = self.copingTextView.sizeThatFits(self.copingTextView.frame.size)
         
         if #available(iOS 13.0, *) {
@@ -25,12 +25,8 @@ class GuideCopingViewController: UIViewController {
     
     
     override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         self.copingTextView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: false)
-    }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 }
 

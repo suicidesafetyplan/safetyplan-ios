@@ -15,7 +15,7 @@ class GuideSuicidePreventionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.suicidePreventionTextView .scrollRangeToVisible(NSMakeRange(0, 0))
+        self.suicidePreventionTextView.scrollRangeToVisible(NSMakeRange(0, 0))
         self.suicidePreventionTextView.contentSize = self.suicidePreventionTextView.sizeThatFits(self.suicidePreventionTextView.frame.size)
         
         if #available(iOS 13.0, *) {
@@ -24,12 +24,9 @@ class GuideSuicidePreventionViewController: UIViewController {
     }
     
     
-    override func viewDidLayoutSubviews() {
+    override func  viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         self.suicidePreventionTextView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: false)
     }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 }
+
