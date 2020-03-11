@@ -959,7 +959,7 @@ This application is designed to support you and help you deal with your suicidal
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gsG-ms-sGD">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="jOB-Gl-ESe" kind="relationship" relationship="viewControllers" id="TUw-vJ-Ufj"/>
