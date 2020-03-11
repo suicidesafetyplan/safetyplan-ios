@@ -15,9 +15,17 @@ class GuideRecoveringViewContoller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.recoveringTextView .scrollRangeToVisible(NSMakeRange(0, 0))
+        self.recoveringTextView.contentSize = self.recoveringTextView.sizeThatFits(self.recoveringTextView.frame.size)
+        
         if #available(iOS 13.0, *) {
-            recoveringTextView.textColor = UIColor.label
+            self.recoveringTextView.textColor = UIColor.label
         }
+    }
+    
+    
+    override func viewDidLayoutSubviews() {
+        self.recoveringTextView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: false)
     }
     
     
