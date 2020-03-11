@@ -22,7 +22,6 @@
 		2C67D9A31B584FFA00C53652 /* EditProfessionalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9831B584FFA00C53652 /* EditProfessionalsViewController.m */; };
 		2C67D9A41B584FFA00C53652 /* EditReasonsToLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9851B584FFA00C53652 /* EditReasonsToLiveViewController.m */; };
 		2C67D9A51B584FFA00C53652 /* EditWarningSignsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9871B584FFA00C53652 /* EditWarningSignsViewController.m */; };
-		2C67D9A61B584FFA00C53652 /* GuideCopingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9891B584FFA00C53652 /* GuideCopingViewController.m */; };
 		2C67D9A71B584FFA00C53652 /* GuideOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98B1B584FFA00C53652 /* GuideOverviewViewController.m */; };
 		2C67D9A81B584FFA00C53652 /* GuideRecoveringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98D1B584FFA00C53652 /* GuideRecoveringViewController.m */; };
 		2C67D9A91B584FFA00C53652 /* GuideSafetyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98F1B584FFA00C53652 /* GuideSafetyPlanViewController.m */; };
@@ -33,6 +32,7 @@
 		2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */; };
 		2C67D9B01B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		2C67D9B21B584FFA00C53652 /* safetyplanlaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */; };
+		3FE1113324193EB3006D4099 /* GuideCopingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +74,6 @@
 		2C67D9851B584FFA00C53652 /* EditReasonsToLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditReasonsToLiveViewController.m; sourceTree = "<group>"; };
 		2C67D9861B584FFA00C53652 /* EditWarningSignsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditWarningSignsViewController.h; sourceTree = "<group>"; };
 		2C67D9871B584FFA00C53652 /* EditWarningSignsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditWarningSignsViewController.m; sourceTree = "<group>"; };
-		2C67D9881B584FFA00C53652 /* GuideCopingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideCopingViewController.h; sourceTree = "<group>"; };
-		2C67D9891B584FFA00C53652 /* GuideCopingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideCopingViewController.m; sourceTree = "<group>"; };
 		2C67D98A1B584FFA00C53652 /* GuideOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideOverviewViewController.h; sourceTree = "<group>"; };
 		2C67D98B1B584FFA00C53652 /* GuideOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideOverviewViewController.m; sourceTree = "<group>"; };
 		2C67D98C1B584FFA00C53652 /* GuideRecoveringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideRecoveringViewController.h; sourceTree = "<group>"; };
@@ -95,6 +93,7 @@
 		2C67D99C1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = safetyplanlaunch.storyboard; sourceTree = "<group>"; };
+		3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCopingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,10 +194,9 @@
 		2CCE8365240F4A9B002729ED /* Guide */ = {
 			isa = PBXGroup;
 			children = (
+				3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */,
 				2C2663551FC50C1600AFC5E1 /* GuideResources2ViewController.h */,
 				2C2663561FC50C1600AFC5E1 /* GuideResources2ViewController.m */,
-				2C67D9881B584FFA00C53652 /* GuideCopingViewController.h */,
-				2C67D9891B584FFA00C53652 /* GuideCopingViewController.m */,
 				2C67D98A1B584FFA00C53652 /* GuideOverviewViewController.h */,
 				2C67D98B1B584FFA00C53652 /* GuideOverviewViewController.m */,
 				2C67D98C1B584FFA00C53652 /* GuideRecoveringViewController.h */,
@@ -302,6 +300,7 @@
 					2C44A9F11B1CBA7C005D208C = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = PU7A82KB49;
+						LastSwiftMigration = 1130;
 					};
 					2C44AA0D1B1CBA7D005D208C = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -365,9 +364,9 @@
 				2C67D9B01B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				2C67D9A11B584FFA00C53652 /* EditFriendsandFamilyViewController.m in Sources */,
 				2C67D9A71B584FFA00C53652 /* GuideOverviewViewController.m in Sources */,
+				3FE1113324193EB3006D4099 /* GuideCopingViewController.swift in Sources */,
 				2C2663571FC50C1600AFC5E1 /* GuideResources2ViewController.m in Sources */,
 				2C67D9A21B584FFA00C53652 /* EditPlacesforDistractionViewController.m in Sources */,
-				2C67D9A61B584FFA00C53652 /* GuideCopingViewController.m in Sources */,
 				2C67D9A41B584FFA00C53652 /* EditReasonsToLiveViewController.m in Sources */,
 				2C67D9A01B584FFA00C53652 /* EditCopingViewController.m in Sources */,
 				2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */,
@@ -482,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 6;
@@ -491,6 +491,8 @@
 				MARKETING_VERSION = 1.4;
 				PRODUCT_NAME = "Safety Plan";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -499,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 6;
@@ -508,6 +511,7 @@
 				MARKETING_VERSION = 1.4;
 				PRODUCT_NAME = "Safety Plan";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -515,6 +519,7 @@
 		2C44AA1C1B1CBA7D005D208C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -534,6 +539,7 @@
 		2C44AA1D1B1CBA7D005D208C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

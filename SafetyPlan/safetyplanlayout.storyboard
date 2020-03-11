@@ -1280,7 +1280,7 @@ This application is designed to support you and help you deal with your suicidal
         <!--Coping-->
         <scene sceneID="yZ3-cA-YbM">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zb3-l8-EWS" customClass="GuideCopingViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zb3-l8-EWS" customClass="GuideCopingViewController" customModule="Safety_Plan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="noj-ZA-7y3"/>
                         <viewControllerLayoutGuide type="bottom" id="7i7-u6-9j4"/>
@@ -1291,7 +1291,7 @@ This application is designed to support you and help you deal with your suicidal
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msI-bs-JwT">
                                 <rect key="frame" x="20" y="8" width="335" height="615"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Promise not to do anything right now">
                                         <attributes>
@@ -1456,7 +1456,7 @@ Think of ways that you can potentially solve your problems. Make a list of all o
                     </view>
                     <navigationItem key="navigationItem" title="Coping" id="Ou5-A6-npT"/>
                     <connections>
-                        <outlet property="textView" destination="msI-bs-JwT" id="puD-Cz-1Es"/>
+                        <outlet property="copingTextView" destination="msI-bs-JwT" id="bTu-d1-DFA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2nG-h7-8NH" userLabel="First Responder" sceneMemberID="firstResponder"/>
