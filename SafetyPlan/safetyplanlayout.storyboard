@@ -16,14 +16,14 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzV-Lf-FtM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34V-4S-smE" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAA-Cq-GaW">
                                                 <rect key="frame" x="8" y="64" width="359" height="20.5"/>
@@ -408,7 +408,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EHf-0G-imG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Cgb-pm-tl6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4863.5" y="-1775"/>
+            <point key="canvasLocation" x="3802" y="-1249"/>
         </scene>
         <!--Warning Signs-->
         <scene sceneID="MAA-qv-yDV">
@@ -612,7 +612,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cB-J9-v5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="c6o-PJ-HoL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3227.5" y="-3332.5"/>
+            <point key="canvasLocation" x="2196" y="-3612"/>
         </scene>
         <!--Crisis View Controller-->
         <scene sceneID="S9C-G3-eFm">
@@ -936,12 +936,46 @@ This application is designed to support you and help you deal with your suicidal
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="FuS-gm-5fk"/>
+                        <segue destination="Kk8-9I-Z5R" kind="relationship" relationship="rootViewController" id="WiQ-8M-tUB"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGw-xx-7j7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="334" y="-2000"/>
+            <point key="canvasLocation" x="-414" y="-2001"/>
+        </scene>
+        <!--Safety Plan View Controller-->
+        <scene sceneID="0uw-SF-dWr">
+            <objects>
+                <viewController id="Kk8-9I-Z5R" customClass="SafetyPlanViewController" customModule="Safety_Plan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="95n-Ts-mhy"/>
+                        <viewControllerLayoutGuide type="bottom" id="mYB-Fv-pfq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9YR-Xj-JUx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LIK-Jo-4UG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mYB-Fv-pfq" firstAttribute="top" secondItem="LIK-Jo-4UG" secondAttribute="bottom" id="8Pj-vc-VqL"/>
+                            <constraint firstItem="LIK-Jo-4UG" firstAttribute="leading" secondItem="9YR-Xj-JUx" secondAttribute="leading" id="KUg-BR-FZe"/>
+                            <constraint firstAttribute="trailing" secondItem="LIK-Jo-4UG" secondAttribute="trailing" id="Q1b-wI-RUa"/>
+                            <constraint firstItem="LIK-Jo-4UG" firstAttribute="top" secondItem="95n-Ts-mhy" secondAttribute="bottom" id="Y96-1s-y3y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="q7K-vc-yGI"/>
+                    <connections>
+                        <outlet property="tableView" destination="LIK-Jo-4UG" id="OnW-o7-vLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUq-D3-uOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="-2001"/>
         </scene>
         <!--Suicide Safety Plan Tab View Controller-->
         <scene sceneID="FCr-oO-mcv">
@@ -1704,7 +1738,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
         <!--Navigation Controller-->
         <scene sceneID="Zae-V5-waX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lWv-g1-4ci" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="WarningSignsNavVC" automaticallyAdjustsScrollViewInsets="NO" id="lWv-g1-4ci" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="zTm-Ue-bOz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
@@ -1718,7 +1752,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DP-IK-b8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2721.5" y="-3318.5"/>
+            <point key="canvasLocation" x="1505" y="-3612"/>
         </scene>
         <!--Coping Strategies-->
         <scene sceneID="qTi-ig-1Yr">
@@ -1920,7 +1954,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSW-TZ-Naa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gAj-HC-QEL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3280.5" y="-2725.5"/>
+            <point key="canvasLocation" x="2932" y="-2836"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="heg-HE-hyk">
@@ -1939,7 +1973,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMN-kw-aae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2828" y="-2627"/>
+            <point key="canvasLocation" x="2254" y="-2835"/>
         </scene>
         <!--Edit Reasons to Live-->
         <scene sceneID="Sob-SH-1yI">
@@ -2151,7 +2185,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0R-RL-yKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="WH3-xy-izZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3665.5" y="-2394.5"/>
+            <point key="canvasLocation" x="4703" y="-3123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Ui-Uw-Ja5">
@@ -2170,7 +2204,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5s-NT-C2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2842" y="-1974"/>
+            <point key="canvasLocation" x="3985" y="-3124"/>
         </scene>
         <!--Edit Contacts-->
         <scene sceneID="Zse-6Q-vA9">
@@ -2467,7 +2501,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mqq-z9-Xfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xau-x5-ulQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3516.5" y="-1461"/>
+            <point key="canvasLocation" x="5297" y="-1018"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zHE-od-zBM">
@@ -2486,7 +2520,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9d-0h-L8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3303.5" y="-1704.5"/>
+            <point key="canvasLocation" x="4588" y="-974"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hZ6-CT-VqI">
@@ -2505,7 +2539,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fyW-7H-m8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4225.5" y="-1786.5"/>
+            <point key="canvasLocation" x="2958" y="-1269"/>
         </scene>
         <!--Edit Places for Distraction-->
         <scene sceneID="0Z7-ZE-X33">
@@ -2706,7 +2740,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnY-iq-4ur" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xUO-1q-DkD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3869.5" y="-998.5"/>
+            <point key="canvasLocation" x="2959" y="-2125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AHB-OZ-0YP">
@@ -2725,7 +2759,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8eg-Ul-1el" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2891.5" y="-1118.5"/>
+            <point key="canvasLocation" x="2254" y="-2125"/>
         </scene>
         <!--Instructions-->
         <scene sceneID="QaU-x4-myj">
@@ -2736,11 +2770,11 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                         <viewControllerLayoutGuide type="bottom" id="JZm-Bc-BU5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Kv3-Vy-qMH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQL-Wl-jpw">
-                                <rect key="frame" x="20" y="8" width="335" height="595"/>
+                                <rect key="frame" x="20" y="8" width="335" height="619"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Suicidal thoughts can seem like they will last forever - but these thoughts and feelings pass with time. Having a plan in place that can help guide you through difficult moments can help keep you safe. 
 

@@ -1,0 +1,59 @@
+//
+//  BaseViewController.swift
+//  Safety Plan
+//
+//  Created by Shayne Torres on 3/11/20.
+//  Copyright © 2020 MoodTools. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class BaseViewController: UIViewController {
+    
+    let defaultTableViewCellIdentifier = "defaultTableViewCellIdentifier"
+    
+    // MARK: - Lifecycle methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Bar color code
+        self.navigationController?.navigationBar.isTranslucent = false
+        
+        // Set title and title color
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.white
+        ]
+        
+        //set back button arrow color
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+    }
+    
+    // MARK: - Helper Methods
+    func setup(tableView: UITableView) {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.tableFooterView = UIView()
+        tableView.separatorInset = .zero
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: self.defaultTableViewCellIdentifier)
+    }
+}
+
+// MARK: - UITableView  Methods
+extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // Implement in subclass
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // Implement in subclass
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Implement in subclass
+        return UITableViewCell()
+    }
+}

@@ -7,10 +7,10 @@
 import Foundation
 import UIKit
 
-class CrisisViewController: UIViewController {
+class CrisisViewController: BaseViewController {
     
     // Enum to represent the different rows that can be displayed in the CrisisTableViewController table view
-    enum CrisisRowType {
+    enum RowType {
         case callEmergencyNumber
         case callHelpline
         case textCrisisTextLine
@@ -70,31 +70,15 @@ class CrisisViewController: UIViewController {
     
     // MARK: - Properties
     // Represents the data to be displayed in the rows of the CrisisViewController tableView
-    private var data: [CrisisRowType] = []
+    private var data: [RowType] = []
     private let tableViewCellIdentifier = "CrisisRowCell"
     
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Bar color code
-        self.navigationController?.navigationBar.isTranslucent = false
-        
-        // Set title and title color
-        self.navigationController?.navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.white
-        ]
-        
-        //set back button arrow color
-        self.navigationController?.navigationBar.tintColor = UIColor.white
         self.title = "Crisis"
-        
-        // This will remove extra separators from tableview**********************
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.tableView.tableFooterView = UIView()
-        self.tableView.separatorInset = .zero
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: tableViewCellIdentifier)
+        self.setup(tableView: self.tableView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -191,17 +175,17 @@ class CrisisViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource/Delegate Methods
-extension CrisisViewController: UITableViewDataSource, UITableViewDelegate {
-    func numberOfSections(in tableView: UITableView) -> Int {
+extension CrisisViewController {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CrisisRowCell") else { fatalError("UITableViewCell not registered") }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: self.defaultTableViewCellIdentifier) else { fatalError("UITableViewCell not registered") }
         let rowType = data[indexPath.row]
         
         cell.textLabel?.text = rowType.title
