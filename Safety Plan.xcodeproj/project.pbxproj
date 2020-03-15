@@ -369,7 +369,6 @@
 				2C44A9F81B1CBA7C005D208C /* main.m in Sources */,
 				3FE1113824194154006D4099 /* GuideRecoveringViewContoller.swift in Sources */,
 				B8E38D502415C2A000729701 /* CrisisViewController.swift in Sources */,
-				2C67D9AB1B584FFA00C53652 /* SuicideGuidePreventionViewController.m in Sources */,
 				2C67D9AA1B584FFA00C53652 /* SafetyPlanViewController.m in Sources */,
 				2C67D9AC1B584FFA00C53652 /* SuicideGuideTableViewController.m in Sources */,
 				2C67D9A31B584FFA00C53652 /* EditProfessionalsViewController.m in Sources */,
@@ -497,11 +496,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				INFOPLIST_FILE = SafetyPlan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.4.1;
 				PRODUCT_NAME = "Safety Plan";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SafetyPlan/Safety Plan-Bridging-Header.h";
@@ -518,11 +517,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				INFOPLIST_FILE = SafetyPlan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.4.1;
 				PRODUCT_NAME = "Safety Plan";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SafetyPlan/Safety Plan-Bridging-Header.h";
