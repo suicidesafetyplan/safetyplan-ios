@@ -6,12 +6,11 @@
 
 import Foundation
 
-class PersonalContact {
-    var name: String
+class PersonalContact: SafetyPlanItem {
     var contactNumber: String
     
     init(name: String, number: String) {
-        self.name = name
         self.contactNumber = number
+        super.init(name: name, type: .personalContact)
     }
 }

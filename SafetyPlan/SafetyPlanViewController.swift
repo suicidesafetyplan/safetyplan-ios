@@ -69,9 +69,9 @@ class SafetyPlanViewController: BaseViewController {
             case .copingStrategies:
                 return "Tap the row to add coping strategies"
             case .reasonsToLive:
-                return "Tap the row to to add thinsg that are worth living for"
+                return "Tap the row to to add things that are worth living for"
             case .contacts:
-                return "IMPLEMENT"
+                return "Tap the row to add any people, professionals, or other numbers that you can contact during a crisis"
             case .placesforDistraction:
                 return "Tap the row to add places that can distract you"
             case .other:
@@ -89,7 +89,9 @@ class SafetyPlanViewController: BaseViewController {
                 return .reasonToLive
             case .placesforDistraction:
                 return .placeForDistraction
-            case .contacts, .other:
+            case .contacts:
+                return .personalContact
+            case .other:
                 return nil
             }
         }
@@ -152,17 +154,21 @@ extension SafetyPlanViewController {
         cell.textLabel?.text = rowData.rowType.title
         cell.textLabel?.font = .systemFont(ofSize: 20, weight: .light)
         
-        var detailText = rowData.rowType.subtitle
+        var detailText = rowData.data.count > 0 ? "" : rowData.rowType.subtitle
         
         // if the current displayed option is one that contains saved safety plan items, grab the saved items, and display them as part of the detail text label
         for (index, item) in rowData.data.enumerated() {
-            if index == 0 {
-                // if this is the first item, add an extra line break
-                detailText.append("\r")
-            }
             // for every safety plan item add a line break and a dot to list the saved item
-            detailText.append("\r • \(item.name)")
+            let appendingText = index != 0 ? "\r • \(item.name)" : " • \(item.name)"
+            detailText.append(appendingText)
         }
+        
+        let otherNotes = UserDefaultsGateway.getOtherNotes()
+        if rowData.rowType == .other, !otherNotes.isEmpty {
+            // if we are displaying the other category, and the notes are not empty
+            detailText = "\r\(otherNotes)"
+        }
+        
         cell.detailTextLabel?.text = detailText
         cell.detailTextLabel?.font = .systemFont(ofSize: 17)
         cell.detailTextLabel?.numberOfLines = 0
@@ -174,22 +180,22 @@ extension SafetyPlanViewController {
         let rowData = self.data[indexPath.row]
         
         switch rowData.rowType {
-        case .warningSings:
+        case .warningSings, .copingStrategies, .reasonsToLive, .placesforDistraction, .contacts:
             let sb = UIStoryboard(name: "Plan", bundle: nil)
-            let warningNavVC = sb.instantiateViewController(withIdentifier: "WarningSignsNavVC")
-            guard let warningSignsVC = (warningNavVC as? UINavigationController)?.topViewController as? EditWarningSignsViewController else { return }
-            warningSignsVC.refreshDelegate = self
-            self.present(warningNavVC, animated: true)
-        case .copingStrategies:
-            break
-        case .reasonsToLive:
-            break
-        case .contacts:
-            break
-        case .placesforDistraction:
-            break
+            let editSafetyPlanItemNav = sb.instantiateViewController(withIdentifier: "EditSafetyPlanItemNav")
+            guard
+                let editSafetyPlanItemsVC = (editSafetyPlanItemNav as? UINavigationController)?.topViewController as? EditSafetyPlanItemViewController,
+                let type = rowData.rowType.relatedSafetyItemType
+            else { return }
+            editSafetyPlanItemsVC.refreshDelegate = self
+            editSafetyPlanItemsVC.safetyPlanItemType = type
+            self.present(editSafetyPlanItemNav, animated: true)
         case .other:
-            break
+            let sb = UIStoryboard(name: "Plan", bundle: nil)
+            let editOtherNotesNav = sb.instantiateViewController(withIdentifier: "EditOtherNotesNavVC")
+            guard let editOtherNoteVC = (editOtherNotesNav as? UINavigationController)?.viewControllers.first as? EditOtherNotesViewController else { return }
+            editOtherNoteVC.refreshDelegate = self
+            self.present(editOtherNotesNav, animated: true)
         }
         
         self.tableView.deselectRow(at: indexPath, animated: true)
