@@ -12,6 +12,7 @@ import UIKit
 class BaseViewController: UIViewController {
     
     let defaultTableViewCellIdentifier = "defaultTableViewCellIdentifier"
+    var registeredTableViewCells: [UITableViewCell.Type] { [] }
     
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
@@ -36,6 +37,10 @@ class BaseViewController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.separatorInset = .zero
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: self.defaultTableViewCellIdentifier)
+        
+        for cellType in self.registeredTableViewCells {
+            tableView.register(cellType, forCellReuseIdentifier: String(describing: cellType))
+        }
     }
 }
 

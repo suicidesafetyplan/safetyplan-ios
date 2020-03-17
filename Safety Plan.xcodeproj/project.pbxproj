@@ -32,6 +32,13 @@
 		2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */; };
 		2C67D9B01B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		2C67D9B21B584FFA00C53652 /* safetyplanlaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */; };
+		B83E76AE241C5F5200837918 /* EditWarningSignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76AD241C5F5200837918 /* EditWarningSignsViewController.swift */; };
+		B83E76B0241C5FDF00837918 /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83E76AF241C5FDF00837918 /* Plan.storyboard */; };
+		B83E76B4241C995000837918 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76B3241C995000837918 /* UITableViewExtensions.swift */; };
+		B83E76B6241CA33B00837918 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76B5241CA33B00837918 /* BaseTableViewCell.swift */; };
+		B83E76BA241CA38700837918 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76B9241CA38700837918 /* TextFieldTableViewCell.swift */; };
+		B83E76BC241D3D5A00837918 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76BB241D3D5A00837918 /* ButtonCell.swift */; };
+		B83E76BE241D40A000837918 /* UIColorExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76BD241D40A000837918 /* UIColorExtentions.swift */; };
 		B86A37782419B31B0011E0F0 /* SafetyPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A37772419B31B0011E0F0 /* SafetyPlanViewController.swift */; };
 		B86A377B2419B3570011E0F0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A377A2419B3570011E0F0 /* BaseViewController.swift */; };
 		B8E38D502415C2A000729701 /* CrisisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E38D4F2415C2A000729701 /* CrisisViewController.swift */; };
@@ -99,6 +106,13 @@
 		2C67D99C1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = safetyplanlaunch.storyboard; sourceTree = "<group>"; };
+		B83E76AD241C5F5200837918 /* EditWarningSignsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWarningSignsViewController.swift; sourceTree = "<group>"; };
+		B83E76AF241C5FDF00837918 /* Plan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
+		B83E76B3241C995000837918 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		B83E76B5241CA33B00837918 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		B83E76B9241CA38700837918 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		B83E76BB241D3D5A00837918 /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		B83E76BD241D40A000837918 /* UIColorExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtentions.swift; sourceTree = "<group>"; };
 		B86A37772419B31B0011E0F0 /* SafetyPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyPlanViewController.swift; sourceTree = "<group>"; };
 		B86A377A2419B3570011E0F0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B8E38D4E2415C29F00729701 /* Safety Plan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Safety Plan-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -152,7 +166,7 @@
 		2C44A9F41B1CBA7C005D208C /* SafetyPlan */ = {
 			isa = PBXGroup;
 			children = (
-				B86A37792419B3430011E0F0 /* Base Classes */,
+				B83E76B7241CA36300837918 /* UI Components */,
 				2CCE8366240F4AC0002729ED /* Storyboards */,
 				2CCE8364240F4A23002729ED /* Top Level Pages */,
 				2CCE8365240F4A9B002729ED /* Guide */,
@@ -160,6 +174,7 @@
 				2CCE8368240F4B34002729ED /* Backend */,
 				B8E38D512415C2D900729701 /* Models */,
 				2C44AA051B1CBA7D005D208C /* Images.xcassets */,
+				B83E76B1241C993500837918 /* Utilities */,
 				2C44A9F51B1CBA7C005D208C /* Supporting Files */,
 			);
 			path = SafetyPlan;
@@ -196,6 +211,7 @@
 			children = (
 				B8E38D4F2415C2A000729701 /* CrisisViewController.swift */,
 				B86A37772419B31B0011E0F0 /* SafetyPlanViewController.swift */,
+				B83E76AD241C5F5200837918 /* EditWarningSignsViewController.swift */,
 				2C67D9981B584FFA00C53652 /* SuicideSafetyPlanTabViewController.h */,
 				2C67D9991B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m */,
 				2C67D9901B584FFA00C53652 /* SafetyPlanViewController.h */,
@@ -232,6 +248,7 @@
 			children = (
 				2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */,
 				2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */,
+				B83E76AF241C5FDF00837918 /* Plan.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -267,10 +284,46 @@
 			name = Backend;
 			sourceTree = "<group>";
 		};
+		B83E76B1241C993500837918 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B83E76B2241C993F00837918 /* Extensions */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		B83E76B2241C993F00837918 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B83E76B3241C995000837918 /* UITableViewExtensions.swift */,
+				B83E76BD241D40A000837918 /* UIColorExtentions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B83E76B7241CA36300837918 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				B83E76B8241CA37100837918 /* UITableViewCells */,
+				B86A37792419B3430011E0F0 /* Base Classes */,
+			);
+			name = "UI Components";
+			sourceTree = "<group>";
+		};
+		B83E76B8241CA37100837918 /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B83E76B9241CA38700837918 /* TextFieldTableViewCell.swift */,
+				B83E76BB241D3D5A00837918 /* ButtonCell.swift */,
+			);
+			name = UITableViewCells;
+			sourceTree = "<group>";
+		};
 		B86A37792419B3430011E0F0 /* Base Classes */ = {
 			isa = PBXGroup;
 			children = (
 				B86A377A2419B3570011E0F0 /* BaseViewController.swift */,
+				B83E76B5241CA33B00837918 /* BaseTableViewCell.swift */,
 			);
 			name = "Base Classes";
 			sourceTree = "<group>";
@@ -370,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C67D9B21B584FFA00C53652 /* safetyplanlaunch.storyboard in Resources */,
+				B83E76B0241C5FDF00837918 /* Plan.storyboard in Resources */,
 				2C67D99E1B584FFA00C53652 /* safetyplanlayout.storyboard in Resources */,
 				2C44AA061B1CBA7D005D208C /* Images.xcassets in Resources */,
 			);
@@ -389,12 +443,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83E76BE241D40A000837918 /* UIColorExtentions.swift in Sources */,
 				2C67D9A91B584FFA00C53652 /* GuideSafetyPlanViewController.m in Sources */,
+				B83E76AE241C5F5200837918 /* EditWarningSignsViewController.swift in Sources */,
 				2C44A9FB1B1CBA7C005D208C /* AppDelegate.m in Sources */,
 				2C67D9AE1B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m in Sources */,
 				B8F74312241A86C000D5FDFE /* UserDefaultsGateway.swift in Sources */,
+				B83E76B6241CA33B00837918 /* BaseTableViewCell.swift in Sources */,
 				2C44A9F81B1CBA7C005D208C /* main.m in Sources */,
 				B8E38D502415C2A000729701 /* CrisisViewController.swift in Sources */,
+				B83E76B4241C995000837918 /* UITableViewExtensions.swift in Sources */,
+				B83E76BA241CA38700837918 /* TextFieldTableViewCell.swift in Sources */,
 				B86A377B2419B3570011E0F0 /* BaseViewController.swift in Sources */,
 				2C67D9AB1B584FFA00C53652 /* SuicideGuidePreventionViewController.m in Sources */,
 				2C67D9AA1B584FFA00C53652 /* SafetyPlanViewController.m in Sources */,
@@ -410,6 +469,7 @@
 				2C67D9A01B584FFA00C53652 /* EditCopingViewController.m in Sources */,
 				2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				B8F74310241A863D00D5FDFE /* SafetyPlanItem.swift in Sources */,
+				B83E76BC241D3D5A00837918 /* ButtonCell.swift in Sources */,
 				B8E38D532415C2F100729701 /* ImportantContactInformation.swift in Sources */,
 				B8E38D552415C31F00729701 /* PersonalContact.swift in Sources */,
 				2C67D9A51B584FFA00C53652 /* EditWarningSignsViewController.m in Sources */,
