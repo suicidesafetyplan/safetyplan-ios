@@ -108,6 +108,9 @@ class SafetyPlanViewController: BaseViewController {
         super.viewDidLoad()
         
         self.title = "Plan"
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "questionmark"), style: .done, target: self, action: #selector(onInstructions))
+        
         self.setup(tableView: self.tableView)
         self.refreshData()
     }
@@ -135,6 +138,13 @@ class SafetyPlanViewController: BaseViewController {
                 // if the rowType does have a relatedSafetyItemType, return a RowData with data saved in UserDefaults
                 return RowData(rowType: $0, data: UserDefaultsGateway.getAllSafetyPlanItems(ofType: safetyItemType))
             }
+    }
+    
+    // MARK: - Actions
+    @objc func onInstructions() {
+        let sb = UIStoryboard(name: "Plan", bundle: nil)
+        let instructionsVC = sb.instantiateViewController(withIdentifier: "InstructionsVC")
+        self.navigationController?.show(instructionsVC, sender: self)
     }
 }
 

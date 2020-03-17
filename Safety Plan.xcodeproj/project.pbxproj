@@ -15,12 +15,10 @@
 		2C44AA061B1CBA7D005D208C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C44AA051B1CBA7D005D208C /* Images.xcassets */; };
 		2C44AA151B1CBA7D005D208C /* SafetyPlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44AA141B1CBA7D005D208C /* SafetyPlanTests.m */; };
 		2C67D99E1B584FFA00C53652 /* safetyplanlayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */; };
-		2C67D9A11B584FFA00C53652 /* EditFriendsandFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D97F1B584FFA00C53652 /* EditFriendsandFamilyViewController.m */; };
 		2C67D9A61B584FFA00C53652 /* GuideCopingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9891B584FFA00C53652 /* GuideCopingViewController.m */; };
 		2C67D9A71B584FFA00C53652 /* GuideOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98B1B584FFA00C53652 /* GuideOverviewViewController.m */; };
 		2C67D9A81B584FFA00C53652 /* GuideRecoveringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98D1B584FFA00C53652 /* GuideRecoveringViewController.m */; };
 		2C67D9A91B584FFA00C53652 /* GuideSafetyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98F1B584FFA00C53652 /* GuideSafetyPlanViewController.m */; };
-		2C67D9AA1B584FFA00C53652 /* SafetyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9911B584FFA00C53652 /* SafetyPlanViewController.m */; };
 		2C67D9AB1B584FFA00C53652 /* SuicideGuidePreventionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9931B584FFA00C53652 /* SuicideGuidePreventionViewController.m */; };
 		2C67D9AC1B584FFA00C53652 /* SuicideGuideTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9951B584FFA00C53652 /* SuicideGuideTableViewController.m */; };
 		2C67D9AE1B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9991B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m */; };
@@ -36,6 +34,7 @@
 		B83E76C42420938D00837918 /* EditSafetyPlanItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76C32420938D00837918 /* EditSafetyPlanItemViewController.swift */; };
 		B83E76C62420976600837918 /* EditOtherNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76C52420976600837918 /* EditOtherNotesViewController.swift */; };
 		B83E76CA2420A7EE00837918 /* DoubleTextFieldTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76C92420A7EE00837918 /* DoubleTextFieldTableCell.swift */; };
+		B83E76CC2420B35E00837918 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76CB2420B35E00837918 /* InstructionsViewController.swift */; };
 		B86A37782419B31B0011E0F0 /* SafetyPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A37772419B31B0011E0F0 /* SafetyPlanViewController.swift */; };
 		B86A377B2419B3570011E0F0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86A377A2419B3570011E0F0 /* BaseViewController.swift */; };
 		B8E38D502415C2A000729701 /* CrisisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E38D4F2415C2A000729701 /* CrisisViewController.swift */; };
@@ -70,8 +69,6 @@
 		2C44AA131B1CBA7D005D208C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C44AA141B1CBA7D005D208C /* SafetyPlanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafetyPlanTests.m; sourceTree = "<group>"; };
 		2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = safetyplanlayout.storyboard; sourceTree = "<group>"; };
-		2C67D97E1B584FFA00C53652 /* EditFriendsandFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsandFamilyViewController.h; sourceTree = "<group>"; };
-		2C67D97F1B584FFA00C53652 /* EditFriendsandFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsandFamilyViewController.m; sourceTree = "<group>"; };
 		2C67D9881B584FFA00C53652 /* GuideCopingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideCopingViewController.h; sourceTree = "<group>"; };
 		2C67D9891B584FFA00C53652 /* GuideCopingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideCopingViewController.m; sourceTree = "<group>"; };
 		2C67D98A1B584FFA00C53652 /* GuideOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideOverviewViewController.h; sourceTree = "<group>"; };
@@ -80,8 +77,6 @@
 		2C67D98D1B584FFA00C53652 /* GuideRecoveringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideRecoveringViewController.m; sourceTree = "<group>"; };
 		2C67D98E1B584FFA00C53652 /* GuideSafetyPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideSafetyPlanViewController.h; sourceTree = "<group>"; };
 		2C67D98F1B584FFA00C53652 /* GuideSafetyPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideSafetyPlanViewController.m; sourceTree = "<group>"; };
-		2C67D9901B584FFA00C53652 /* SafetyPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafetyPlanViewController.h; sourceTree = "<group>"; };
-		2C67D9911B584FFA00C53652 /* SafetyPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafetyPlanViewController.m; sourceTree = "<group>"; };
 		2C67D9921B584FFA00C53652 /* SuicideGuidePreventionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuicideGuidePreventionViewController.h; sourceTree = "<group>"; };
 		2C67D9931B584FFA00C53652 /* SuicideGuidePreventionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuicideGuidePreventionViewController.m; sourceTree = "<group>"; };
 		2C67D9941B584FFA00C53652 /* SuicideGuideTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuicideGuideTableViewController.h; sourceTree = "<group>"; };
@@ -102,6 +97,7 @@
 		B83E76C32420938D00837918 /* EditSafetyPlanItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSafetyPlanItemViewController.swift; sourceTree = "<group>"; };
 		B83E76C52420976600837918 /* EditOtherNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOtherNotesViewController.swift; sourceTree = "<group>"; };
 		B83E76C92420A7EE00837918 /* DoubleTextFieldTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTextFieldTableCell.swift; sourceTree = "<group>"; };
+		B83E76CB2420B35E00837918 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		B86A37772419B31B0011E0F0 /* SafetyPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyPlanViewController.swift; sourceTree = "<group>"; };
 		B86A377A2419B3570011E0F0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B8E38D4E2415C29F00729701 /* Safety Plan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Safety Plan-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -202,8 +198,6 @@
 				B86A37772419B31B0011E0F0 /* SafetyPlanViewController.swift */,
 				2C67D9981B584FFA00C53652 /* SuicideSafetyPlanTabViewController.h */,
 				2C67D9991B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m */,
-				2C67D9901B584FFA00C53652 /* SafetyPlanViewController.h */,
-				2C67D9911B584FFA00C53652 /* SafetyPlanViewController.m */,
 				2C67D9941B584FFA00C53652 /* SuicideGuideTableViewController.h */,
 				2C67D9951B584FFA00C53652 /* SuicideGuideTableViewController.m */,
 				B8E38D4E2415C29F00729701 /* Safety Plan-Bridging-Header.h */,
@@ -245,8 +239,7 @@
 			children = (
 				B83E76C32420938D00837918 /* EditSafetyPlanItemViewController.swift */,
 				B83E76C52420976600837918 /* EditOtherNotesViewController.swift */,
-				2C67D97E1B584FFA00C53652 /* EditFriendsandFamilyViewController.h */,
-				2C67D97F1B584FFA00C53652 /* EditFriendsandFamilyViewController.m */,
+				B83E76CB2420B35E00837918 /* InstructionsViewController.swift */,
 			);
 			name = "Safety Plan";
 			sourceTree = "<group>";
@@ -439,10 +432,8 @@
 				2C67D9AB1B584FFA00C53652 /* SuicideGuidePreventionViewController.m in Sources */,
 				B83E76C42420938D00837918 /* EditSafetyPlanItemViewController.swift in Sources */,
 				B83E76C62420976600837918 /* EditOtherNotesViewController.swift in Sources */,
-				2C67D9AA1B584FFA00C53652 /* SafetyPlanViewController.m in Sources */,
 				2C67D9AC1B584FFA00C53652 /* SuicideGuideTableViewController.m in Sources */,
 				2C67D9B01B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
-				2C67D9A11B584FFA00C53652 /* EditFriendsandFamilyViewController.m in Sources */,
 				2C67D9A71B584FFA00C53652 /* GuideOverviewViewController.m in Sources */,
 				2C2663571FC50C1600AFC5E1 /* GuideResources2ViewController.m in Sources */,
 				2C67D9A61B584FFA00C53652 /* GuideCopingViewController.m in Sources */,
@@ -452,6 +443,7 @@
 				B8E38D532415C2F100729701 /* ImportantContactInformation.swift in Sources */,
 				B8E38D552415C31F00729701 /* PersonalContact.swift in Sources */,
 				2C67D9A81B584FFA00C53652 /* GuideRecoveringViewController.m in Sources */,
+				B83E76CC2420B35E00837918 /* InstructionsViewController.swift in Sources */,
 				B86A37782419B31B0011E0F0 /* SafetyPlanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
