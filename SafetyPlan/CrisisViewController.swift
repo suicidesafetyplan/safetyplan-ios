@@ -188,6 +188,13 @@ extension CrisisViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: self.defaultTableViewCellIdentifier) else { fatalError("UITableViewCell not registered") }
         let rowType = data[indexPath.row]
         
+        if #available(iOS 13.0, *) {
+            if self.traitCollection.userInterfaceStyle == .dark {
+                cell.backgroundColor = .secondarySystemBackground
+            }
+        } else {
+            // Fallback on earlier versions
+        }
         cell.textLabel?.text = rowType.title
         cell.textLabel?.font = UIFont.systemFont(ofSize: 22, weight: .light)
         cell.imageView?.image = rowType.rowImage

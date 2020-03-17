@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GRP-YY-af2">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GRP-YY-af2">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -68,7 +68,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="Kyn-Uz-DJe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
                             <tableViewSection id="mFp-qv-vcM">
                                 <cells>
@@ -83,7 +83,7 @@
                                                     <rect key="frame" x="91" y="0.0" width="268" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="eye" id="t6M-4b-D8j">
@@ -92,6 +92,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="PH9-v6-DKj" kind="show" id="AkH-eh-8XJ"/>
                                         </connections>
@@ -107,7 +108,7 @@
                                                     <rect key="frame" x="91" y="0.0" width="268" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="coping" id="qkK-q2-aF8">
@@ -116,6 +117,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="zb3-l8-EWS" kind="show" id="k9M-ka-eMX"/>
                                         </connections>
@@ -131,7 +133,7 @@
                                                     <rect key="frame" x="91" y="0.0" width="268" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="uparrow" id="sup-ew-CR5">
@@ -140,6 +142,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="z03-CO-2ol" kind="show" id="qVV-7V-HvT"/>
                                         </connections>
@@ -155,7 +158,7 @@
                                                     <rect key="frame" x="91" y="0.0" width="268" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="crossoutline" id="YYw-rq-5bJ">
@@ -164,6 +167,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="Bcc-vl-vuE" kind="show" id="icb-rm-5gn"/>
                                         </connections>
@@ -179,7 +183,7 @@
                                                     <rect key="frame" x="91" y="0.0" width="268" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="warningsignlarge" id="eUe-BP-3nS">
@@ -188,6 +192,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="fRt-Pb-egW" kind="show" id="PlJ-FA-U0S"/>
                                         </connections>
@@ -203,7 +208,7 @@
                                                     <rect key="frame" x="91" y="0.0" width="268" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="safeenv" id="oVk-U9-mRy">
@@ -212,6 +217,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="bux-3X-GXZ" kind="show" id="GvH-jj-TyF"/>
                                         </connections>
@@ -227,7 +233,7 @@
                                                     <rect key="frame" x="91" y="0.0" width="268" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="web" id="f40-jg-4N0">
@@ -236,6 +242,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="x6i-fE-SJq" kind="show" id="4ZH-yt-OBj"/>
                                         </connections>
@@ -268,18 +275,18 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfn-ED-HSe">
                                 <rect key="frame" x="16" y="8" width="343" height="566"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">If you are having thoughts of suicide, you are not alone. Many people have had suicidal thoughts at some point in their lives. Some problems and experiences can leave you feeling hopeless and overwhelmed. Feeling suicidal is not a sign of weakness, and it doesn't mean that you are weak or crazy. Thinking of suicide occurs when pain exceeds the resources for coping with that pain. You may think that you have no options left and suicide would be a way to escape intense emotional pain. But while this pain may seem overwhelming and permanent, with time and support, you can overcome your problems and the pain, as well as the suicidal feelings, will pass. 
 
 Take hope in the fact that people DO get through this, even when they are feeling as badly as you do now. There is a very good chance that you are going to live through these feelings, no matter how much pain you are currently experiencing.
 
 This application is designed to support you and help you deal with your suicidal urges when they arise so that you may continue on the path to recovery. Please take the time to read this guide and fill out the Safety Plan. The Safety Plan will come in handy when you have thoughts of hurting yourself. Once it is completed, you can follow the steps outlined in your Safety Plan to cope with your emotional pain. If following the Safety Plan is not enough to alleviate your pain, you can call for help or find a local emergency center through the Crisis tab of the app.
 </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Hfn-ED-HSe" firstAttribute="leading" secondItem="zCA-4g-CkQ" secondAttribute="leadingMargin" id="A3J-i5-gl1"/>
                             <constraint firstItem="Hfn-ED-HSe" firstAttribute="top" secondItem="DaW-6Q-YM9" secondAttribute="bottom" constant="8" symbolic="YES" id="taI-2v-JNk"/>
@@ -294,7 +301,7 @@ This application is designed to support you and help you deal with your suicidal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipz-tY-ALR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2346" y="-206"/>
+            <point key="canvasLocation" x="2215" y="-198"/>
         </scene>
         <!--Crisis-->
         <scene sceneID="VRL-IM-y2O">
@@ -379,7 +386,7 @@ This application is designed to support you and help you deal with your suicidal
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gsG-ms-sGD">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="jOB-Gl-ESe" kind="relationship" relationship="viewControllers" id="TUw-vJ-Ufj"/>
@@ -394,7 +401,7 @@ This application is designed to support you and help you deal with your suicidal
         <!--Coping-->
         <scene sceneID="yZ3-cA-YbM">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zb3-l8-EWS" customClass="GuideCopingViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="zb3-l8-EWS" customClass="GuideCopingViewController" customModule="Safety_Plan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="noj-ZA-7y3"/>
                         <viewControllerLayoutGuide type="bottom" id="7i7-u6-9j4"/>
@@ -405,7 +412,7 @@ This application is designed to support you and help you deal with your suicidal
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msI-bs-JwT">
                                 <rect key="frame" x="20" y="8" width="335" height="615"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Promise not to do anything right now">
                                         <attributes>
@@ -560,7 +567,7 @@ Think of ways that you can potentially solve your problems. Make a list of all o
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="msI-bs-JwT" secondAttribute="bottom" id="IPh-op-dI7"/>
                             <constraint firstAttribute="trailing" secondItem="msI-bs-JwT" secondAttribute="trailing" constant="20" symbolic="YES" id="lKY-6P-kr3"/>
@@ -570,7 +577,7 @@ Think of ways that you can potentially solve your problems. Make a list of all o
                     </view>
                     <navigationItem key="navigationItem" title="Coping" id="Ou5-A6-npT"/>
                     <connections>
-                        <outlet property="textView" destination="msI-bs-JwT" id="puD-Cz-1Es"/>
+                        <outlet property="copingTextView" destination="msI-bs-JwT" id="bTu-d1-DFA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2nG-h7-8NH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -580,7 +587,7 @@ Think of ways that you can potentially solve your problems. Make a list of all o
         <!--Recovering-->
         <scene sceneID="3D8-X6-0Az">
             <objects>
-                <viewController title="Recovering" automaticallyAdjustsScrollViewInsets="NO" id="z03-CO-2ol" customClass="GuideRecoveringViewController" sceneMemberID="viewController">
+                <viewController title="Recovering" automaticallyAdjustsScrollViewInsets="NO" id="z03-CO-2ol" customClass="GuideRecoveringViewContoller" customModule="Safety_Plan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KHa-ON-oBa"/>
                         <viewControllerLayoutGuide type="bottom" id="XBG-Av-cwQ"/>
@@ -591,7 +598,7 @@ Think of ways that you can potentially solve your problems. Make a list of all o
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2C-kA-0ad">
                                 <rect key="frame" x="20" y="8" width="335" height="595"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Reach out for help">
                                         <attributes>
@@ -731,7 +738,7 @@ Cg
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="g2C-kA-0ad" secondAttribute="bottom" constant="20" symbolic="YES" id="1d3-WP-CGC"/>
                             <constraint firstItem="g2C-kA-0ad" firstAttribute="leading" secondItem="s9J-eI-UzH" secondAttribute="leading" constant="20" symbolic="YES" id="2vE-Hq-JGP"/>
@@ -741,7 +748,7 @@ Cg
                     </view>
                     <navigationItem key="navigationItem" title="Recovering" id="dmY-jm-xHm"/>
                     <connections>
-                        <outlet property="textView" destination="g2C-kA-0ad" id="6dO-0Q-PTC"/>
+                        <outlet property="recoveringTextView" destination="g2C-kA-0ad" id="9q3-cv-QPW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24o-eQ-ib1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -762,7 +769,6 @@ Cg
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfF-zi-Jed">
                                 <rect key="frame" x="16" y="8" width="343" height="558"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Suicidal thoughts can seem like they will last forever – but for many, these thoughts and feelings pass. Having a plan in place that can help guide you through difficult moments can make a difference and keep you safe. Ideally, such a plan is developed jointly with your counselor or therapist. It can also be developed with a crisis line counselor who can help you write down actions to take and people to contact in order to feel safe from suicide. In general, a safety plan is designed so that you can start at step one and continue through the steps until you feel safe. When you have thoughts of suicide, refer to your safety plan.
 
 The following are essential elements to explore and include in the development of your safety plan:
@@ -777,11 +783,12 @@ The following are essential elements to explore and include in the development o
 
 5. Find a place with others who may offer support as well as distraction from the crisis: Make a list of healthy social settings that may help take your mind off things.
 </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="AfF-zi-Jed" firstAttribute="leading" secondItem="Yng-O6-768" secondAttribute="leadingMargin" id="2Ve-xb-qTr"/>
                             <constraint firstItem="AfF-zi-Jed" firstAttribute="trailing" secondItem="Yng-O6-768" secondAttribute="trailingMargin" id="9Ok-cY-VSN"/>
@@ -824,7 +831,7 @@ This application is designed to support you and help you deal with your suicidal
         <!--Suicide Prevention-->
         <scene sceneID="Gww-To-wqg">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="fRt-Pb-egW" customClass="SuicideGuidePreventionViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="fRt-Pb-egW" customClass="GuideSuicidePreventionViewController" customModule="Safety_Plan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uuS-lg-MQT"/>
                         <viewControllerLayoutGuide type="bottom" id="Zsz-So-Mvd"/>
@@ -835,7 +842,7 @@ This application is designed to support you and help you deal with your suicidal
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oX-eO-XIw">
                                 <rect key="frame" x="20" y="8" width="335" height="558"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">People dealing with suicidal thoughts don't necessarily want to die - they just want to stop the pain. Please take any signs of suicidal thought seriously. In this guide we will cover the warning signs of suicide, how to talk to a suicidal person about suicide, responding to a suicidal crisis, and supporting them during recovery.
@@ -999,7 +1006,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="1oX-eO-XIw" firstAttribute="leading" secondItem="wwb-vi-kv4" secondAttribute="leading" constant="20" symbolic="YES" id="Gre-mJ-twk"/>
                             <constraint firstItem="1oX-eO-XIw" firstAttribute="top" secondItem="uuS-lg-MQT" secondAttribute="bottom" constant="8" symbolic="YES" id="I8e-Ua-XIk"/>
@@ -1009,7 +1016,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                     </view>
                     <navigationItem key="navigationItem" title="Suicide Prevention" id="2Oa-RV-UfP"/>
                     <connections>
-                        <outlet property="textView" destination="1oX-eO-XIw" id="Mf9-go-Yu0"/>
+                        <outlet property="suicidePreventionTextView" destination="1oX-eO-XIw" id="Rzp-cl-yNu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qn8-v2-igR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1073,7 +1080,7 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="85I-5v-aSO" firstAttribute="trailing" secondItem="ARa-Xc-T8p" secondAttribute="trailingMargin" id="3Qt-Uh-21I"/>
                             <constraint firstItem="85I-5v-aSO" firstAttribute="leading" secondItem="ARa-Xc-T8p" secondAttribute="leadingMargin" id="4gO-Oa-cgW"/>
@@ -1108,13 +1115,13 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" misplaced="YES" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0y-Pm-K0I">
                                 <rect key="frame" x="16" y="0.0" width="343" height="603"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">It is critical to make your environment safe by removing things you could use to hurt yourself. Either remove them yourself or talk to a trusted friend or family member and have them remove objects such as guns, knives, razors, or pills. If you need pills regularly, your trusted friend or family member can give you the pills on an as-needed basis according to the prescription. If you have a specific plan in place, make sure to tell your trusted friend or family member about the plan so they can ensure your safety.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Q0y-Pm-K0I" secondAttribute="trailing" id="3CJ-cp-3hM"/>
                             <constraint firstItem="Q0y-Pm-K0I" firstAttribute="top" secondItem="Is6-1j-Pnj" secondAttribute="bottom" id="6Jy-JL-ljF"/>
