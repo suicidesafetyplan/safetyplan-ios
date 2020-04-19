@@ -152,7 +152,7 @@ class EditSafetyPlanItemViewController: BaseViewController, SaveCancellabel {
     
     @objc internal func onSave() {
         if self.safetyPlanItemType == .personalContact, let contacts = self.safetyPlanItems as? [PersonalContact] {
-            let nonEmptyPersonalContacts = contacts.filter { !$0.name.trimmingCharacters(in: .whitespaces).isEmpty }
+            let nonEmptyPersonalContacts = contacts.filter { !$0.isEmpty }
             self.personalContactGateway.replaceAll(with: nonEmptyPersonalContacts)
         } else {
             let nonEmptySafetyPlanItems = self.safetyPlanItems.filter { !$0.name.trimmingCharacters(in: .whitespaces).isEmpty }

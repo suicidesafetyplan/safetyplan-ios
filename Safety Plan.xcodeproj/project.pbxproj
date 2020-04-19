@@ -36,6 +36,8 @@
 		B83E76C62420976600837918 /* EditOtherNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76C52420976600837918 /* EditOtherNotesViewController.swift */; };
 		B83E76CA2420A7EE00837918 /* DoubleTextFieldTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76C92420A7EE00837918 /* DoubleTextFieldTableCell.swift */; };
 		B83E76CC2420B35E00837918 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76CB2420B35E00837918 /* InstructionsViewController.swift */; };
+		B84A89FD244D15C8004EC2B4 /* SafetyPlanItemGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A89FC244D15C8004EC2B4 /* SafetyPlanItemGateway.swift */; };
+		B84A89FF244D15EC004EC2B4 /* PersonalContactGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A89FE244D15EC004EC2B4 /* PersonalContactGateway.swift */; };
 		B8650C6F242591B1009D09E2 /* RLMPersonalContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8650C6E242591B1009D09E2 /* RLMPersonalContact.swift */; };
 		B8650C71242592A1009D09E2 /* RLMSafetyPlanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8650C70242592A1009D09E2 /* RLMSafetyPlanItem.swift */; };
 		B8650C772425DEA1009D09E2 /* DomainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8650C762425DEA1009D09E2 /* DomainObject.swift */; };
@@ -107,6 +109,8 @@
 		B83E76C52420976600837918 /* EditOtherNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOtherNotesViewController.swift; sourceTree = "<group>"; };
 		B83E76C92420A7EE00837918 /* DoubleTextFieldTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTextFieldTableCell.swift; sourceTree = "<group>"; };
 		B83E76CB2420B35E00837918 /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		B84A89FC244D15C8004EC2B4 /* SafetyPlanItemGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyPlanItemGateway.swift; sourceTree = "<group>"; };
+		B84A89FE244D15EC004EC2B4 /* PersonalContactGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContactGateway.swift; sourceTree = "<group>"; };
 		B8650C6E242591B1009D09E2 /* RLMPersonalContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMPersonalContact.swift; sourceTree = "<group>"; };
 		B8650C70242592A1009D09E2 /* RLMSafetyPlanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLMSafetyPlanItem.swift; sourceTree = "<group>"; };
 		B8650C762425DEA1009D09E2 /* DomainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainObject.swift; sourceTree = "<group>"; };
@@ -297,9 +301,10 @@
 		B83E76B1241C993500837918 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B8E38D522415C2F100729701 /* ImportantContactInformation.swift */,
+				B8C6D916244BA68B003D1650 /* SpecialTypealiases.swift */,
 				B8C6D918244BBB40003D1650 /* UserDefaults */,
 				B83E76B2241C993F00837918 /* Extensions */,
-				B8C6D916244BA68B003D1650 /* SpecialTypealiases.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -333,12 +338,21 @@
 			name = UITableViewCells;
 			sourceTree = "<group>";
 		};
+		B84A8A00244D1613004EC2B4 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				B83A47B42447F52F0030A8A4 /* DatabaseGateway.swift */,
+				B84A89FE244D15EC004EC2B4 /* PersonalContactGateway.swift */,
+				B84A89FC244D15C8004EC2B4 /* SafetyPlanItemGateway.swift */,
+			);
+			name = Gateways;
+			sourceTree = "<group>";
+		};
 		B8650C6C24259177009D09E2 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
 				B8650C6E242591B1009D09E2 /* RLMPersonalContact.swift */,
 				B8650C70242592A1009D09E2 /* RLMSafetyPlanItem.swift */,
-				B83A47B42447F52F0030A8A4 /* DatabaseGateway.swift */,
 				B8C6D914244BA4DE003D1650 /* RealmMigrationHelper.swift */,
 			);
 			name = Realm;
@@ -374,8 +388,8 @@
 		B8E38D512415C2D900729701 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B8E38D522415C2F100729701 /* ImportantContactInformation.swift */,
 				B8650C6D24259180009D09E2 /* Domain */,
+				B84A8A00244D1613004EC2B4 /* Gateways */,
 				B8650C6C24259177009D09E2 /* Realm */,
 				B8F74311241A86C000D5FDFE /* UserDefaultsGateway.swift */,
 			);
@@ -570,6 +584,7 @@
 				B8C6D91C244BDB24003D1650 /* AppDelegate.swift in Sources */,
 				B83E76BA241CA38700837918 /* TextFieldTableViewCell.swift in Sources */,
 				B8C6D917244BA68B003D1650 /* SpecialTypealiases.swift in Sources */,
+				B84A89FD244D15C8004EC2B4 /* SafetyPlanItemGateway.swift in Sources */,
 				B86A377B2419B3570011E0F0 /* BaseViewController.swift in Sources */,
 				B83E76C42420938D00837918 /* EditSafetyPlanItemViewController.swift in Sources */,
 				B83E76C62420976600837918 /* EditOtherNotesViewController.swift in Sources */,
@@ -587,6 +602,7 @@
 				B8C6D91A244BBB4D003D1650 /* AppDefaults.swift in Sources */,
 				B8E38D532415C2F100729701 /* ImportantContactInformation.swift in Sources */,
 				B8E38D552415C31F00729701 /* PersonalContact.swift in Sources */,
+				B84A89FF244D15EC004EC2B4 /* PersonalContactGateway.swift in Sources */,
 				B8650C772425DEA1009D09E2 /* DomainObject.swift in Sources */,
 				B8650C71242592A1009D09E2 /* RLMSafetyPlanItem.swift in Sources */,
 				B83E76CC2420B35E00837918 /* InstructionsViewController.swift in Sources */,

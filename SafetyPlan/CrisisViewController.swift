@@ -72,6 +72,7 @@ class CrisisViewController: BaseViewController {
     // Represents the data to be displayed in the rows of the CrisisViewController tableView
     private var data: [RowType] = []
     private let tableViewCellIdentifier = "CrisisRowCell"
+    private let personalContactGateway = PersonalContactGateway()
     
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
@@ -100,19 +101,9 @@ class CrisisViewController: BaseViewController {
             .textCrisisTextLine
         ]
         
-        // TODO: [ST] come up with a better way to store and retrieve contacts from User defaults.
-        // Doing it this way is not super safe and not flexible. We should allow the user to have more than just 9 contacts
-        let defaults = UserDefaults.standard
-        let contacts: [PersonalContact] = (1...9).compactMap {
-            guard
-                let name = defaults.string(forKey: "name\($0)"),
-                let number = defaults.string(forKey: "number\($0)")
-            else { return nil }
-            
-            return PersonalContact(name: name, number: number)
-        }
-            // filter out any contacts that dont have a name or number
-        .filter { !$0.name.isEmpty && !$0.contactNumber.isEmpty }
+        // Grab all saved personal contacts from DB
+        // filter out any contacts that dont have a name or number
+        let contacts: [PersonalContact] = self.personalContactGateway.getAll().filter { !$0.name.isEmpty && !$0.contactNumber.isEmpty }
         
         // add a "Call CONTACT NAME" row for each one stored in the UserDefaults
         contacts.forEach { data.append(.callContact(name: $0.name, number: $0.contactNumber)) }

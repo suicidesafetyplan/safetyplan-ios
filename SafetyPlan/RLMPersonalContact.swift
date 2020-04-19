@@ -13,6 +13,7 @@ class RLMPersonalContact: Object {
     @objc dynamic var id: String = ""
     @objc dynamic var name: String = ""
     @objc dynamic var contactNumber: String = ""
+    @objc dynamic var safetyPlanItemTypeId: Int = 0
 }
 
 // MARK: - Mapping Methods

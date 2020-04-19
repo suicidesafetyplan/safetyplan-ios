@@ -29,4 +29,8 @@ class PersonalContact: SafetyPlanItem {
         rlmObject.contactNumber = self.contactNumber
         return rlmObject
     }
+    
+    var isEmpty: Bool {
+        return self.name.trimmingCharacters(in: .whitespaces).isEmpty && self.contactNumber.trimmingCharacters(in: .whitespaces).isEmpty
+    }
 }
