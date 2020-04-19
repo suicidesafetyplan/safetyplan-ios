@@ -51,6 +51,8 @@ class EditSafetyPlanItemViewController: BaseViewController, SaveCancellabel {
     }
     weak var refreshDelegate: SafetyPlanRefreshDelegate?
     var safetyPlanItemType: SafetyPlanItem.ItemType = .warningSign
+    private let safetyPlanItemGateway = SafetyPlanItemGateway()
+    private let personalContactGateway = PersonalContactGateway()
     
     private var typeName: String {
         switch self.safetyPlanItemType {
@@ -102,7 +104,11 @@ class EditSafetyPlanItemViewController: BaseViewController, SaveCancellabel {
     /// Returns the appropriate SafetyPlanItems for the given type
     /// - Parameter type: The type of safety plan item to return
     private func fetchSafetyPlanItems(for type: SafetyPlanItem.ItemType) -> [SafetyPlanItem] {
-        return UserDefaultsGateway.getAllSafetyPlanItems(ofType: self.safetyPlanItemType)
+        if type == .personalContact {
+            return personalContactGateway.getAll()
+        } else {
+            return safetyPlanItemGateway.getAll(forType: self.safetyPlanItemType)
+        }
     }
     
     private func organizeData() {
@@ -147,10 +153,10 @@ class EditSafetyPlanItemViewController: BaseViewController, SaveCancellabel {
     @objc internal func onSave() {
         if self.safetyPlanItemType == .personalContact, let contacts = self.safetyPlanItems as? [PersonalContact] {
             let nonEmptyPersonalContacts = contacts.filter { !$0.name.trimmingCharacters(in: .whitespaces).isEmpty }
-            UserDefaultsGateway.save(nonEmptyPersonalContacts)
+            self.personalContactGateway.replaceAll(with: nonEmptyPersonalContacts)
         } else {
             let nonEmptySafetyPlanItems = self.safetyPlanItems.filter { !$0.name.trimmingCharacters(in: .whitespaces).isEmpty }
-            UserDefaultsGateway.save(nonEmptySafetyPlanItems, for: self.safetyPlanItemType)
+            self.safetyPlanItemGateway.replaceAll(with: nonEmptySafetyPlanItems)
         }
         self.refreshDelegate?.refreshData()
         self.dismiss(animated: true)

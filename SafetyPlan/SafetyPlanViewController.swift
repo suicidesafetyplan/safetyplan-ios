@@ -102,6 +102,8 @@ class SafetyPlanViewController: BaseViewController {
     
     // MARK: - Properties
     private var data: [RowData] = []
+    private let safetyItemGateway = SafetyPlanItemGateway()
+    private let personalContactGateway = PersonalContactGateway()
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -135,8 +137,10 @@ class SafetyPlanViewController: BaseViewController {
                     // if the rowType does not have a relatedSafetyItemType, return a RowData with no Data
                     return RowData(rowType: $0, data: [])
                 }
-                // if the rowType does have a relatedSafetyItemType, return a RowData with data saved in UserDefaults
-                return RowData(rowType: $0, data: UserDefaultsGateway.getAllSafetyPlanItems(ofType: safetyItemType))
+                if safetyItemType == .personalContact {
+                    return RowData(rowType: $0, data: personalContactGateway.getAll())
+                }
+                return RowData(rowType: $0, data: safetyItemGateway.getAll(forType: safetyItemType))
             }
     }
     
