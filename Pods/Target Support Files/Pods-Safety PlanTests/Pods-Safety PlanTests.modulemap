@@ -1,0 +1,6 @@
+framework module Pods_Safety_PlanTests {
+  umbrella header "Pods-Safety PlanTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

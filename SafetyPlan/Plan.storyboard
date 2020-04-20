@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Safety Plan Item View Controller-->
+        <scene sceneID="k4t-pC-66o">
+            <objects>
+                <viewController id="RAS-9t-ghO" customClass="EditSafetyPlanItemViewController" customModule="Safety_Plan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KBi-T3-BMU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJr-aF-dD2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="raX-GQ-khS" firstAttribute="bottom" secondItem="mJr-aF-dD2" secondAttribute="bottom" id="14v-A6-tfi"/>
+                            <constraint firstItem="mJr-aF-dD2" firstAttribute="leading" secondItem="raX-GQ-khS" secondAttribute="leading" id="53H-z1-8wB"/>
+                            <constraint firstItem="mJr-aF-dD2" firstAttribute="top" secondItem="raX-GQ-khS" secondAttribute="top" id="Xme-Um-vcW"/>
+                            <constraint firstItem="raX-GQ-khS" firstAttribute="trailing" secondItem="mJr-aF-dD2" secondAttribute="trailing" id="ep4-aH-xyY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="raX-GQ-khS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h68-aa-Ykv"/>
+                    <connections>
+                        <outlet property="tableView" destination="mJr-aF-dD2" id="tS4-Sa-82N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rnT-15-87b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="737"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="U4B-p3-z1L">
+            <objects>
+                <navigationController storyboardIdentifier="EditSafetyPlanItemNav" automaticallyAdjustsScrollViewInsets="NO" id="PEt-ue-IN6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YvW-w1-pat">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17434722189999999" green="0.59072256089999997" blue="0.86913794280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RAS-9t-ghO" kind="relationship" relationship="rootViewController" id="QSP-av-oXu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guO-8A-B3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="737"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eC1-NV-Kiz">
+            <objects>
+                <navigationController storyboardIdentifier="EditOtherNotesNavVC" automaticallyAdjustsScrollViewInsets="NO" id="E6r-7d-J67" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LRZ-rH-YUn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17434722189999999" green="0.59072256089999997" blue="0.86913794280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lBS-6E-ytC" kind="relationship" relationship="rootViewController" id="XKS-01-kmD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NeX-i9-D2b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="1446"/>
+        </scene>
+        <!--Edit Other Notes View Controller-->
+        <scene sceneID="9fV-zv-6ir">
+            <objects>
+                <viewController id="lBS-6E-ytC" customClass="EditOtherNotesViewController" customModule="Safety_Plan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rdF-NR-7I4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="upm-D9-3IC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YOJ-lA-l5I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Me-jP-rln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="1448"/>
+        </scene>
+        <!--Instructions-->
+        <scene sceneID="lGc-Mn-p25">
+            <objects>
+                <viewController storyboardIdentifier="InstructionsVC" id="fu8-VT-pwt" customClass="InstructionsViewController" customModule="Safety_Plan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kv2-on-ALG"/>
+                        <viewControllerLayoutGuide type="bottom" id="W8Q-GD-6Re"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H96-cD-hNR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSf-Kg-uFp">
+                                <rect key="frame" x="20" y="52" width="374" height="824"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Suicidal thoughts can seem like they will last forever - but these thoughts and feelings pass with time. Having a plan in place that can help guide you through difficult moments can help keep you safe. 
+
+This Safety Plan is designed so that when you are dealing with suicidal thoughts, you can start at the beginning and continue down the steps until you feel safe. 
+
+We recommend working with a therapist or calling a suicide hotline for assistance filling out this safety plan.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sSf-Kg-uFp" firstAttribute="leading" secondItem="H96-cD-hNR" secondAttribute="leading" constant="20" symbolic="YES" id="2hS-Em-C8X"/>
+                            <constraint firstItem="sSf-Kg-uFp" firstAttribute="top" secondItem="Kv2-on-ALG" secondAttribute="bottom" constant="8" symbolic="YES" id="MUu-Yc-8vv"/>
+                            <constraint firstAttribute="trailing" secondItem="sSf-Kg-uFp" secondAttribute="trailing" constant="20" symbolic="YES" id="Pln-cR-Kq7"/>
+                            <constraint firstAttribute="bottom" secondItem="sSf-Kg-uFp" secondAttribute="bottom" constant="20" symbolic="YES" id="aGW-Oa-bHd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2aC-6h-vVH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Instructions" id="zuJ-gm-Rmd"/>
+                    <connections>
+                        <outlet property="textView" destination="sSf-Kg-uFp" id="ydI-Uv-7by"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFV-ad-0Yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090" y="737"/>
+        </scene>
+    </scenes>
+</document>
