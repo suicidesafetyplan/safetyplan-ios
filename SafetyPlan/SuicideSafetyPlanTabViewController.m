@@ -5,34 +5,33 @@
 //
 
 #import "SuicideSafetyPlanTabViewController.h"
+#import "Safety_Plan-Swift.h"
 
-@interface SuicideSafetyPlanTabViewController ()
+@interface SuicideSafetyPlanTabViewController () <SafetyPlanViewControllerActions>
 
 @end
 
 @implementation SuicideSafetyPlanTabViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad;
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-
+    // At this point, we should have SafetyPlanViewController in the stack.
+    // This is a brittle solution. It will break if we change the tab bar order.
+    // We will deal with that later.
+    UINavigationController *navController = (UINavigationController *)self.viewControllers.firstObject;
+    SafetyPlanViewController *viewController = (SafetyPlanViewController *)navController.topViewController;
+    viewController.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)editSafetyPlanUsing:(enum ItemType)using from:(SafetyPlanViewController *)from;
+{
+    EditSafetyPlanItemViewController *controller = [EditSafetyPlanItemViewController newFromStoryboardWithType:using
+                                                                                               refreshDelegate:from];
+    [from presentViewController:controller
+                       animated:true
+                     completion:nil];
 }
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
