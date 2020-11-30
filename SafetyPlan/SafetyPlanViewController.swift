@@ -9,11 +9,17 @@
 import Foundation
 import UIKit
 
-protocol SafetyPlanRefreshDelegate: class {
+@objc protocol SafetyPlanRefreshDelegate: class {
     func refreshData()
 }
 
+@objc protocol SafetyPlanViewControllerActions {
+    func editSafetyPlan(using: SafetyPlanItem.ItemType, from: SafetyPlanViewController)
+}
+
 class SafetyPlanViewController: BaseViewController {
+    
+    @objc var delegate: SafetyPlanViewControllerActions!
     
     struct RowData {
         var rowType: RowType
@@ -191,28 +197,33 @@ extension SafetyPlanViewController {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let rowData = self.data[indexPath.row]
+        let rowType = self.data[indexPath.row].rowType
         
-        switch rowData.rowType {
-        case .warningSings, .copingStrategies, .reasonsToLive, .placesforDistraction, .contacts:
-            let sb = UIStoryboard(name: "Plan", bundle: nil)
-            let editSafetyPlanItemNav = sb.instantiateViewController(withIdentifier: "EditSafetyPlanItemNav")
-            guard
-                let editSafetyPlanItemsVC = (editSafetyPlanItemNav as? UINavigationController)?.topViewController as? EditSafetyPlanItemViewController,
-                let type = rowData.rowType.relatedSafetyItemType
-            else { return }
-            editSafetyPlanItemsVC.refreshDelegate = self
-            editSafetyPlanItemsVC.safetyPlanItemType = type
-            self.present(editSafetyPlanItemNav, animated: true)
+        switch rowType {
+        
+        case .warningSings,
+             .copingStrategies,
+             .reasonsToLive,
+             .placesforDistraction,
+             .contacts:
+            
+            delegate.editSafetyPlan(using: rowType.relatedSafetyItemType!,
+                                    from: self)
+            
         case .other:
             let sb = UIStoryboard(name: "Plan", bundle: nil)
             let editOtherNotesNav = sb.instantiateViewController(withIdentifier: "EditOtherNotesNavVC")
-            guard let editOtherNoteVC = (editOtherNotesNav as? UINavigationController)?.viewControllers.first as? EditOtherNotesViewController else { return }
+            guard
+                let navController = editOtherNotesNav as? UINavigationController,
+                let editOtherNoteVC = navController.viewControllers.first as? EditOtherNotesViewController else {
+                return
+                #warning("Do we report this to a user? Or should we force unwrap any of the conditions above?")
+            }
             editOtherNoteVC.refreshDelegate = self
-            self.present(editOtherNotesNav, animated: true)
+            present(editOtherNotesNav, animated: true)
         }
         
-        self.tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
