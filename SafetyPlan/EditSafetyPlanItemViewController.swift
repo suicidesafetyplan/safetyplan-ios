@@ -32,6 +32,14 @@ class EditSafetyPlanItemViewController: BaseViewController, SaveCancellabel {
         case button(title: String)
     }
     
+    @objc class func newFromStoryboard(type: SafetyPlanItem.ItemType, refreshDelegate: SafetyPlanRefreshDelegate) -> EditSafetyPlanItemViewController {
+        let sb = UIStoryboard(name: "Plan", bundle: nil)
+        let editSafetyVC = sb.instantiateViewController(withIdentifier: "EditSafetyPlanItemNav") as! EditSafetyPlanItemViewController
+        editSafetyVC.refreshDelegate = refreshDelegate
+        editSafetyVC.safetyPlanItemType = type
+        return editSafetyVC
+    }
+    
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     
