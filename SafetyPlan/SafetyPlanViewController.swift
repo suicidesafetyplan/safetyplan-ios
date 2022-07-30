@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol SafetyPlanRefreshDelegate: class {
+protocol SafetyPlanRefreshDelegate: AnyObject {
     func refreshData()
 }
 
@@ -104,15 +104,18 @@ class SafetyPlanViewController: BaseViewController {
     private var data: [RowData] = []
     private let safetyItemGateway = SafetyPlanItemGateway()
     private let personalContactGateway = PersonalContactGateway()
+
+    private var otherNotes: String { UserDefaultsGateway.getOtherNotes() }
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Plan"
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "questionmark"), style: .done, target: self, action: #selector(onInstructions))
-        
+
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_share"), style: .done, target: self, action: #selector(onShare))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "questionmark"), style: .done, target: self, action: #selector(onInstructions))
+
         self.setup(tableView: self.tableView)
         self.refreshData()
     }
@@ -150,6 +153,30 @@ class SafetyPlanViewController: BaseViewController {
         let instructionsVC = sb.instantiateViewController(withIdentifier: "InstructionsVC")
         self.navigationController?.show(instructionsVC, sender: self)
     }
+
+    @objc func onShare() {
+        let shareSheet = UIActivityViewController(activityItems: [constructPlan()], applicationActivities: nil)
+        self.present(shareSheet, animated: true)
+    }
+
+    private func constructPlan() -> String {
+        var planResult = "Plan"
+        data.forEach { item in
+            let itemAnswers: String = {
+                switch item.rowType {
+                case .other:
+                    return otherNotes.isEmpty ? "–" : otherNotes
+                default:
+                    return item.data.isEmpty ? "–" : item.data.reduce("", {
+                        [$0, $1.name].joined(separator: ", ")
+                    })
+                }
+            }()
+            let itemResult = [item.rowType.title, itemAnswers].joined(separator: "\n")
+            planResult = [planResult, itemResult].joined(separator: "\n\n")
+        }
+        return planResult
+    }
 }
 
 // MARK: - UITableView Methods
@@ -177,7 +204,6 @@ extension SafetyPlanViewController {
             detailText.append(appendingText)
         }
         
-        let otherNotes = UserDefaultsGateway.getOtherNotes()
         if rowData.rowType == .other, !otherNotes.isEmpty {
             // if we are displaying the other category, and the notes are not empty
             detailText = "\r\(otherNotes)"
