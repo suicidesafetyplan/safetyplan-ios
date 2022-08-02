@@ -26,8 +26,11 @@
 	<string>comgooglemaps</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>safetyplanlaunch</string>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>systemBackground</string>
+	</dict>
 	<key>UIMainStoryboardFile</key>
 	<string>safetyplanlayout</string>
 	<key>UIRequiredDeviceCapabilities</key>
