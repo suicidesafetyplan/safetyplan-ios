@@ -16,15 +16,15 @@ class TextFieldTableViewCell: BaseTableViewCell, UITextFieldDelegate {
     var textFieldDidClearCompletion: (() -> ())?
     
     override func commonInit() {
-        self.addSubview(self.textField)
+        self.contentView.addSubview(self.textField)
         self.textField.translatesAutoresizingMaskIntoConstraints = false
         self.textField.clearButtonMode = .always
         self.textField.delegate = self
         NSLayoutConstraint.activate([
-            self.textField.topAnchor.constraint(equalTo: self.topAnchor, constant: 16),
-            self.textField.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
-            self.textField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            self.textField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            self.textField.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 16),
+            self.textField.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -16),
+            self.textField.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 16),
+            self.textField.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -16),
         ])
     }
     

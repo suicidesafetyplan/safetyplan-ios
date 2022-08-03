@@ -22,15 +22,15 @@ class ButtonCell: BaseTableViewCell {
     override func commonInit() {
         super.commonInit()
         
-        self.addSubview(self.button)
+        self.contentView.addSubview(self.button)
         self.button.translatesAutoresizingMaskIntoConstraints = false
         self.button.addTarget(self, action: #selector(onTap), for: .primaryActionTriggered)
         self.button.setTitleColor(.appBlue, for: .normal)
         NSLayoutConstraint.activate([
-            button.topAnchor.constraint(equalTo: self.topAnchor, constant: 12),
-            button.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 12),
-            button.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -12),
-            button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -12),
+            button.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 12),
+            button.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 12),
+            button.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -12),
+            button.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -12),
         ])
     }
     
