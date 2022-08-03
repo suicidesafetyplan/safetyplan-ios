@@ -69,15 +69,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func configureTabBar() {
-        if #available(iOS 13.0, *) {
-            let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
-            tabBarAppearance.configureWithDefaultBackground()
-            tabBarAppearance.backgroundColor = UIColor.systemBackground
-            UITabBar.appearance().standardAppearance = tabBarAppearance
+        let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithDefaultBackground()
+        tabBarAppearance.backgroundColor = UIColor.systemBackground
+        UITabBar.appearance().standardAppearance = tabBarAppearance
 
-            if #available(iOS 15.0, *) {
-                UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
-            }
+        if #available(iOS 15.0, *) {
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
         }
     }
     
