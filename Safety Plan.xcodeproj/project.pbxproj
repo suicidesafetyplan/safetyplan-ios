@@ -22,6 +22,7 @@
 		3FE1113324193EB3006D4099 /* GuideCopingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */; };
 		3FE1113824194154006D4099 /* GuideRecoveringViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113624194154006D4099 /* GuideRecoveringViewContoller.swift */; };
 		3FE1113924194154006D4099 /* GuideSuicidePreventionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113724194154006D4099 /* GuideSuicidePreventionViewController.swift */; };
+		446660A8289C5A4E00090856 /* safetyplanlaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446660A7289C5A4E00090856 /* safetyplanlaunch.storyboard */; };
 		4489DACF28989DD500A984A7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4489DACE28989DD500A984A7 /* Colors.xcassets */; };
 		9C27D17D9D9204A2A7FC5552 /* Pods_Safety_PlanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB18F0A8CBBAD5BB3844FF21 /* Pods_Safety_PlanTests.framework */; };
 		A71A9D355BACCA526028E3D2 /* Pods_Safety_Plan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC79E336B06AA74EACC72F5 /* Pods_Safety_Plan.framework */; };
@@ -94,6 +95,7 @@
 		3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCopingViewController.swift; sourceTree = "<group>"; };
 		3FE1113624194154006D4099 /* GuideRecoveringViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideRecoveringViewContoller.swift; sourceTree = "<group>"; };
 		3FE1113724194154006D4099 /* GuideSuicidePreventionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideSuicidePreventionViewController.swift; sourceTree = "<group>"; };
+		446660A7289C5A4E00090856 /* safetyplanlaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = safetyplanlaunch.storyboard; sourceTree = "<group>"; };
 		4489DACE28989DD500A984A7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5B0BC7487183D023877A322A /* Pods-Safety PlanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safety PlanTests.release.xcconfig"; path = "Target Support Files/Pods-Safety PlanTests/Pods-Safety PlanTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB18F0A8CBBAD5BB3844FF21 /* Pods_Safety_PlanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safety_PlanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */,
+				446660A7289C5A4E00090856 /* safetyplanlaunch.storyboard */,
 				B83E76AF241C5FDF00837918 /* Plan.storyboard */,
 			);
 			name = Storyboards;
@@ -486,6 +489,7 @@
 				B83E76B0241C5FDF00837918 /* Plan.storyboard in Resources */,
 				2C67D99E1B584FFA00C53652 /* safetyplanlayout.storyboard in Resources */,
 				2C44AA061B1CBA7D005D208C /* Images.xcassets in Resources */,
+				446660A8289C5A4E00090856 /* safetyplanlaunch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
