@@ -166,13 +166,21 @@ class SafetyPlanViewController: BaseViewController {
                 switch item.rowType {
                 case .other:
                     return otherNotes.isEmpty ? "–" : otherNotes
+                case .contacts:
+                    return item.data.isEmpty ? "–" : item.data
+                        .compactMap {
+                            guard let contact = $0 as? PersonalContact else { return nil }
+                            let contactInfo = [contact.name, contact.contactNumber].joined(separator: ": ")
+                            return contactInfo
+                        }
+                        .joined(separator: ", ")
                 default:
-                    return item.data.isEmpty ? "–" : item.data.reduce("", {
-                        [$0, $1.name].joined(separator: ", ")
-                    })
+                    return item.data.isEmpty ? "–" : item.data
+                        .map{ $0.name }
+                        .joined(separator: ", ")
                 }
             }()
-            let itemResult = [item.rowType.title, String(itemAnswers.dropFirst(2))].joined(separator: "\n- ")
+            let itemResult = [item.rowType.title, itemAnswers].joined(separator: "\n- ")
             planResult = [planResult, itemResult].joined(separator: "\n\n")
         }
         return planResult
