@@ -17,10 +17,7 @@ class GuideSuicidePreventionViewController: UIViewController {
         
         self.suicidePreventionTextView.scrollRangeToVisible(NSMakeRange(0, 0))
         self.suicidePreventionTextView.contentSize = self.suicidePreventionTextView.sizeThatFits(self.suicidePreventionTextView.frame.size)
-        
-        if #available(iOS 13.0, *) {
-            self.suicidePreventionTextView.textColor = UIColor.label
-        }
+        self.suicidePreventionTextView.textColor = UIColor.label
     }
     
     

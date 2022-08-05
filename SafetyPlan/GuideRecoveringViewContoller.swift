@@ -17,10 +17,7 @@ class GuideRecoveringViewContoller: UIViewController {
         
         self.recoveringTextView.scrollRangeToVisible(NSMakeRange(0, 0))
         self.recoveringTextView.contentSize = self.recoveringTextView.sizeThatFits(self.recoveringTextView.frame.size)
-        
-        if #available(iOS 13.0, *) {
-            self.recoveringTextView.textColor = UIColor.label
-        }
+        self.recoveringTextView.textColor = UIColor.label
     }
     
     

@@ -24,21 +24,21 @@ class DoubleTextFieldTableCell: BaseTableViewCell, UITextFieldDelegate {
     
     override func commonInit() {
         for textField in [self.firstTextField, self.secondTextField] {
-            self.addSubview(textField)
+            self.contentView.addSubview(textField)
             textField.translatesAutoresizingMaskIntoConstraints = false
             textField.clearButtonMode = .always
             textField.delegate = self
         }
         NSLayoutConstraint.activate([
             // first text field Constraints
-            firstTextField.topAnchor.constraint(equalTo: self.topAnchor, constant: 16),
+            firstTextField.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 16),
             firstTextField.bottomAnchor.constraint(equalTo: secondTextField.topAnchor, constant: -16),
-            firstTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            firstTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            firstTextField.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 16),
+            firstTextField.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -16),
             // second text field Constraints
-            secondTextField.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
-            secondTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            secondTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16),
+            secondTextField.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -16),
+            secondTextField.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 16),
+            secondTextField.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -16),
         ])
     }
     

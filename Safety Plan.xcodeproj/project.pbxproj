@@ -19,10 +19,11 @@
 		2C67D9AE1B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9991B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m */; };
 		2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */; };
 		2C67D9B01B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
-		2C67D9B21B584FFA00C53652 /* safetyplanlaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */; };
 		3FE1113324193EB3006D4099 /* GuideCopingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */; };
 		3FE1113824194154006D4099 /* GuideRecoveringViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113624194154006D4099 /* GuideRecoveringViewContoller.swift */; };
 		3FE1113924194154006D4099 /* GuideSuicidePreventionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113724194154006D4099 /* GuideSuicidePreventionViewController.swift */; };
+		446660A8289C5A4E00090856 /* safetyplanlaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446660A7289C5A4E00090856 /* safetyplanlaunch.storyboard */; };
+		4489DACF28989DD500A984A7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4489DACE28989DD500A984A7 /* Colors.xcassets */; };
 		9C27D17D9D9204A2A7FC5552 /* Pods_Safety_PlanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB18F0A8CBBAD5BB3844FF21 /* Pods_Safety_PlanTests.framework */; };
 		A71A9D355BACCA526028E3D2 /* Pods_Safety_Plan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC79E336B06AA74EACC72F5 /* Pods_Safety_Plan.framework */; };
 		B83A47B52447F52F0030A8A4 /* DatabaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A47B42447F52F0030A8A4 /* DatabaseGateway.swift */; };
@@ -90,11 +91,12 @@
 		2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		2C67D99C1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
-		2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = safetyplanlaunch.storyboard; sourceTree = "<group>"; };
 		34BA1E692163DB695751F3AE /* Pods-Safety Plan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safety Plan.release.xcconfig"; path = "Target Support Files/Pods-Safety Plan/Pods-Safety Plan.release.xcconfig"; sourceTree = "<group>"; };
 		3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCopingViewController.swift; sourceTree = "<group>"; };
 		3FE1113624194154006D4099 /* GuideRecoveringViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideRecoveringViewContoller.swift; sourceTree = "<group>"; };
 		3FE1113724194154006D4099 /* GuideSuicidePreventionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideSuicidePreventionViewController.swift; sourceTree = "<group>"; };
+		446660A7289C5A4E00090856 /* safetyplanlaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = safetyplanlaunch.storyboard; sourceTree = "<group>"; };
+		4489DACE28989DD500A984A7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5B0BC7487183D023877A322A /* Pods-Safety PlanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safety PlanTests.release.xcconfig"; path = "Target Support Files/Pods-Safety PlanTests/Pods-Safety PlanTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB18F0A8CBBAD5BB3844FF21 /* Pods_Safety_PlanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safety_PlanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC79E336B06AA74EACC72F5 /* Pods_Safety_Plan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safety_Plan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +187,7 @@
 				2CCE8368240F4B34002729ED /* Backend */,
 				B8E38D512415C2D900729701 /* Models */,
 				2C44AA051B1CBA7D005D208C /* Images.xcassets */,
+				4489DACE28989DD500A984A7 /* Colors.xcassets */,
 				B83E76B1241C993500837918 /* Utilities */,
 				2C44A9F51B1CBA7C005D208C /* Supporting Files */,
 			);
@@ -250,7 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */,
-				2C67D9B11B584FFA00C53652 /* safetyplanlaunch.storyboard */,
+				446660A7289C5A4E00090856 /* safetyplanlaunch.storyboard */,
 				B83E76AF241C5FDF00837918 /* Plan.storyboard */,
 			);
 			name = Storyboards;
@@ -482,10 +485,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C67D9B21B584FFA00C53652 /* safetyplanlaunch.storyboard in Resources */,
+				4489DACF28989DD500A984A7 /* Colors.xcassets in Resources */,
 				B83E76B0241C5FDF00837918 /* Plan.storyboard in Resources */,
 				2C67D99E1B584FFA00C53652 /* safetyplanlayout.storyboard in Resources */,
 				2C44AA061B1CBA7D005D208C /* Images.xcassets in Resources */,
+				446660A8289C5A4E00090856 /* safetyplanlaunch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,7 +669,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -703,7 +707,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -720,8 +724,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 8;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = SafetyPlan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.5;
 				PRODUCT_NAME = "Safety Plan";
@@ -743,7 +748,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 8;
 				INFOPLIST_FILE = SafetyPlan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.5;
 				PRODUCT_NAME = "Safety Plan";

@@ -17,10 +17,7 @@ class GuideCopingViewController: UIViewController {
         
         self.copingTextView.scrollRangeToVisible(NSMakeRange(0, 0))
         self.copingTextView.contentSize = self.copingTextView.sizeThatFits(self.copingTextView.frame.size)
-        
-        if #available(iOS 13.0, *) {
-            self.copingTextView.textColor = UIColor.label
-        }
+        self.copingTextView.textColor = UIColor.label
     }
     
     
