@@ -172,7 +172,7 @@ class SafetyPlanViewController: BaseViewController {
                     })
                 }
             }()
-            let itemResult = [item.rowType.title, itemAnswers].joined(separator: "\n")
+            let itemResult = [item.rowType.title, String(itemAnswers.dropFirst(2))].joined(separator: "\n- ")
             planResult = [planResult, itemResult].joined(separator: "\n\n")
         }
         return planResult
