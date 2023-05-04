@@ -32,7 +32,7 @@ enum ImportantContactInformation {
         case .localEmergencyLine:
             return "911"
         case .nationalSuicidePreventionLifeline:
-            return "18002738255"
+            return "988"
         case .crisisTextLine:
             return "741741"
         }

@@ -72,7 +72,7 @@ class EditSafetyPlanItemViewController: BaseViewController, SaveCancellabel {
     private var headerMessage: String {
         switch self.safetyPlanItemType {
         case .warningSign:
-            return "What sort of thoughts, images, moods, situations, of behaviors indicate to you that crisis may be developing?"
+            return "What sort of thoughts, images, moods, situations, or behaviors indicate to you that crisis may be developing?"
         case .copingStrategy:
             return "What are some things that you can do on your own to help you not act on thoughts/urges to harm yourself?"
         case .reasonToLive:
