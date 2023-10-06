@@ -3,15 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C2663571FC50C1600AFC5E1 /* GuideResources2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2663561FC50C1600AFC5E1 /* GuideResources2ViewController.m */; };
 		2C2C856D1D203F5B009E9B3F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2C856B1D203F5B009E9B3F /* AddressBook.framework */; };
 		2C2C856E1D203F5B009E9B3F /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2C856C1D203F5B009E9B3F /* AddressBookUI.framework */; };
+		2C412D5C2AD084BA00A3F716 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2C412D5B2AD084BA00A3F716 /* Realm */; };
+		2C412D5E2AD084BA00A3F716 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2C412D5D2AD084BA00A3F716 /* RealmSwift */; };
 		2C44AA061B1CBA7D005D208C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C44AA051B1CBA7D005D208C /* Images.xcassets */; };
-		2C44AA151B1CBA7D005D208C /* SafetyPlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C44AA141B1CBA7D005D208C /* SafetyPlanTests.m */; };
 		2C67D99E1B584FFA00C53652 /* safetyplanlayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */; };
 		2C67D9A71B584FFA00C53652 /* GuideOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98B1B584FFA00C53652 /* GuideOverviewViewController.m */; };
 		2C67D9A91B584FFA00C53652 /* GuideSafetyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D98F1B584FFA00C53652 /* GuideSafetyPlanViewController.m */; };
@@ -24,8 +25,6 @@
 		3FE1113924194154006D4099 /* GuideSuicidePreventionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113724194154006D4099 /* GuideSuicidePreventionViewController.swift */; };
 		446660A8289C5A4E00090856 /* safetyplanlaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446660A7289C5A4E00090856 /* safetyplanlaunch.storyboard */; };
 		4489DACF28989DD500A984A7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4489DACE28989DD500A984A7 /* Colors.xcassets */; };
-		9C27D17D9D9204A2A7FC5552 /* Pods_Safety_PlanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB18F0A8CBBAD5BB3844FF21 /* Pods_Safety_PlanTests.framework */; };
-		A71A9D355BACCA526028E3D2 /* Pods_Safety_Plan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC79E336B06AA74EACC72F5 /* Pods_Safety_Plan.framework */; };
 		B83A47B52447F52F0030A8A4 /* DatabaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83A47B42447F52F0030A8A4 /* DatabaseGateway.swift */; };
 		B83E76B0241C5FDF00837918 /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83E76AF241C5FDF00837918 /* Plan.storyboard */; };
 		B83E76B4241C995000837918 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E76B3241C995000837918 /* UITableViewExtensions.swift */; };
@@ -56,18 +55,7 @@
 		B8F74312241A86C000D5FDFE /* UserDefaultsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F74311241A86C000D5FDFE /* UserDefaultsGateway.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2C44AA0F1B1CBA7D005D208C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2C44A9EA1B1CBA7C005D208C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C44A9F11B1CBA7C005D208C;
-			remoteInfo = SafetyPlan;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		2A1EDD13C59484C7F2B33967 /* Pods-Safety PlanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safety PlanTests.debug.xcconfig"; path = "Target Support Files/Pods-Safety PlanTests/Pods-Safety PlanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C2663551FC50C1600AFC5E1 /* GuideResources2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideResources2ViewController.h; sourceTree = "<group>"; };
 		2C2663561FC50C1600AFC5E1 /* GuideResources2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideResources2ViewController.m; sourceTree = "<group>"; };
 		2C2C856B1D203F5B009E9B3F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -75,9 +63,6 @@
 		2C44A9F21B1CBA7C005D208C /* Safety Plan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safety Plan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C44A9F61B1CBA7C005D208C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C44AA051B1CBA7D005D208C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2C44AA0E1B1CBA7D005D208C /* Safety PlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Safety PlanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C44AA131B1CBA7D005D208C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C44AA141B1CBA7D005D208C /* SafetyPlanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafetyPlanTests.m; sourceTree = "<group>"; };
 		2C67D9791B584FFA00C53652 /* safetyplanlayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = safetyplanlayout.storyboard; sourceTree = "<group>"; };
 		2C67D98A1B584FFA00C53652 /* GuideOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideOverviewViewController.h; sourceTree = "<group>"; };
 		2C67D98B1B584FFA00C53652 /* GuideOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideOverviewViewController.m; sourceTree = "<group>"; };
@@ -91,15 +76,11 @@
 		2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		2C67D99C1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
-		34BA1E692163DB695751F3AE /* Pods-Safety Plan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safety Plan.release.xcconfig"; path = "Target Support Files/Pods-Safety Plan/Pods-Safety Plan.release.xcconfig"; sourceTree = "<group>"; };
 		3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCopingViewController.swift; sourceTree = "<group>"; };
 		3FE1113624194154006D4099 /* GuideRecoveringViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideRecoveringViewContoller.swift; sourceTree = "<group>"; };
 		3FE1113724194154006D4099 /* GuideSuicidePreventionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideSuicidePreventionViewController.swift; sourceTree = "<group>"; };
 		446660A7289C5A4E00090856 /* safetyplanlaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = safetyplanlaunch.storyboard; sourceTree = "<group>"; };
 		4489DACE28989DD500A984A7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		5B0BC7487183D023877A322A /* Pods-Safety PlanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safety PlanTests.release.xcconfig"; path = "Target Support Files/Pods-Safety PlanTests/Pods-Safety PlanTests.release.xcconfig"; sourceTree = "<group>"; };
-		AB18F0A8CBBAD5BB3844FF21 /* Pods_Safety_PlanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safety_PlanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADC79E336B06AA74EACC72F5 /* Pods_Safety_Plan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safety_Plan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83A47B42447F52F0030A8A4 /* DatabaseGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseGateway.swift; sourceTree = "<group>"; };
 		B83E76AF241C5FDF00837918 /* Plan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
 		B83E76B3241C995000837918 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
@@ -129,7 +110,6 @@
 		B8E38D542415C31F00729701 /* PersonalContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalContact.swift; sourceTree = "<group>"; };
 		B8F7430F241A863D00D5FDFE /* SafetyPlanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyPlanItem.swift; sourceTree = "<group>"; };
 		B8F74311241A86C000D5FDFE /* UserDefaultsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsGateway.swift; sourceTree = "<group>"; };
-		CB1D04A2A6190DB537FF169C /* Pods-Safety Plan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safety Plan.debug.xcconfig"; path = "Target Support Files/Pods-Safety Plan/Pods-Safety Plan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,17 +117,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C412D5E2AD084BA00A3F716 /* RealmSwift in Frameworks */,
+				2C412D5C2AD084BA00A3F716 /* Realm in Frameworks */,
 				2C2C856D1D203F5B009E9B3F /* AddressBook.framework in Frameworks */,
 				2C2C856E1D203F5B009E9B3F /* AddressBookUI.framework in Frameworks */,
-				A71A9D355BACCA526028E3D2 /* Pods_Safety_Plan.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C44AA0B1B1CBA7D005D208C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C27D17D9D9204A2A7FC5552 /* Pods_Safety_PlanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,10 +133,7 @@
 				2C2C856B1D203F5B009E9B3F /* AddressBook.framework */,
 				2C2C856C1D203F5B009E9B3F /* AddressBookUI.framework */,
 				2C44A9F41B1CBA7C005D208C /* SafetyPlan */,
-				2C44AA111B1CBA7D005D208C /* SafetyPlanTests */,
 				2C44A9F31B1CBA7C005D208C /* Products */,
-				70DAE2B1593535FB4AED4F92 /* Pods */,
-				7650841A28A1B7511BCBA51A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				2C44A9F21B1CBA7C005D208C /* Safety Plan.app */,
-				2C44AA0E1B1CBA7D005D208C /* Safety PlanTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,23 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				2C44A9F61B1CBA7C005D208C /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2C44AA111B1CBA7D005D208C /* SafetyPlanTests */ = {
-			isa = PBXGroup;
-			children = (
-				2C44AA141B1CBA7D005D208C /* SafetyPlanTests.m */,
-				2C44AA121B1CBA7D005D208C /* Supporting Files */,
-			);
-			path = SafetyPlanTests;
-			sourceTree = "<group>";
-		};
-		2C44AA121B1CBA7D005D208C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2C44AA131B1CBA7D005D208C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -279,26 +231,6 @@
 				B8C6D91B244BDB24003D1650 /* AppDelegate.swift */,
 			);
 			name = Backend;
-			sourceTree = "<group>";
-		};
-		70DAE2B1593535FB4AED4F92 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CB1D04A2A6190DB537FF169C /* Pods-Safety Plan.debug.xcconfig */,
-				34BA1E692163DB695751F3AE /* Pods-Safety Plan.release.xcconfig */,
-				2A1EDD13C59484C7F2B33967 /* Pods-Safety PlanTests.debug.xcconfig */,
-				5B0BC7487183D023877A322A /* Pods-Safety PlanTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		7650841A28A1B7511BCBA51A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ADC79E336B06AA74EACC72F5 /* Pods_Safety_Plan.framework */,
-				AB18F0A8CBBAD5BB3844FF21 /* Pods_Safety_PlanTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B83E76B1241C993500837918 /* Utilities */ = {
@@ -406,39 +338,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C44AA181B1CBA7D005D208C /* Build configuration list for PBXNativeTarget "Safety Plan" */;
 			buildPhases = (
-				7938AAAF17EE6E7D0EB8E385 /* [CP] Check Pods Manifest.lock */,
 				2C44A9EE1B1CBA7C005D208C /* Sources */,
 				2C44A9EF1B1CBA7C005D208C /* Frameworks */,
 				2C44A9F01B1CBA7C005D208C /* Resources */,
-				B0E313B040B2684F17387591 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Safety Plan";
+			packageProductDependencies = (
+				2C412D5B2AD084BA00A3F716 /* Realm */,
+				2C412D5D2AD084BA00A3F716 /* RealmSwift */,
+			);
 			productName = SafetyPlan;
 			productReference = 2C44A9F21B1CBA7C005D208C /* Safety Plan.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2C44AA0D1B1CBA7D005D208C /* Safety PlanTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2C44AA1B1B1CBA7D005D208C /* Build configuration list for PBXNativeTarget "Safety PlanTests" */;
-			buildPhases = (
-				EDF01736F3F84707256B34A7 /* [CP] Check Pods Manifest.lock */,
-				2C44AA0A1B1CBA7D005D208C /* Sources */,
-				2C44AA0B1B1CBA7D005D208C /* Frameworks */,
-				2C44AA0C1B1CBA7D005D208C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2C44AA101B1CBA7D005D208C /* PBXTargetDependency */,
-			);
-			name = "Safety PlanTests";
-			productName = SafetyPlanTests;
-			productReference = 2C44AA0E1B1CBA7D005D208C /* Safety PlanTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -451,12 +366,7 @@
 				TargetAttributes = {
 					2C44A9F11B1CBA7C005D208C = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = PU7A82KB49;
 						LastSwiftMigration = 1130;
-					};
-					2C44AA0D1B1CBA7D005D208C = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 2C44A9F11B1CBA7C005D208C;
 					};
 				};
 			};
@@ -470,12 +380,14 @@
 				Base,
 			);
 			mainGroup = 2C44A9E91B1CBA7C005D208C;
+			packageReferences = (
+				2C412D5A2AD084BA00A3F716 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 2C44A9F31B1CBA7C005D208C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				2C44A9F11B1CBA7C005D208C /* Safety Plan */,
-				2C44AA0D1B1CBA7D005D208C /* Safety PlanTests */,
 			);
 		};
 /* End PBXProject section */
@@ -493,81 +405,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C44AA0C1B1CBA7D005D208C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7938AAAF17EE6E7D0EB8E385 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Safety Plan-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0E313B040B2684F17387591 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Safety Plan/Pods-Safety Plan-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Safety Plan/Pods-Safety Plan-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDF01736F3F84707256B34A7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Safety PlanTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C44A9EE1B1CBA7C005D208C /* Sources */ = {
@@ -614,23 +452,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C44AA0A1B1CBA7D005D208C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C44AA151B1CBA7D005D208C /* SafetyPlanTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2C44AA101B1CBA7D005D208C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2C44A9F11B1CBA7C005D208C /* Safety Plan */;
-			targetProxy = 2C44AA0F1B1CBA7D005D208C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2C44AA161B1CBA7D005D208C /* Debug */ = {
@@ -717,17 +539,19 @@
 		};
 		2C44AA191B1CBA7D005D208C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB1D04A2A6190DB537FF169C /* Pods-Safety Plan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 9;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				DEVELOPMENT_TEAM = PU7A82KB49;
 				INFOPLIST_FILE = SafetyPlan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.6;
 				PRODUCT_NAME = "Safety Plan";
 				PROVISIONING_PROFILE = "";
@@ -740,60 +564,25 @@
 		};
 		2C44AA1A1B1CBA7D005D208C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34BA1E692163DB695751F3AE /* Pods-Safety Plan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = PU7A82KB49;
 				INFOPLIST_FILE = SafetyPlan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.6;
 				PRODUCT_NAME = "Safety Plan";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SafetyPlan/Safety Plan-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		2C44AA1C1B1CBA7D005D208C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A1EDD13C59484C7F2B33967 /* Pods-Safety PlanTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SafetyPlanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "Safety PlanTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafetyPlan.app/SafetyPlan";
-			};
-			name = Debug;
-		};
-		2C44AA1D1B1CBA7D005D208C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B0BC7487183D023877A322A /* Pods-Safety PlanTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SafetyPlanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "Safety PlanTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafetyPlan.app/SafetyPlan";
 			};
 			name = Release;
 		};
@@ -818,16 +607,31 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C44AA1B1B1CBA7D005D208C /* Build configuration list for PBXNativeTarget "Safety PlanTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C44AA1C1B1CBA7D005D208C /* Debug */,
-				2C44AA1D1B1CBA7D005D208C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C412D5A2AD084BA00A3F716 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C412D5B2AD084BA00A3F716 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C412D5A2AD084BA00A3F716 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2C412D5D2AD084BA00A3F716 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C412D5A2AD084BA00A3F716 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C44A9EA1B1CBA7C005D208C /* Project object */;
 }
