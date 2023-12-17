@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GRP-YY-af2">
-    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GRP-YY-af2">
+    <device id="retina6_72" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,15 +17,15 @@
                         <viewControllerLayoutGuide type="bottom" id="9RG-mv-XWj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yGA-v1-IKG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LSB-cA-vgH">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="103" width="430" height="746"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LSB-cA-vgH" firstAttribute="leading" secondItem="yGA-v1-IKG" secondAttribute="leading" id="7m6-Ol-3wT"/>
                             <constraint firstItem="9RG-mv-XWj" firstAttribute="top" secondItem="LSB-cA-vgH" secondAttribute="bottom" id="KtV-jx-1L0"/>
@@ -48,7 +49,7 @@
                     <tabBarItem key="tabBarItem" title="Guide" image="guideicon" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="hNY-EB-iqL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85851715689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -66,183 +67,183 @@
             <objects>
                 <tableViewController id="6M1-cM-AaL" customClass="SuicideGuideTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="Kyn-Uz-DJe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="829"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
                             <tableViewSection id="mFp-qv-vcM">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="31S-xx-IDX" imageView="t6M-4b-D8j" style="IBUITableViewCellStyleDefault" id="T36-rN-Dg0">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="50" width="430" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T36-rN-Dg0" id="lAx-uM-XJp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Overview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="31S-xx-IDX">
-                                                    <rect key="frame" x="91" y="0.0" width="268" height="60"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Overview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="31S-xx-IDX">
+                                                    <rect key="frame" x="95" y="0.0" width="315" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="eye" id="t6M-4b-D8j">
-                                                    <rect key="frame" x="16" y="0.0" width="60" height="60"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="eye" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="t6M-4b-D8j">
+                                                    <rect key="frame" x="20" y="0.0" width="60" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <connections>
                                             <segue destination="PH9-v6-DKj" kind="show" id="AkH-eh-8XJ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="754-0k-AXu" imageView="qkK-q2-aF8" style="IBUITableViewCellStyleDefault" id="fwT-aV-5tl">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="110" width="430" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fwT-aV-5tl" id="Ih8-IG-iZE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Coping" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="754-0k-AXu">
-                                                    <rect key="frame" x="91" y="0.0" width="268" height="60"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Coping" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="754-0k-AXu">
+                                                    <rect key="frame" x="95" y="0.0" width="315" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="coping" id="qkK-q2-aF8">
-                                                    <rect key="frame" x="16" y="0.0" width="60" height="60"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="coping" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="qkK-q2-aF8">
+                                                    <rect key="frame" x="20" y="0.0" width="60" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <connections>
                                             <segue destination="zb3-l8-EWS" kind="show" id="k9M-ka-eMX"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="f5w-Y9-ALC" imageView="sup-ew-CR5" style="IBUITableViewCellStyleDefault" id="bb9-P5-9GH">
-                                        <rect key="frame" x="0.0" y="148" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="170" width="430" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bb9-P5-9GH" id="d6D-jm-Swo">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Recovering" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f5w-Y9-ALC">
-                                                    <rect key="frame" x="91" y="0.0" width="268" height="60"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Recovering" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="f5w-Y9-ALC">
+                                                    <rect key="frame" x="95" y="0.0" width="315" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="uparrow" id="sup-ew-CR5">
-                                                    <rect key="frame" x="16" y="0.0" width="60" height="60"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="uparrow" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="sup-ew-CR5">
+                                                    <rect key="frame" x="20" y="0.0" width="60" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <connections>
                                             <segue destination="z03-CO-2ol" kind="show" id="qVV-7V-HvT"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="BgA-pw-WW5" imageView="YYw-rq-5bJ" style="IBUITableViewCellStyleDefault" id="ASA-Qz-qnm">
-                                        <rect key="frame" x="0.0" y="208" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="230" width="430" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ASA-Qz-qnm" id="VtS-DF-lDH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Safety Plan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BgA-pw-WW5">
-                                                    <rect key="frame" x="91" y="0.0" width="268" height="60"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Safety Plan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="BgA-pw-WW5">
+                                                    <rect key="frame" x="95" y="0.0" width="315" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="crossoutline" id="YYw-rq-5bJ">
-                                                    <rect key="frame" x="16" y="0.0" width="60" height="60"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="crossoutline" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="YYw-rq-5bJ">
+                                                    <rect key="frame" x="20" y="0.0" width="60" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <connections>
                                             <segue destination="Bcc-vl-vuE" kind="show" id="icb-rm-5gn"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eIh-24-O3g" imageView="eUe-BP-3nS" style="IBUITableViewCellStyleDefault" id="5pd-sA-P4a">
-                                        <rect key="frame" x="0.0" y="268" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="290" width="430" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5pd-sA-P4a" id="rVg-06-xhb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Suicide Prevention" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eIh-24-O3g">
-                                                    <rect key="frame" x="91" y="0.0" width="268" height="60"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Suicide Prevention" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="eIh-24-O3g">
+                                                    <rect key="frame" x="95" y="0.0" width="315" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="warningsignlarge" id="eUe-BP-3nS">
-                                                    <rect key="frame" x="16" y="0.0" width="60" height="60"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="warningsignlarge" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="eUe-BP-3nS">
+                                                    <rect key="frame" x="20" y="0.0" width="60" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <connections>
                                             <segue destination="fRt-Pb-egW" kind="show" id="PlJ-FA-U0S"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="n3K-wM-y9Q" imageView="oVk-U9-mRy" style="IBUITableViewCellStyleDefault" id="Stm-CH-lSC">
-                                        <rect key="frame" x="0.0" y="328" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="350" width="430" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Stm-CH-lSC" id="1mw-Ox-bqs">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Making Environment Safe" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n3K-wM-y9Q">
-                                                    <rect key="frame" x="91" y="0.0" width="268" height="60"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Making Environment Safe" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="n3K-wM-y9Q">
+                                                    <rect key="frame" x="95" y="0.0" width="315" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="safeenv" id="oVk-U9-mRy">
-                                                    <rect key="frame" x="16" y="0.0" width="60" height="60"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="safeenv" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="oVk-U9-mRy">
+                                                    <rect key="frame" x="20" y="0.0" width="60" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <connections>
                                             <segue destination="bux-3X-GXZ" kind="show" id="GvH-jj-TyF"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="o4A-7E-vEn" imageView="f40-jg-4N0" style="IBUITableViewCellStyleDefault" id="WMy-rG-MJP">
-                                        <rect key="frame" x="0.0" y="388" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="410" width="430" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WMy-rG-MJP" id="af2-fg-Mxj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Resources" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o4A-7E-vEn">
-                                                    <rect key="frame" x="91" y="0.0" width="268" height="60"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Resources" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="o4A-7E-vEn">
+                                                    <rect key="frame" x="95" y="0.0" width="315" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="web" id="f40-jg-4N0">
-                                                    <rect key="frame" x="16" y="0.0" width="60" height="60"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="web" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="f40-jg-4N0">
+                                                    <rect key="frame" x="20" y="0.0" width="60" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                         <connections>
                                             <segue destination="x6i-fE-SJq" kind="show" id="4ZH-yt-OBj"/>
                                         </connections>
@@ -270,23 +271,23 @@
                         <viewControllerLayoutGuide type="bottom" id="pRi-DT-nu8"/>
                     </layoutGuides>
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="zCA-4g-CkQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="829"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfn-ED-HSe">
-                                <rect key="frame" x="16" y="8" width="343" height="566"/>
-                                <string key="text">If you are having thoughts of suicide, you are not alone. Many people have had suicidal thoughts at some point in their lives. Some problems and experiences can leave you feeling hopeless and overwhelmed. Feeling suicidal is not a sign of weakness, and it doesn't mean that you are weak or crazy. Thinking of suicide occurs when pain exceeds the resources for coping with that pain. You may think that you have no options left and suicide would be a way to escape intense emotional pain. But while this pain may seem overwhelming and permanent, with time and support, you can overcome your problems and the pain, as well as the suicidal feelings, will pass. 
+                                <rect key="frame" x="20" y="8" width="390" height="738"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">If you are having thoughts of suicide, you are not alone. Many people have had suicidal thoughts at some point in their lives. Some problems and experiences can leave you feeling hopeless and overwhelmed. Feeling suicidal is not a sign of weakness, and it doesn't mean that you are weak or crazy. Thinking of suicide occurs when pain exceeds the resources for coping with that pain. You may think that you have no options left and suicide would be a way to escape intense emotional pain. But while this pain may seem overwhelming and permanent, with time and support, you can overcome your problems and the pain, as well as the suicidal feelings, will pass. 
 
 Take hope in the fact that people DO get through this, even when they are feeling as badly as you do now. There is a very good chance that you are going to live through these feelings, no matter how much pain you are currently experiencing.
 
-This application is designed to support you and help you deal with your suicidal urges when they arise so that you may continue on the path to recovery. Please take the time to read this guide and fill out the Safety Plan. The Safety Plan will come in handy when you have thoughts of hurting yourself. Once it is completed, you can follow the steps outlined in your Safety Plan to cope with your emotional pain. If following the Safety Plan is not enough to alleviate your pain, you can call for help or find a local emergency center through the Crisis tab of the app.
-</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+This application is designed to support you and help you deal with your suicidal urges when they arise so that you may continue on the path to recovery. Please take the time to read this guide and fill out the Safety Plan. The Safety Plan will come in handy when you have thoughts of hurting yourself. Once it is completed, you can follow the steps outlined in your Safety Plan to cope with your emotional pain. If following the Safety Plan is not enough to alleviate your pain, you can call for help or find a local emergency center through the Crisis tab of the app.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Hfn-ED-HSe" firstAttribute="leading" secondItem="zCA-4g-CkQ" secondAttribute="leadingMargin" id="A3J-i5-gl1"/>
                             <constraint firstItem="Hfn-ED-HSe" firstAttribute="top" secondItem="DaW-6Q-YM9" secondAttribute="bottom" constant="8" symbolic="YES" id="taI-2v-JNk"/>
@@ -310,7 +311,7 @@ This application is designed to support you and help you deal with your suicidal
                     <tabBarItem key="tabBarItem" title="Crisis" image="warningsigns" id="JPe-ug-YqC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iTl-F4-CjH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85851715689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -330,7 +331,7 @@ This application is designed to support you and help you deal with your suicidal
                     <tabBarItem key="tabBarItem" title="Plan" image="planicon" id="Wvm-nQ-Mts"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="HqP-DC-wvd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85851715689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -352,15 +353,15 @@ This application is designed to support you and help you deal with your suicidal
                         <viewControllerLayoutGuide type="bottom" id="mYB-Fv-pfq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9YR-Xj-JUx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="829"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LIK-Jo-4UG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="746"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mYB-Fv-pfq" firstAttribute="top" secondItem="LIK-Jo-4UG" secondAttribute="bottom" id="8Pj-vc-VqL"/>
                             <constraint firstItem="LIK-Jo-4UG" firstAttribute="leading" secondItem="9YR-Xj-JUx" secondAttribute="leading" id="KUg-BR-FZe"/>
@@ -386,7 +387,7 @@ This application is designed to support you and help you deal with your suicidal
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gsG-ms-sGD">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="jOB-Gl-ESe" kind="relationship" relationship="viewControllers" id="TUw-vJ-Ufj"/>
@@ -407,172 +408,46 @@ This application is designed to support you and help you deal with your suicidal
                         <viewControllerLayoutGuide type="bottom" id="7i7-u6-9j4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sxo-Km-Zom">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="829"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msI-bs-JwT">
-                                <rect key="frame" x="20" y="8" width="335" height="615"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Promise not to do anything right now">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msI-bs-JwT">
+                                <rect key="frame" x="16" y="16" width="398" height="797"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">PROMISE NOT TO DO ANYTHING RIGHT NOW
+
 Even if you are in a lot of pain, give yourself some distance between thoughts and action. Make a promise to yourself. For example, "I won't do anything drastic in the next 24 hours." Or wait a week. Thoughts and actions are two different things. There's no deadline. Wait so you can put some distance between your thoughts and actions.
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Follow your Safety Plan">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+FOLLOW YOUR SAFETY PLAN
+
 Do activities that have helped you cope in the past, reflect on your reasons to live, go to a safe place to distract yourself, or contact friends / family / professionals. If this is not enough or not possible, go to the Crisis Tab and reach out for help.
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Avoid dangerous substances / objects">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+AVOID DANGEROUS SUBSTANCES / OBJECTS
+
 Suicidal thoughts can become even stronger when you have taken drugs or alcohol. In addition, it is critical to remove yourself from places where you may have access to things that you can use to hurt yourself.
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Reach out">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+REACH OUT
+
 If you are worried that you may lose control or do something to hurt yourself, tell someone. Make sure you are around someone you trust.
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Do the opposite of how you feel">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+DO THE OPPOSITE OF HOW YOU FEEL
 
 When you have thoughts of suicide, it can be helpful to do the opposite of how you feel. For example, when people feel depressed they usually want to be alone. Doing the opposite can help with feelings of depression.
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Problem solve">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-Think of ways that you can potentially solve your problems. Make a list of all of the problems you are dealing with right now. Then, make a list of all of the solutions you can think of to those problems. Asking someone you trust to help you with this can be useful. Dealing with one or two small problems can help to put an end to immediate feelings of suicide. Once you are thinking more clearly, you can tackle other bigger problems.
+PROBLEM SOLVE
 
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+Think of ways that you can potentially solve your problems. Make a list of all of the problems you are dealing with right now. Then, make a list of all of the solutions you can think of to those problems. Asking someone you trust to help you with this can be useful. Dealing with one or two small problems can help to put an end to immediate feelings of suicide. Once you are thinking more clearly, you can tackle other bigger problems.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="msI-bs-JwT" secondAttribute="bottom" id="IPh-op-dI7"/>
-                            <constraint firstAttribute="trailing" secondItem="msI-bs-JwT" secondAttribute="trailing" constant="20" symbolic="YES" id="lKY-6P-kr3"/>
-                            <constraint firstItem="msI-bs-JwT" firstAttribute="leading" secondItem="Sxo-Km-Zom" secondAttribute="leading" constant="20" symbolic="YES" id="pkG-c5-Nby"/>
-                            <constraint firstItem="msI-bs-JwT" firstAttribute="top" secondItem="noj-ZA-7y3" secondAttribute="bottom" constant="8" symbolic="YES" id="u9L-4U-DZF"/>
+                            <constraint firstAttribute="bottom" secondItem="msI-bs-JwT" secondAttribute="bottom" constant="16" id="IPh-op-dI7"/>
+                            <constraint firstAttribute="trailing" secondItem="msI-bs-JwT" secondAttribute="trailing" constant="16" id="lKY-6P-kr3"/>
+                            <constraint firstItem="msI-bs-JwT" firstAttribute="leading" secondItem="Sxo-Km-Zom" secondAttribute="leading" constant="16" id="pkG-c5-Nby"/>
+                            <constraint firstItem="msI-bs-JwT" firstAttribute="top" secondItem="noj-ZA-7y3" secondAttribute="bottom" constant="16" id="u9L-4U-DZF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Coping" id="Ou5-A6-npT"/>
@@ -593,152 +468,40 @@ Think of ways that you can potentially solve your problems. Make a list of all o
                         <viewControllerLayoutGuide type="bottom" id="XBG-Av-cwQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="s9J-eI-UzH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="829"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2C-kA-0ad">
-                                <rect key="frame" x="20" y="8" width="335" height="595"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Reach out for help">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2C-kA-0ad">
+                                <rect key="frame" x="20" y="8" width="390" height="801"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">REACH OUT FOR HELP
+
 Get professional support by talking to your doctor or by going to other resources available online. Many times, suicidal thoughts are caused by clinical depression or other mental illnesses. Mental health professionals such as a therapist or a psychiatrist can help you overcome these problems. In addition, there may be support groups in the area that can help you share your experiences and listen to the experiences of others in an understanding manner.
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Make a schedule">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+MAKE A SCHEDULE
+
 Follow a routine for yourself every day and stick to it as closely as possible. For example, wake up at a regular time, sleep at a regular time, and have regular planned activities in your day such as exercising or showering.
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Take care of yourself">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+TAKE CARE OF YOURSELF
+
 It's important to take good care of yourself. Strategies that have been shown to improve your mood are exercising, getting proper nutrition, sleeping well, getting more sunlight, and forming supportive relationships.
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Identify signs of suicidal thoughts">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+IDENTIFY SIGNS OF SUICIDAL THOUGHTS
+
 In the Safety Plan you can identify warning signs of a suicidal crisis, such as certain situations, places, or people. Try to find ways to avoid these triggers.
 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Things to avoid">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+THINGS TO AVOID
+
 • Being alone
 • Alcohol and drugs
 • Doing things that make you feel worse
-• Ruminating about suicide
-
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+• Ruminating about suicide</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="g2C-kA-0ad" secondAttribute="bottom" constant="20" symbolic="YES" id="1d3-WP-CGC"/>
                             <constraint firstItem="g2C-kA-0ad" firstAttribute="leading" secondItem="s9J-eI-UzH" secondAttribute="leading" constant="20" symbolic="YES" id="2vE-Hq-JGP"/>
@@ -764,12 +527,13 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="vTz-Nw-CtH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yng-O6-768">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="829"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfF-zi-Jed">
-                                <rect key="frame" x="16" y="8" width="343" height="558"/>
-                                <string key="text">Suicidal thoughts can seem like they will last forever – but for many, these thoughts and feelings pass. Having a plan in place that can help guide you through difficult moments can make a difference and keep you safe. Ideally, such a plan is developed jointly with your counselor or therapist. It can also be developed with a crisis line counselor who can help you write down actions to take and people to contact in order to feel safe from suicide. In general, a safety plan is designed so that you can start at step one and continue through the steps until you feel safe. When you have thoughts of suicide, refer to your safety plan.
+                                <rect key="frame" x="20" y="8" width="390" height="730"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Suicidal thoughts can seem like they will last forever – but for many, these thoughts and feelings pass. Having a plan in place that can help guide you through difficult moments can make a difference and keep you safe. Ideally, such a plan is developed jointly with your counselor or therapist. It can also be developed with a crisis line counselor who can help you write down actions to take and people to contact in order to feel safe from suicide. In general, a safety plan is designed so that you can start at step one and continue through the steps until you feel safe. When you have thoughts of suicide, refer to your safety plan.
 
 The following are essential elements to explore and include in the development of your safety plan:
 
@@ -781,14 +545,13 @@ The following are essential elements to explore and include in the development o
 
 4. Reach out. Add family members, frends, mental health professionals, local agencies, or anybody else who you can call for support or to help resolve a crisis.
 
-5. Find a place with others who may offer support as well as distraction from the crisis: Make a list of healthy social settings that may help take your mind off things.
-</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+5. Find a place with others who may offer support as well as distraction from the crisis: Make a list of healthy social settings that may help take your mind off things.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="AfF-zi-Jed" firstAttribute="leading" secondItem="Yng-O6-768" secondAttribute="leadingMargin" id="2Ve-xb-qTr"/>
                             <constraint firstItem="AfF-zi-Jed" firstAttribute="trailing" secondItem="Yng-O6-768" secondAttribute="trailingMargin" id="9Ok-cY-VSN"/>
@@ -806,23 +569,26 @@ The following are essential elements to explore and include in the development o
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" ambiguous="YES" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9T-Xi-bni">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9T-Xi-bni">
                             <rect key="frame" x="16" y="72" width="568" height="479"/>
-                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <string key="text">If you are having thoughts of suicide, you are not alone. Many people have had suicidal thoughts at some point in their lives. Some problems and experiences can leave you feeling hopeless and overwhelmed. Feeling suicidal is not a sign of weakness, and it doesn't mean that you are weak or crazy. Thinking of suicide occurs when pain exceeds the resources for coping with that pain. You may think that you have no options left and suicide would be a way to escape intense emotional pain. But while this pain may seem overwhelming and permanent, with time and support, you can overcome your problems and the pain, as well as the suicidal feelings, will pass. 
 
 Take hope in the fact that people DO get through this, even when they are feeling as badly as you do now. There is a very good chance that you are going to live through these feelings, no matter how much pain you are currently experiencing.
 
 This application is designed to support you and help you deal with your suicidal urges when they arise so that you may continue on the path to recovery. Please take the time to read this guide and fill out the Safety Plan. The Safety Plan will come in handy when you have thoughts of hurting yourself. Once it is completed, you can follow the steps outlined in your Safety Plan to cope with your emotional pain. If following the Safety Plan is not enough to alleviate your pain, you can call for help or find a local emergency center through the Crisis tab of the app.
 </string>
+                            <color key="textColor" systemColor="labelColor"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="Y9T-Xi-bni" firstAttribute="leading" secondItem="3lm-sU-m4R" secondAttribute="leadingMargin" id="3Ov-7I-Lzg"/>
                         <constraint firstItem="Y9T-Xi-bni" firstAttribute="trailing" secondItem="3lm-sU-m4R" secondAttribute="trailingMargin" id="ZB5-Fh-gQg"/>
+                        <constraint firstItem="Y9T-Xi-bni" firstAttribute="top" secondItem="3lm-sU-m4R" secondAttribute="top" id="jkF-aM-XHl"/>
+                        <constraint firstAttribute="bottom" secondItem="Y9T-Xi-bni" secondAttribute="bottom" id="pZE-64-Mhc"/>
                     </constraints>
                 </view>
             </objects>
@@ -837,176 +603,96 @@ This application is designed to support you and help you deal with your suicidal
                         <viewControllerLayoutGuide type="bottom" id="Zsz-So-Mvd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wwb-vi-kv4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="829"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oX-eO-XIw">
-                                <rect key="frame" x="20" y="8" width="335" height="558"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">People dealing with suicidal thoughts don't necessarily want to die - they just want to stop the pain. Please take any signs of suicidal thought seriously. In this guide we will cover the warning signs of suicide, how to talk to a suicidal person about suicide, responding to a suicidal crisis, and supporting them during recovery.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Warning Signs">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Ckl0IGlzIGltcG9ydGFudCB0byByZWNvZ25pemUgdGhlIHdhcm5pbmcgc2lnbnMgb2Ygc3VpY2lkZSBh
-bmQgdG8gdGFrZSB0aGVtIHNlcmlvdXNseS4gQW50aWRlcHJlc3NhbnQgd2FybmluZyAtIFdoaWxlIGFu
-dGlkZXByZXNzYW50cyBoYXZlIGJlZW4gc2hvd24gdG8gYmUgaGVscGZ1bCBpbiByZWR1Y2luZyBzdWlj
-aWRhbCB0aG91Z2h0cywgdmFyeWluZyByZWFjdGlvbnMgdG8gZGlmZmVyZW50IGFudGlkZXByZXNzYW50
-cyBtZWFucyB0aGF0IGZvciBzb21lLCB0aGUgZmlyc3QgdGltZSBvbiBhbnRpZGVwcmVzc2FudHMgb3Ig
-Y2hhbmdlcyBpbiBhbnRpZGVwcmVzc2FudCB0eXBlIC8gZG9zZSBpbmNyZWFzZSB0aGUgcmlzayBvZiBz
-dWljaWRlLiBJdCBpcyBjcml0aWNhbCB0byBtb25pdG9yIHNvbWVvbmUgYmVjYXVzZSB0aGUgcmlzayBv
-ZiBzdWljaWRlIGlzIGdyZWF0ZXN0IGR1cmluZyB0aGUgZmlyc3QgdHdvIG1vbnRocyBvZiBuZXcgYW50
-aWRlcHJlc3NhbnQgdHJlYXRtZW50LgrCoArCoFdhcm5pbmcgU2lnbnM6IArCoArigKIgVGFsa2luZyBh
-Ym91dCB3YW50aW5nIHRvIGRpZSBvciB0byBraWxsIG9uZXNlbGYuCuKAoiBMb29raW5nIGZvciBhIHdh
-eSB0byBraWxsIG9uZXNlbGYsIHN1Y2ggYXMgc2VhcmNoaW5nIG9ubGluZSBvciBidXlpbmcgYSBndW4u
-ChDigKIgVGFsa2luZyBhYm91dCBmZWVsaW5nIGhvcGVsZXNzIG9yIGhhdmluZyBubyByZWFzb24gdG8g
-bGl2ZS4K4oCiIFRhbGtpbmcgYWJvdXQgZmVlbGluZyB0cmFwcGVkIG9yIGluIHVuYmVhcmFibGUgcGFp
-bi4K4oCiIFRhbGtpbmcgYWJvdXQgYmVpbmcgYSBidXJkZW4gdG8gb3RoZXJzLgrigKIgSW5jcmVhc2lu
-ZyB0aGUgdXNlIG9mIGFsY29ob2wgb3IgZHJ1Z3MuCuKAoiBBY3RpbmcgYW54aW91cyBvciBhZ2l0YXRl
-ZDsgYmVoYXZpbmcgcmVja2xlc3NseS4K4oCiIFNsZWVwaW5nIHRvbyBsaXR0bGUgb3IgdG9vIG11Y2gu
-CuKAoiBXaXRoZHJhd24gb3IgZmVlbGluZyBpc29sYXRlZC4K4oCiIFNob3dpbmcgcmFnZSBvciB0YWxr
-aW5nIGFib3V0IHNlZWtpbmcgcmV2ZW5nZS4K4oCiIERpc3BsYXlpbmcgZXh0cmVtZSBtb29kIHN3aW5n
-cy4K4oCiIFByZW9jY3VwYXRpb24gd2l0aCBkZWF0aC4K4oCiIFN1ZGRlbmx5IGhhcHBpZXIsIGNhbG1l
-ci4K4oCiIExvc3Mgb2YgaW50ZXJlc3QgaW4gdGhpbmdzIG9uZSBjYXJlcyBhYm91dC4K4oCiIFZpc2l0
-aW5nIG9yIGNhbGxpbmcgcGVvcGxlIHRvIHNheSBnb29kYnllLgrigKIgTWFraW5nIGFycmFuZ2VtZW50
-czsgc2V0dGluZyBvbmUncyBhZmZhaXJzIGluIG9yZGVyLgrigKIgR2l2aW5nIHRoaW5ncyBhd2F5LCBz
-dWNoIGFzIHByaXplZCBwb3NzZXNzaW9ucy4KCg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Talking to a suicidal person">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-If you think a friend or family member is considering suicide, you might be afraid to bring up the subject. However, talking openly about suicidal thoughts and feelings can save a life. The easiest way to start the conversation is simply to ask: Are you having thoughts of suicide?
-
-• Be direct. Talk openly and matter-of-factly about suicide.
-• Be willing to listen. Allow expressions of feelings. Accept the feelings.
-• Be non-judgmental. Don't debate whether suicide is right or wrong, or whether feelings are good or bad. Don't lecture on the value of life.
-• Get involved. Become available. Show interest and support.
-• Don't dare him or her to do it.
-• Don't act shocked. This will put distance between you.
-• Don't be sworn to secrecy. Seek support.
-• Offer hope that alternatives are available but do not offer glib reassurance.
-• Take action. Remove means, such as guns or stockpiled pills.
-• Get help from persons or agencies specializing in crisis intervention and suicide prevention.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Respond quickly in a crisis">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-CldoZW4gc29tZWJvZHkgdGVsbHMgeW91IHRoZXkgYXJlIHRoaW5raW5nIGFib3V0IHN1aWNpZGUsIHlv
-dSBjYW4gc3RhcnQgd2l0aCBldmFsdWF0aW5nIHRoZSBsZXZlbCBvZiBzdWljaWRlIHJpc2sgdGhhdCB0
-aGUgcGVyc29uIGlzIGluLiAKCkxldmVsIG9mIHN1aWNpZGUgcmlzawrigKIgTG93IC0gdGhvdWdodHMg
-b2Ygc3VpY2lkZSwgYnV0IG5vIHBsYW4gb3IgaW50ZW50CuKAoiBNZWRpdW0gLSB0aG91Z2h0cyBvZiBz
-dWljaWRlIHdpdGggdmFndWUgcGxhbiwgYnV0IG5vIHN1aWNpZGFsIGFjdGlvbnMK4oCiIEhpZ2ggLSB0
-aG91Z2h0cyBvZiBzdWljaWRlIHdpdGggc3BlY2lmaWMgcGxhbiAQCuKAoiBWZXJ5IGhpZ2ggLSB0aG91
-Z2h0cyBvZiBzdWljaWRlIHdpdGggc3BlY2lmaWMgcGxhbiBhbmQgaW50ZW50IHRvIGNhcnJ5IG91dCB0
-aGUgcGxhbgoKSWYgYSBzdWljaWRlIGF0dGVtcHQgc2VlbXMgaW1taW5lbnQsIGNhbGwgYSBsb2NhbCBj
-cmlzaXMgY2VudGVyLCBkaWFsIDkxMSwgb3IgdGFrZSB0aGUgcGVyc29uIHRvIGFuIGVtZXJnZW5jeSBy
-b29tLiBSZW1vdmUgZ3VucywgZHJ1Z3MsIGtuaXZlcywgYW5kIG90aGVyIHBvdGVudGlhbGx5IGxldGhh
-bCBvYmplY3RzIGZyb20gdGhlIHZpY2luaXR5IGJ1dMKgZG8gbm90LCB1bmRlciBhbnkgY2lyY3Vtc3Rh
-bmNlcywgbGVhdmUgYSBzdWljaWRhbCBwZXJzb24gYWxvbmUuCgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Support during recovery">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="systemBold" size="17"/>
-                                            <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-Remove potential means of suicide - Remove knives, guns, and other potential lethal objects from the suicidal person. If he or she is likely to overdose on pills, then keep medications with you and give them out only as necessary to follow the prescription.
-
-• Get them professional help - Encourage the person to seek a mental health professional, be it a doctor or therapist. You can call a crisis line for help and guidance, even if you yourself are not suicidal.
-• Support them - Ask the person every once in a while how he or she is feeling so that if the person is going through another suicidal crisis, you can ensure they are not alone. Encourage the person to reach out to you if they are feeling acutely suicidal.
-• Take care of yourself - It can be emotionally difficult to support a person for an extended period of time. It is important for you to make sure your own health and happiness are solid. While you cannot simply control the suicidal person and make them better, you can control how well you take care of yourself.
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oX-eO-XIw">
+                                <rect key="frame" x="20" y="8" width="390" height="764"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text" base64-UTF8="YES">
+UGVvcGxlIGRlYWxpbmcgd2l0aCBzdWljaWRhbCB0aG91Z2h0cyBkb24ndCBuZWNlc3NhcmlseSB3YW50
+IHRvIGRpZSAtIHRoZXkganVzdCB3YW50IHRvIHN0b3AgdGhlIHBhaW4uIFBsZWFzZSB0YWtlIGFueSBz
+aWducyBvZiBzdWljaWRhbCB0aG91Z2h0IHNlcmlvdXNseS4gSW4gdGhpcyBndWlkZSB3ZSB3aWxsIGNv
+dmVyIHRoZSB3YXJuaW5nIHNpZ25zIG9mIHN1aWNpZGUsIGhvdyB0byB0YWxrIHRvIGEgc3VpY2lkYWwg
+cGVyc29uIGFib3V0IHN1aWNpZGUsIHJlc3BvbmRpbmcgdG8gYSBzdWljaWRhbCBjcmlzaXMsIGFuZCBz
+dXBwb3J0aW5nIHRoZW0gZHVyaW5nIHJlY292ZXJ5LgoKV2FybmluZyBTaWducwoKSXQgaXMgaW1wb3J0
+YW50IHRvIHJlY29nbml6ZSB0aGUgd2FybmluZyBzaWducyBvZiBzdWljaWRlIGFuZCB0byB0YWtlIHRo
+ZW0gc2VyaW91c2x5LiBBbnRpZGVwcmVzc2FudCB3YXJuaW5nIC0gV2hpbGUgYW50aWRlcHJlc3NhbnRz
+IGhhdmUgYmVlbiBzaG93biB0byBiZSBoZWxwZnVsIGluIHJlZHVjaW5nIHN1aWNpZGFsIHRob3VnaHRz
+LCB2YXJ5aW5nIHJlYWN0aW9ucyB0byBkaWZmZXJlbnQgYW50aWRlcHJlc3NhbnRzIG1lYW5zIHRoYXQg
+Zm9yIHNvbWUsIHRoZSBmaXJzdCB0aW1lIG9uIGFudGlkZXByZXNzYW50cyBvciBjaGFuZ2VzIGluIGFu
+dGlkZXByZXNzYW50IHR5cGUgLyBkb3NlIGluY3JlYXNlIHRoZSByaXNrIG9mIHN1aWNpZGUuIEl0IGlz
+IGNyaXRpY2FsIHRvIG1vbml0b3Igc29tZW9uZSBiZWNhdXNlIHRoZSByaXNrIG9mIHN1aWNpZGUgaXMg
+Z3JlYXRlc3QgZHVyaW5nIHRoZSBmaXJzdCB0d28gbW9udGhzIG9mIG5ldyBhbnRpZGVwcmVzc2FudCB0
+cmVhdG1lbnQuCsKgCsKgV2FybmluZyBTaWduczogCsKgCuKAoiBUYWxraW5nIGFib3V0IHdhbnRpbmcg
+dG8gZGllIG9yIHRvIGtpbGwgb25lc2VsZi4K4oCiIExvb2tpbmcgZm9yIGEgd2F5IHRvIGtpbGwgb25l
+c2VsZiwgc3VjaCBhcyBzZWFyY2hpbmcgb25saW5lIG9yIGJ1eWluZyBhIGd1bi4KEOKAoiBUYWxraW5n
+IGFib3V0IGZlZWxpbmcgaG9wZWxlc3Mgb3IgaGF2aW5nIG5vIHJlYXNvbiB0byBsaXZlLgrigKIgVGFs
+a2luZyBhYm91dCBmZWVsaW5nIHRyYXBwZWQgb3IgaW4gdW5iZWFyYWJsZSBwYWluLgrigKIgVGFsa2lu
+ZyBhYm91dCBiZWluZyBhIGJ1cmRlbiB0byBvdGhlcnMuCuKAoiBJbmNyZWFzaW5nIHRoZSB1c2Ugb2Yg
+YWxjb2hvbCBvciBkcnVncy4K4oCiIEFjdGluZyBhbnhpb3VzIG9yIGFnaXRhdGVkOyBiZWhhdmluZyBy
+ZWNrbGVzc2x5LgrigKIgU2xlZXBpbmcgdG9vIGxpdHRsZSBvciB0b28gbXVjaC4K4oCiIFdpdGhkcmF3
+biBvciBmZWVsaW5nIGlzb2xhdGVkLgrigKIgU2hvd2luZyByYWdlIG9yIHRhbGtpbmcgYWJvdXQgc2Vl
+a2luZyByZXZlbmdlLgrigKIgRGlzcGxheWluZyBleHRyZW1lIG1vb2Qgc3dpbmdzLgrigKIgUHJlb2Nj
+dXBhdGlvbiB3aXRoIGRlYXRoLgrigKIgU3VkZGVubHkgaGFwcGllciwgY2FsbWVyLgrigKIgTG9zcyBv
+ZiBpbnRlcmVzdCBpbiB0aGluZ3Mgb25lIGNhcmVzIGFib3V0LgrigKIgVmlzaXRpbmcgb3IgY2FsbGlu
+ZyBwZW9wbGUgdG8gc2F5IGdvb2RieWUuCuKAoiBNYWtpbmcgYXJyYW5nZW1lbnRzOyBzZXR0aW5nIG9u
+ZSdzIGFmZmFpcnMgaW4gb3JkZXIuCuKAoiBHaXZpbmcgdGhpbmdzIGF3YXksIHN1Y2ggYXMgcHJpemVk
+IHBvc3Nlc3Npb25zLgoKVGFsa2luZyB0byBhIHN1aWNpZGFsIHBlcnNvbgoKSWYgeW91IHRoaW5rIGEg
+ZnJpZW5kIG9yIGZhbWlseSBtZW1iZXIgaXMgY29uc2lkZXJpbmcgc3VpY2lkZSwgeW91IG1pZ2h0IGJl
+IGFmcmFpZCB0byBicmluZyB1cCB0aGUgc3ViamVjdC4gSG93ZXZlciwgdGFsa2luZyBvcGVubHkgYWJv
+dXQgc3VpY2lkYWwgdGhvdWdodHMgYW5kIGZlZWxpbmdzIGNhbiBzYXZlIGEgbGlmZS4gVGhlIGVhc2ll
+c3Qgd2F5IHRvIHN0YXJ0IHRoZSBjb252ZXJzYXRpb24gaXMgc2ltcGx5IHRvIGFzazogQXJlIHlvdSBo
+YXZpbmcgdGhvdWdodHMgb2Ygc3VpY2lkZT8KCuKAoiBCZSBkaXJlY3QuIFRhbGsgb3Blbmx5IGFuZCBt
+YXR0ZXItb2YtZmFjdGx5IGFib3V0IHN1aWNpZGUuCuKAoiBCZSB3aWxsaW5nIHRvIGxpc3Rlbi4gQWxs
+b3cgZXhwcmVzc2lvbnMgb2YgZmVlbGluZ3MuIEFjY2VwdCB0aGUgZmVlbGluZ3MuCuKAoiBCZSBub24t
+anVkZ21lbnRhbC4gRG9uJ3QgZGViYXRlIHdoZXRoZXIgc3VpY2lkZSBpcyByaWdodCBvciB3cm9uZywg
+b3Igd2hldGhlciBmZWVsaW5ncyBhcmUgZ29vZCBvciBiYWQuIERvbid0IGxlY3R1cmUgb24gdGhlIHZh
+bHVlIG9mIGxpZmUuCuKAoiBHZXQgaW52b2x2ZWQuIEJlY29tZSBhdmFpbGFibGUuIFNob3cgaW50ZXJl
+c3QgYW5kIHN1cHBvcnQuCuKAoiBEb24ndCBkYXJlIGhpbSBvciBoZXIgdG8gZG8gaXQuCuKAoiBEb24n
+dCBhY3Qgc2hvY2tlZC4gVGhpcyB3aWxsIHB1dCBkaXN0YW5jZSBiZXR3ZWVuIHlvdS4K4oCiIERvbid0
+IGJlIHN3b3JuIHRvIHNlY3JlY3kuIFNlZWsgc3VwcG9ydC4K4oCiIE9mZmVyIGhvcGUgdGhhdCBhbHRl
+cm5hdGl2ZXMgYXJlIGF2YWlsYWJsZSBidXQgZG8gbm90IG9mZmVyIGdsaWIgcmVhc3N1cmFuY2UuCuKA
+oiBUYWtlIGFjdGlvbi4gUmVtb3ZlIG1lYW5zLCBzdWNoIGFzIGd1bnMgb3Igc3RvY2twaWxlZCBwaWxs
+cy4K4oCiIEdldCBoZWxwIGZyb20gcGVyc29ucyBvciBhZ2VuY2llcyBzcGVjaWFsaXppbmcgaW4gY3Jp
+c2lzIGludGVydmVudGlvbiBhbmQgc3VpY2lkZSBwcmV2ZW50aW9uLgoKUmVzcG9uZCBxdWlja2x5IGlu
+IGEgY3Jpc2lzCgpXaGVuIHNvbWVib2R5IHRlbGxzIHlvdSB0aGV5IGFyZSB0aGlua2luZyBhYm91dCBz
+dWljaWRlLCB5b3UgY2FuIHN0YXJ0IHdpdGggZXZhbHVhdGluZyB0aGUgbGV2ZWwgb2Ygc3VpY2lkZSBy
+aXNrIHRoYXQgdGhlIHBlcnNvbiBpcyBpbi4gCgpMZXZlbCBvZiBzdWljaWRlIHJpc2sK4oCiIExvdyAt
+IHRob3VnaHRzIG9mIHN1aWNpZGUsIGJ1dCBubyBwbGFuIG9yIGludGVudArigKIgTWVkaXVtIC0gdGhv
+dWdodHMgb2Ygc3VpY2lkZSB3aXRoIHZhZ3VlIHBsYW4sIGJ1dCBubyBzdWljaWRhbCBhY3Rpb25zCuKA
+oiBIaWdoIC0gdGhvdWdodHMgb2Ygc3VpY2lkZSB3aXRoIHNwZWNpZmljIHBsYW4gEArigKIgVmVyeSBo
+aWdoIC0gdGhvdWdodHMgb2Ygc3VpY2lkZSB3aXRoIHNwZWNpZmljIHBsYW4gYW5kIGludGVudCB0byBj
+YXJyeSBvdXQgdGhlIHBsYW4KCklmIGEgc3VpY2lkZSBhdHRlbXB0IHNlZW1zIGltbWluZW50LCBjYWxs
+IGEgbG9jYWwgY3Jpc2lzIGNlbnRlciwgZGlhbCA5MTEsIG9yIHRha2UgdGhlIHBlcnNvbiB0byBhbiBl
+bWVyZ2VuY3kgcm9vbS4gUmVtb3ZlIGd1bnMsIGRydWdzLCBrbml2ZXMsIGFuZCBvdGhlciBwb3RlbnRp
+YWxseSBsZXRoYWwgb2JqZWN0cyBmcm9tIHRoZSB2aWNpbml0eSBidXTCoGRvIG5vdCwgdW5kZXIgYW55
+IGNpcmN1bXN0YW5jZXMsIGxlYXZlIGEgc3VpY2lkYWwgcGVyc29uIGFsb25lLgoKU3VwcG9ydCBkdXJp
+bmcgcmVjb3ZlcnkKClJlbW92ZSBwb3RlbnRpYWwgbWVhbnMgb2Ygc3VpY2lkZSAtIFJlbW92ZSBrbml2
+ZXMsIGd1bnMsIGFuZCBvdGhlciBwb3RlbnRpYWwgbGV0aGFsIG9iamVjdHMgZnJvbSB0aGUgc3VpY2lk
+YWwgcGVyc29uLiBJZiBoZSBvciBzaGUgaXMgbGlrZWx5IHRvIG92ZXJkb3NlIG9uIHBpbGxzLCB0aGVu
+IGtlZXAgbWVkaWNhdGlvbnMgd2l0aCB5b3UgYW5kIGdpdmUgdGhlbSBvdXQgb25seSBhcyBuZWNlc3Nh
+cnkgdG8gZm9sbG93IHRoZSBwcmVzY3JpcHRpb24uCgrigKIgR2V0IHRoZW0gcHJvZmVzc2lvbmFsIGhl
+bHAgLSBFbmNvdXJhZ2UgdGhlIHBlcnNvbiB0byBzZWVrIGEgbWVudGFsIGhlYWx0aCBwcm9mZXNzaW9u
+YWwsIGJlIGl0IGEgZG9jdG9yIG9yIHRoZXJhcGlzdC4gWW91IGNhbiBjYWxsIGEgY3Jpc2lzIGxpbmUg
+Zm9yIGhlbHAgYW5kIGd1aWRhbmNlLCBldmVuIGlmIHlvdSB5b3Vyc2VsZiBhcmUgbm90IHN1aWNpZGFs
+LgrigKIgU3VwcG9ydCB0aGVtIC0gQXNrIHRoZSBwZXJzb24gZXZlcnkgb25jZSBpbiBhIHdoaWxlIGhv
+dyBoZSBvciBzaGUgaXMgZmVlbGluZyBzbyB0aGF0IGlmIHRoZSBwZXJzb24gaXMgZ29pbmcgdGhyb3Vn
+aCBhbm90aGVyIHN1aWNpZGFsIGNyaXNpcywgeW91IGNhbiBlbnN1cmUgdGhleSBhcmUgbm90IGFsb25l
+LiBFbmNvdXJhZ2UgdGhlIHBlcnNvbiB0byByZWFjaCBvdXQgdG8geW91IGlmIHRoZXkgYXJlIGZlZWxp
+bmcgYWN1dGVseSBzdWljaWRhbC4K4oCiIFRha2UgY2FyZSBvZiB5b3Vyc2VsZiAtIEl0IGNhbiBiZSBl
+bW90aW9uYWxseSBkaWZmaWN1bHQgdG8gc3VwcG9ydCBhIHBlcnNvbiBmb3IgYW4gZXh0ZW5kZWQgcGVy
+aW9kIG9mIHRpbWUuIEl0IGlzIGltcG9ydGFudCBmb3IgeW91IHRvIG1ha2Ugc3VyZSB5b3VyIG93biBo
+ZWFsdGggYW5kIGhhcHBpbmVzcyBhcmUgc29saWQuIFdoaWxlIHlvdSBjYW5ub3Qgc2ltcGx5IGNvbnRy
+b2wgdGhlIHN1aWNpZGFsIHBlcnNvbiBhbmQgbWFrZSB0aGVtIGJldHRlciwgeW91IGNhbiBjb250cm9s
+IGhvdyB3ZWxsIHlvdSB0YWtlIGNhcmUgb2YgeW91cnNlbGYuA
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1oX-eO-XIw" firstAttribute="leading" secondItem="wwb-vi-kv4" secondAttribute="leading" constant="20" symbolic="YES" id="Gre-mJ-twk"/>
                             <constraint firstItem="1oX-eO-XIw" firstAttribute="top" secondItem="uuS-lg-MQT" secondAttribute="bottom" constant="8" symbolic="YES" id="I8e-Ua-XIk"/>
@@ -1032,55 +718,55 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                         <viewControllerLayoutGuide type="bottom" id="ITS-IN-OW0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ARa-Xc-T8p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="829"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="85I-5v-aSO">
-                                <rect key="frame" x="16" y="8" width="343" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="85I-5v-aSO">
+                                <rect key="frame" x="20" y="8" width="390" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="qNF-fd-EEw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="HelpGuide - Dealing with Suicidal Thoughts"/>
                                 <connections>
                                     <action selector="helpguide1buttonpress:" destination="x6i-fE-SJq" eventType="touchUpInside" id="K9N-5u-NjL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5Ze-7H-k9a">
-                                <rect key="frame" x="16" y="56" width="343" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5Ze-7H-k9a">
+                                <rect key="frame" x="20" y="56" width="390" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9N7-uV-JhQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="HelpGuide - Helping Someone Who Is Suicidal"/>
                                 <connections>
                                     <action selector="helpguide2buttonpress:" destination="x6i-fE-SJq" eventType="touchUpInside" id="X2j-SN-Bw3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1D6-cz-ISd">
-                                <rect key="frame" x="16" y="114" width="343" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1D6-cz-ISd">
+                                <rect key="frame" x="20" y="114" width="390" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="xj0-q1-AZn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Metanoia - If you are thinking about suicide read this first"/>
                                 <connections>
                                     <action selector="metanoiabuttonpress:" destination="x6i-fE-SJq" eventType="touchUpInside" id="us6-dZ-wbt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WlA-qV-Y4i">
-                                <rect key="frame" x="16" y="172" width="343" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WlA-qV-Y4i">
+                                <rect key="frame" x="20" y="172" width="390" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="kiN-tf-Kje"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="WikiHow - How to Cope with Suicidal Thoughts"/>
                                 <connections>
                                     <action selector="wikihowbuttonpress:" destination="x6i-fE-SJq" eventType="touchUpInside" id="SWE-f8-EhU"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="85I-5v-aSO" firstAttribute="trailing" secondItem="ARa-Xc-T8p" secondAttribute="trailingMargin" id="3Qt-Uh-21I"/>
                             <constraint firstItem="85I-5v-aSO" firstAttribute="leading" secondItem="ARa-Xc-T8p" secondAttribute="leadingMargin" id="4gO-Oa-cgW"/>
@@ -1110,18 +796,18 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
                         <viewControllerLayoutGuide type="bottom" id="BbR-kT-Ctf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lIQ-Ku-Paf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="829"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" misplaced="YES" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0y-Pm-K0I">
-                                <rect key="frame" x="16" y="0.0" width="343" height="603"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0y-Pm-K0I">
+                                <rect key="frame" x="20" y="0.0" width="390" height="746"/>
                                 <string key="text">It is critical to make your environment safe by removing things you could use to hurt yourself. Either remove them yourself or talk to a trusted friend or family member and have them remove objects such as guns, knives, razors, or pills. If you need pills regularly, your trusted friend or family member can give you the pills on an as-needed basis according to the prescription. If you have a specific plan in place, make sure to tell your trusted friend or family member about the plan so they can ensure your safety.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Q0y-Pm-K0I" secondAttribute="trailing" id="3CJ-cp-3hM"/>
                             <constraint firstItem="Q0y-Pm-K0I" firstAttribute="top" secondItem="Is6-1j-Pnj" secondAttribute="bottom" id="6Jy-JL-ljF"/>
@@ -1145,7 +831,16 @@ Remove potential means of suicide - Remove knives, guns, and other potential let
         <image name="safeenv" width="144" height="144"/>
         <image name="uparrow" width="144" height="144"/>
         <image name="warningsignlarge" width="144" height="144"/>
-        <image name="warningsigns" width="25" height="25"/>
+        <image name="warningsigns" width="24" height="24"/>
         <image name="web" width="144" height="144"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
