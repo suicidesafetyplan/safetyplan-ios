@@ -140,7 +140,7 @@ class CrisisViewController: BaseViewController {
                 }
                 guard let contactNumberUrl = contactUrl else { return }
                 
-                UIApplication.shared.openURL(contactNumberUrl)
+                UIApplication.shared.open(contactNumberUrl)
             })
         })
         // create the cancel action
@@ -157,10 +157,10 @@ class CrisisViewController: BaseViewController {
     private func openMaps(searchQuery: String) {
         // Attempt to open search query in Google Maps app
         if let mapBaseUrl = URL(string: "comgooglemaps://"), UIApplication.shared.canOpenURL(mapBaseUrl), let url = URL(string: "comgooglemaps://?q=\(searchQuery)") {
-            UIApplication.shared.openURL(url)
+            UIApplication.shared.open(url)
         } else if let url = URL(string: "http://www.google.com/maps/search/\(searchQuery)") {
             // Default to the native web browser
-            UIApplication.shared.openURL(url)
+            UIApplication.shared.open(url)
         }
     }
 }
@@ -186,6 +186,7 @@ extension CrisisViewController {
         cell.textLabel?.text = rowType.title
         cell.textLabel?.font = UIFont.systemFont(ofSize: 22, weight: .light)
         cell.imageView?.image = rowType.rowImage
+        cell.textLabel?.font = .preferredFont(forTextStyle: .title2)
         return cell
     }
     

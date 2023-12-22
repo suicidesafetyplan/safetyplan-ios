@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,18 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJr-aF-dD2">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="raX-GQ-khS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="raX-GQ-khS" firstAttribute="bottom" secondItem="mJr-aF-dD2" secondAttribute="bottom" id="14v-A6-tfi"/>
                             <constraint firstItem="mJr-aF-dD2" firstAttribute="leading" secondItem="raX-GQ-khS" secondAttribute="leading" id="53H-z1-8wB"/>
                             <constraint firstItem="mJr-aF-dD2" firstAttribute="top" secondItem="raX-GQ-khS" secondAttribute="top" id="Xme-Um-vcW"/>
                             <constraint firstItem="raX-GQ-khS" firstAttribute="trailing" secondItem="mJr-aF-dD2" secondAttribute="trailing" id="ep4-aH-xyY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="raX-GQ-khS"/>
                     </view>
                     <navigationItem key="navigationItem" id="h68-aa-Ykv"/>
                     <connections>
@@ -45,7 +46,7 @@
                 <navigationController storyboardIdentifier="EditSafetyPlanItemNav" automaticallyAdjustsScrollViewInsets="NO" id="PEt-ue-IN6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YvW-w1-pat">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.17434722189999999" green="0.59072256089999997" blue="0.86913794280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -64,7 +65,7 @@
                 <navigationController storyboardIdentifier="EditOtherNotesNavVC" automaticallyAdjustsScrollViewInsets="NO" id="E6r-7d-J67" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LRZ-rH-YUn">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.17434722189999999" green="0.59072256089999997" blue="0.86913794280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -84,8 +85,8 @@
                     <view key="view" contentMode="scaleToFill" id="rdF-NR-7I4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="upm-D9-3IC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="YOJ-lA-l5I"/>
                 </viewController>
@@ -106,25 +107,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSf-Kg-uFp">
-                                <rect key="frame" x="20" y="52" width="374" height="824"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20" y="56" width="374" height="820"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Suicidal thoughts can seem like they will last forever - but these thoughts and feelings pass with time. Having a plan in place that can help guide you through difficult moments can help keep you safe. 
 
 This Safety Plan is designed so that when you are dealing with suicidal thoughts, you can start at the beginning and continue down the steps until you feel safe. 
 
 We recommend working with a therapist or calling a suicide hotline for assistance filling out this safety plan.</string>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2aC-6h-vVH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sSf-Kg-uFp" firstAttribute="leading" secondItem="H96-cD-hNR" secondAttribute="leading" constant="20" symbolic="YES" id="2hS-Em-C8X"/>
                             <constraint firstItem="sSf-Kg-uFp" firstAttribute="top" secondItem="Kv2-on-ALG" secondAttribute="bottom" constant="8" symbolic="YES" id="MUu-Yc-8vv"/>
                             <constraint firstAttribute="trailing" secondItem="sSf-Kg-uFp" secondAttribute="trailing" constant="20" symbolic="YES" id="Pln-cR-Kq7"/>
                             <constraint firstAttribute="bottom" secondItem="sSf-Kg-uFp" secondAttribute="bottom" constant="20" symbolic="YES" id="aGW-Oa-bHd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="2aC-6h-vVH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Instructions" id="zuJ-gm-Rmd"/>
                     <connections>
@@ -136,4 +138,12 @@ We recommend working with a therapist or calling a suicide hotline for assistanc
             <point key="canvasLocation" x="2090" y="737"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
