@@ -32,10 +32,10 @@
 }
 */
 - (IBAction)helpguide1buttonpress:(id)sender {
-      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.helpguide.org/articles/suicide-prevention/suicide-help-dealing-with-your-suicidal-thoughts-and-feelings.htm"]];
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.helpguide.org/articles/suicide-prevention/are-you-feeling-suicidal.htm"]];
 }
 - (IBAction)helpguide2buttonpress:(id)sender {
-      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.helpguide.org/articles/suicide-prevention/suicide-prevention-helping-someone-who-is-suicidal.htm"]];
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.helpguide.org/articles/suicide-prevention/suicide-prevention.htm"]];
 }
 - (IBAction)metanoiabuttonpress:(id)sender {
           [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.metanoia.org/suicide/"]];
