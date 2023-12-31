@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -94,20 +94,16 @@
             </objects>
             <point key="canvasLocation" x="783" y="1448"/>
         </scene>
-        <!--Instructions-->
-        <scene sceneID="lGc-Mn-p25">
+        <!--Instructions View Controller-->
+        <scene sceneID="DyL-Pe-Gir">
             <objects>
-                <viewController storyboardIdentifier="InstructionsVC" id="fu8-VT-pwt" customClass="InstructionsViewController" customModule="Safety_Plan" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Kv2-on-ALG"/>
-                        <viewControllerLayoutGuide type="bottom" id="W8Q-GD-6Re"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="H96-cD-hNR">
+                <viewController storyboardIdentifier="InstructionsVC" id="dp8-TS-wNM" customClass="InstructionsViewController" customModule="Safety_Plan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PvO-xe-fho">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSf-Kg-uFp">
-                                <rect key="frame" x="20" y="56" width="374" height="820"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSf-Kg-uFp">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Suicidal thoughts can seem like they will last forever - but these thoughts and feelings pass with time. Having a plan in place that can help guide you through difficult moments can help keep you safe. 
 
@@ -119,23 +115,19 @@ We recommend working with a therapist or calling a suicide hotline for assistanc
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="2aC-6h-vVH"/>
+                        <viewLayoutGuide key="safeArea" id="63B-z6-pi1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sSf-Kg-uFp" firstAttribute="leading" secondItem="H96-cD-hNR" secondAttribute="leading" constant="20" symbolic="YES" id="2hS-Em-C8X"/>
-                            <constraint firstItem="sSf-Kg-uFp" firstAttribute="top" secondItem="Kv2-on-ALG" secondAttribute="bottom" constant="8" symbolic="YES" id="MUu-Yc-8vv"/>
-                            <constraint firstAttribute="trailing" secondItem="sSf-Kg-uFp" secondAttribute="trailing" constant="20" symbolic="YES" id="Pln-cR-Kq7"/>
-                            <constraint firstAttribute="bottom" secondItem="sSf-Kg-uFp" secondAttribute="bottom" constant="20" symbolic="YES" id="aGW-Oa-bHd"/>
+                            <constraint firstItem="63B-z6-pi1" firstAttribute="trailing" secondItem="sSf-Kg-uFp" secondAttribute="trailing" id="Adk-wm-FIu"/>
+                            <constraint firstItem="sSf-Kg-uFp" firstAttribute="top" secondItem="63B-z6-pi1" secondAttribute="top" id="K9y-q7-XsS"/>
+                            <constraint firstItem="63B-z6-pi1" firstAttribute="leading" secondItem="sSf-Kg-uFp" secondAttribute="leading" id="jPC-eh-41M"/>
+                            <constraint firstItem="sSf-Kg-uFp" firstAttribute="bottom" secondItem="63B-z6-pi1" secondAttribute="bottom" id="kJg-lP-xIT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Instructions" id="zuJ-gm-Rmd"/>
-                    <connections>
-                        <outlet property="textView" destination="sSf-Kg-uFp" id="ydI-Uv-7by"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UFV-ad-0Yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XEy-28-K2q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2090" y="737"/>
+            <point key="canvasLocation" x="1759" y="737"/>
         </scene>
     </scenes>
     <resources>
