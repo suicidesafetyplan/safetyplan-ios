@@ -32,16 +32,17 @@
 }
 */
 - (IBAction)helpguide1buttonpress:(id)sender {
-      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.helpguide.org/articles/suicide-prevention/are-you-feeling-suicidal.htm"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.helpguide.org/articles/suicide-prevention/are-you-feeling-suicidal.htm"] options:@{} completionHandler:nil];
+
 }
 - (IBAction)helpguide2buttonpress:(id)sender {
-      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.helpguide.org/articles/suicide-prevention/suicide-prevention.htm"]];
+      [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.helpguide.org/articles/suicide-prevention/suicide-prevention.htm"] options:@{} completionHandler:nil];
 }
 - (IBAction)metanoiabuttonpress:(id)sender {
-          [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.metanoia.org/suicide/"]];
+          [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.metanoia.org/suicide/"] options:@{} completionHandler:nil];
 }
 - (IBAction)wikihowbuttonpress:(id)sender {
-          [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.wikihow.com/Cope-With-Suicidal-Thoughts"]];
+          [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.wikihow.com/Cope-With-Suicidal-Thoughts"] options:@{} completionHandler:nil];
 }
 
 @end
