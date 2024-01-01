@@ -35,8 +35,8 @@ appearances=(
 )
 
 # Save final screenshots into this folder (it will be created)
-targetFolder="~/Desktop/SafetyPlanScreenshots"
-rm -rf ~/Desktop/SafetyPlanScreenshots
+targetFolder="/Users/dani/Desktop/SafetyPlanScreenshots"
+rm -rf /Users/dani/Desktop/SafetyPlanScreenshots
 
 for simulator in "${simulators[@]}"; do
     for language in "${languages[@]}"; do
