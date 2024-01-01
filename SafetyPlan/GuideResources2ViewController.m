@@ -15,6 +15,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    if CommandLine.arguments.contains("--safetyPlanScreenshots") {
+        // We are in testing mode, make arrangements if needed
+        UIView.setAnimationsEnabled(false)
+    }
 }
 
 - (void)didReceiveMemoryWarning {

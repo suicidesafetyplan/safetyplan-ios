@@ -14,7 +14,12 @@ class GuideRecoveringViewContoller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        if CommandLine.arguments.contains("--safetyPlanScreenshots") {
+            // We are in testing mode, make arrangements if needed
+            UIView.setAnimationsEnabled(false)
+        }
+
         self.recoveringTextView.scrollRangeToVisible(NSMakeRange(0, 0))
         self.recoveringTextView.contentSize = self.recoveringTextView.sizeThatFits(self.recoveringTextView.frame.size)
         self.recoveringTextView.textColor = UIColor.label

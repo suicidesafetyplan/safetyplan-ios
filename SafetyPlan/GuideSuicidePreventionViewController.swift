@@ -14,7 +14,12 @@ class GuideSuicidePreventionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        if CommandLine.arguments.contains("--safetyPlanScreenshots") {
+            // We are in testing mode, make arrangements if needed
+            UIView.setAnimationsEnabled(false)
+        }
+
         self.suicidePreventionTextView.scrollRangeToVisible(NSMakeRange(0, 0))
         self.suicidePreventionTextView.contentSize = self.suicidePreventionTextView.sizeThatFits(self.suicidePreventionTextView.frame.size)
         self.suicidePreventionTextView.textColor = UIColor.label

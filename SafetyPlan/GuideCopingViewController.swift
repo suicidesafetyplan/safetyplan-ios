@@ -15,6 +15,11 @@ class GuideCopingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if CommandLine.arguments.contains("--safetyPlanScreenshots") {
+            // We are in testing mode, make arrangements if needed
+            UIView.setAnimationsEnabled(false)
+        }
+
         self.copingTextView.scrollRangeToVisible(NSMakeRange(0, 0))
         self.copingTextView.contentSize = self.copingTextView.sizeThatFits(self.copingTextView.frame.size)
         self.copingTextView.textColor = UIColor.label

@@ -18,7 +18,12 @@ class EditOtherNotesViewController: BaseViewController, SaveCancellabel {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        if CommandLine.arguments.contains("--safetyPlanScreenshots") {
+            // We are in testing mode, make arrangements if needed
+            UIView.setAnimationsEnabled(false)
+        }
+
         self.title = "Edit Other"
         
         self.setupUI()
