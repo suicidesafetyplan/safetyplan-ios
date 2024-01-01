@@ -2,7 +2,7 @@
 //  SafetyPlanScreenshots.swift
 //  SafetyPlanScreenshots
 //
-//  Created by dani on 1/1/24.
+//  Created by Daniel Springer on 1/1/24.
 //  Copyright © 2024 MoodTools. All rights reserved.
 //
 
@@ -19,7 +19,7 @@ final class SafetyPlanScreenshots: XCTestCase {
 
     var app: XCUIApplication!
 
-    let aList = ["Check", "List", "Factorize", "Randomize", "Next"]
+    let aList = ["Home"]
 
     override func setUpWithError() throws {
         continueAfterFailure = false
@@ -39,54 +39,17 @@ final class SafetyPlanScreenshots: XCTestCase {
         let firstTextField = app.textFields.firstMatch
         var textToType = ""
         switch word {
-            case "Check":
-                textToType = "2351"
-            case "Factorize":
-                textToType = "2350"
-            case "List":
-                textToType = "1"
-            case "Randomize":
-                break
-            case "Next":
-                textToType = "2350"
+            case "SomePage":
+                textToType = "blah"
             default:
                 return
         }
 
-        if word != "Randomize" {
-            firstTextField.typeText(textToType)
-        }
-
-        if word != "Previous" && word != "List" && word != "Next" {
-            takeScreenshot(named: "\(myIndex)A-\(word)-Home")
-        }
-
-
-        if word == "Randomize" {
-            app.pickerWheels.element.adjust(toPickerWheelValue: "3 digits")
-            app.buttons["Create Random Prime"].firstMatch.tap()
-            XCTAssertTrue(app.buttons["Done"].firstMatch.waitForExistence(timeout: 5))
-            takeScreenshot(named: "\(myIndex)B-\(word)")
-            app.buttons["Done"].firstMatch.tap()
-            app.navigationBars[word].buttons["SafetyPlan"].tap()
-            return
-        }
-
-        app.buttons[word].firstMatch.tap()
-
-        if word == "List" {
-            let aAlert = app.alerts.firstMatch
-            XCTAssertTrue(aAlert.waitForExistence(timeout: 5))
-            app.alerts.buttons.firstMatch.tap() // dismiss alert
-            XCTAssertTrue(app.textFields.firstMatch.waitForExistence(timeout: 5))
-            app.typeText("2350") // second field should have focus, from swift
-            takeScreenshot(named: "\(myIndex)B-\(word)")
-            app.buttons[word].firstMatch.tap() // tap list butotn
-        }
+        firstTextField.typeText(textToType)
 
         XCTAssertTrue(app.buttons["Done"].firstMatch.waitForExistence(timeout: 5))
 
-        takeScreenshot(named: "\(myIndex)B-\(word)")
+        takeScreenshot(named: "somePage")
 
         app.buttons["Done"].firstMatch.tap()
         app.navigationBars[word].buttons["SafetyPlan"].tap()

@@ -21,6 +21,7 @@
 		2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */; };
 		2C67D9B01B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		338BC1D02B43634700E1F0D9 /* SafetyPlanScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338BC1CF2B43634700E1F0D9 /* SafetyPlanScreenshots.swift */; };
+		338BC1D92B4368C900E1F0D9 /* screenshots.sh in Resources */ = {isa = PBXBuildFile; fileRef = 338BC1D82B4368C900E1F0D9 /* screenshots.sh */; };
 		3FE1113324193EB3006D4099 /* GuideCopingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */; };
 		3FE1113824194154006D4099 /* GuideRecoveringViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113624194154006D4099 /* GuideRecoveringViewContoller.swift */; };
 		3FE1113924194154006D4099 /* GuideSuicidePreventionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113724194154006D4099 /* GuideSuicidePreventionViewController.swift */; };
@@ -89,6 +90,7 @@
 		2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		338BC1CD2B43634700E1F0D9 /* SafetyPlanScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafetyPlanScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		338BC1CF2B43634700E1F0D9 /* SafetyPlanScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyPlanScreenshots.swift; sourceTree = "<group>"; };
+		338BC1D82B4368C900E1F0D9 /* screenshots.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = screenshots.sh; sourceTree = "<group>"; };
 		3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCopingViewController.swift; sourceTree = "<group>"; };
 		3FE1113624194154006D4099 /* GuideRecoveringViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideRecoveringViewContoller.swift; sourceTree = "<group>"; };
 		3FE1113724194154006D4099 /* GuideSuicidePreventionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideSuicidePreventionViewController.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				338BC1CF2B43634700E1F0D9 /* SafetyPlanScreenshots.swift */,
+				338BC1D82B4368C900E1F0D9 /* screenshots.sh */,
 			);
 			path = SafetyPlanScreenshots;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				338BC1D92B4368C900E1F0D9 /* screenshots.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
