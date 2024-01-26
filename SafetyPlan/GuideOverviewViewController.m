@@ -16,6 +16,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    if ([[[NSProcessInfo processInfo] arguments] containsObject:@"--safetyPlanScreenshots"]) {
+        // We are in testing mode, make arrangements if needed
+        [UIView setAnimationsEnabled:false];
+    }
+
     [self.textView scrollRangeToVisible:NSMakeRange(0, 0)];
     self.textView.scrollEnabled = YES;
     self.textView.contentSize = [self.textView sizeThatFits:self.textView.frame.size];

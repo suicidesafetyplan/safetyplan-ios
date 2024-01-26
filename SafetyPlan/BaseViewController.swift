@@ -17,7 +17,12 @@ class BaseViewController: UIViewController {
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        if CommandLine.arguments.contains("--safetyPlanScreenshots") {
+            // We are in testing mode, make arrangements if needed
+            UIView.setAnimationsEnabled(false)
+        }
+
         // Bar color code
         self.navigationController?.navigationBar.isTranslucent = false
         

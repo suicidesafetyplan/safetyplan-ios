@@ -15,6 +15,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if ([[[NSProcessInfo processInfo] arguments] containsObject:@"--safetyPlanScreenshots"]) {
+        // We are in testing mode, make arrangements if needed
+        [UIView setAnimationsEnabled:false];
+    }
+
     //BAR COLOR CODE
     [self.navigationController.navigationBar setTranslucent:NO];
     //set title and title color

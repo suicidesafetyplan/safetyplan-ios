@@ -20,6 +20,8 @@
 		2C67D9AE1B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D9991B584FFA00C53652 /* SuicideSafetyPlanTabViewController.m */; };
 		2C67D9AF1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */; };
 		2C67D9B01B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		338BC1D02B43634700E1F0D9 /* SafetyPlanScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338BC1CF2B43634700E1F0D9 /* SafetyPlanScreenshots.swift */; };
+		338BC1D92B4368C900E1F0D9 /* screenshots.sh in Resources */ = {isa = PBXBuildFile; fileRef = 338BC1D82B4368C900E1F0D9 /* screenshots.sh */; };
 		3FE1113324193EB3006D4099 /* GuideCopingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */; };
 		3FE1113824194154006D4099 /* GuideRecoveringViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113624194154006D4099 /* GuideRecoveringViewContoller.swift */; };
 		3FE1113924194154006D4099 /* GuideSuicidePreventionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1113724194154006D4099 /* GuideSuicidePreventionViewController.swift */; };
@@ -55,6 +57,16 @@
 		B8F74312241A86C000D5FDFE /* UserDefaultsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F74311241A86C000D5FDFE /* UserDefaultsGateway.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		338BC1D32B43634700E1F0D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C44A9EA1B1CBA7C005D208C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C44A9F11B1CBA7C005D208C;
+			remoteInfo = "Safety Plan";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2C2663551FC50C1600AFC5E1 /* GuideResources2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideResources2ViewController.h; sourceTree = "<group>"; };
 		2C2663561FC50C1600AFC5E1 /* GuideResources2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideResources2ViewController.m; sourceTree = "<group>"; };
@@ -76,6 +88,9 @@
 		2C67D99B1B584FFA00C53652 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		2C67D99C1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		2C67D99D1B584FFA00C53652 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		338BC1CD2B43634700E1F0D9 /* SafetyPlanScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafetyPlanScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		338BC1CF2B43634700E1F0D9 /* SafetyPlanScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyPlanScreenshots.swift; sourceTree = "<group>"; };
+		338BC1D82B4368C900E1F0D9 /* screenshots.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = screenshots.sh; sourceTree = "<group>"; };
 		3FE1113224193EB2006D4099 /* GuideCopingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCopingViewController.swift; sourceTree = "<group>"; };
 		3FE1113624194154006D4099 /* GuideRecoveringViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideRecoveringViewContoller.swift; sourceTree = "<group>"; };
 		3FE1113724194154006D4099 /* GuideSuicidePreventionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideSuicidePreventionViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +139,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		338BC1CA2B43634600E1F0D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -133,6 +155,7 @@
 				2C2C856B1D203F5B009E9B3F /* AddressBook.framework */,
 				2C2C856C1D203F5B009E9B3F /* AddressBookUI.framework */,
 				2C44A9F41B1CBA7C005D208C /* SafetyPlan */,
+				338BC1CE2B43634700E1F0D9 /* SafetyPlanScreenshots */,
 				2C44A9F31B1CBA7C005D208C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				2C44A9F21B1CBA7C005D208C /* Safety Plan.app */,
+				338BC1CD2B43634700E1F0D9 /* SafetyPlanScreenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,6 +255,15 @@
 				B8C6D91B244BDB24003D1650 /* AppDelegate.swift */,
 			);
 			name = Backend;
+			sourceTree = "<group>";
+		};
+		338BC1CE2B43634700E1F0D9 /* SafetyPlanScreenshots */ = {
+			isa = PBXGroup;
+			children = (
+				338BC1CF2B43634700E1F0D9 /* SafetyPlanScreenshots.swift */,
+				338BC1D82B4368C900E1F0D9 /* screenshots.sh */,
+			);
+			path = SafetyPlanScreenshots;
 			sourceTree = "<group>";
 		};
 		B83E76B1241C993500837918 /* Utilities */ = {
@@ -355,6 +388,24 @@
 			productReference = 2C44A9F21B1CBA7C005D208C /* Safety Plan.app */;
 			productType = "com.apple.product-type.application";
 		};
+		338BC1CC2B43634600E1F0D9 /* SafetyPlanScreenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 338BC1D52B43634700E1F0D9 /* Build configuration list for PBXNativeTarget "SafetyPlanScreenshots" */;
+			buildPhases = (
+				338BC1C92B43634600E1F0D9 /* Sources */,
+				338BC1CA2B43634600E1F0D9 /* Frameworks */,
+				338BC1CB2B43634600E1F0D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				338BC1D42B43634700E1F0D9 /* PBXTargetDependency */,
+			);
+			name = SafetyPlanScreenshots;
+			productName = safetyplanUITests;
+			productReference = 338BC1CD2B43634700E1F0D9 /* SafetyPlanScreenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -362,12 +413,17 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				ORGANIZATIONNAME = MoodTools;
 				TargetAttributes = {
 					2C44A9F11B1CBA7C005D208C = {
 						CreatedOnToolsVersion = 6.3.2;
 						LastSwiftMigration = 1130;
+					};
+					338BC1CC2B43634600E1F0D9 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 2C44A9F11B1CBA7C005D208C;
 					};
 				};
 			};
@@ -388,6 +444,7 @@
 			projectRoot = "";
 			targets = (
 				2C44A9F11B1CBA7C005D208C /* Safety Plan */,
+				338BC1CC2B43634600E1F0D9 /* SafetyPlanScreenshots */,
 			);
 		};
 /* End PBXProject section */
@@ -402,6 +459,14 @@
 				2C67D99E1B584FFA00C53652 /* safetyplanlayout.storyboard in Resources */,
 				2C44AA061B1CBA7D005D208C /* Images.xcassets in Resources */,
 				446660A8289C5A4E00090856 /* safetyplanlaunch.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		338BC1CB2B43634600E1F0D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338BC1D92B4368C900E1F0D9 /* screenshots.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +517,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		338BC1C92B43634600E1F0D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338BC1D02B43634700E1F0D9 /* SafetyPlanScreenshots.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		338BC1D42B43634700E1F0D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C44A9F11B1CBA7C005D208C /* Safety Plan */;
+			targetProxy = 338BC1D32B43634700E1F0D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2C44AA161B1CBA7D005D208C /* Debug */ = {
@@ -616,6 +697,64 @@
 			};
 			name = Release;
 		};
+		338BC1D62B43634700E1F0D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = identifiergoeshere.SafetyPlanScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Safety Plan";
+			};
+			name = Debug;
+		};
+		338BC1D72B43634700E1F0D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = identifiergoeshere.SafetyPlanScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Safety Plan";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -633,6 +772,15 @@
 			buildConfigurations = (
 				2C44AA191B1CBA7D005D208C /* Debug */,
 				2C44AA1A1B1CBA7D005D208C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		338BC1D52B43634700E1F0D9 /* Build configuration list for PBXNativeTarget "SafetyPlanScreenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				338BC1D62B43634700E1F0D9 /* Debug */,
+				338BC1D72B43634700E1F0D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

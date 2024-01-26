@@ -16,7 +16,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
+    if ([[[NSProcessInfo processInfo] arguments] containsObject:@"--safetyPlanScreenshots"]) {
+        // We are in testing mode, make arrangements if needed
+        [UIView setAnimationsEnabled:false];
+    }
+
     //SCROLL THE TEXTVIEW TO THE TOP! 
 [self.Textview scrollRangeToVisible:NSMakeRange(0, 0)];
 

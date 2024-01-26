@@ -87,7 +87,12 @@ class EditSafetyPlanItemViewController: BaseViewController, SaveCancellabel {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        if CommandLine.arguments.contains("--safetyPlanScreenshots") {
+            // We are in testing mode, make arrangements if needed
+            UIView.setAnimationsEnabled(false)
+        }
+
         self.title = "Edit \(self.typeName)"
         self.setup(tableView: self.tableView)
         self.setupNavBar()
