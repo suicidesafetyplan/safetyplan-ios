@@ -27,7 +27,7 @@ class CrisisViewController: BaseViewController {
             case .callHelpline:
                 return "Call Helpline"
             case .textCrisisTextLine:
-                return "Text Crisis Text Line"
+                return "Text \(RegionCrisisInfo.current.textLineName ?? "Crisis Text Line")"
             case .callContact(let name, _):
                 return "Call \(name)"
             case .findUrgentCare:
@@ -97,9 +97,13 @@ class CrisisViewController: BaseViewController {
         // Setup data with rows to be shown first
         data = [
             .callEmergencyNumber,
-            .callHelpline,
-            .textCrisisTextLine
+            .callHelpline
         ]
+
+        // Only show the text line row for regions that have a crisis text service
+        if RegionCrisisInfo.current.textLineNumber != nil {
+            data.append(.textCrisisTextLine)
+        }
         
         // Grab all saved personal contacts from DB
         // filter out any contacts that dont have a name or number
@@ -134,7 +138,8 @@ class CrisisViewController: BaseViewController {
                 case .call:
                     contactUrl = URL(string: "tel://\(phoneNumber)")
                 case .text:
-                    let urlStr = "sms:+\(phoneNumber)"
+                    // No "+" prefix: crisis text lines are short codes, which fail with international format
+                    let urlStr = "sms:\(phoneNumber)"
                     let contactUrlStr = urlStr.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
                     contactUrl = URL(string: contactUrlStr)
                 }
@@ -193,14 +198,15 @@ extension CrisisViewController {
         let rowType = self.data[indexPath.row]
         switch rowType {
         case .callEmergencyNumber:
-            let contact = ImportantContactInformation.localEmergencyLine
-            self.showAlert(type: .call, title: "Call", message: "Call 911?", phoneNumber: contact.contactNumber)
+            let info = RegionCrisisInfo.current
+            self.showAlert(type: .call, title: "Call", message: "Call \(info.emergencyNumber)?", phoneNumber: info.emergencyNumber)
         case .callHelpline:
-            let contact = ImportantContactInformation.nationalSuicidePreventionLifeline
-            self.showAlert(type: .call, title: "Call", message: "Call \(contact.title)?", phoneNumber: contact.contactNumber)
+            let info = RegionCrisisInfo.current
+            self.showAlert(type: .call, title: "Call", message: "Call \(info.helplineName)?", phoneNumber: info.helplineNumber)
         case .textCrisisTextLine:
-            let contact = ImportantContactInformation.crisisTextLine
-            self.showAlert(type: .text, title: "Text \(contact.title)?", message: "Text \(contact.contactNumber)", phoneNumber: contact.contactNumber)
+            let info = RegionCrisisInfo.current
+            guard let name = info.textLineName, let number = info.textLineNumber else { break }
+            self.showAlert(type: .text, title: "Text \(name)?", message: "Text \(number)", phoneNumber: number)
         case .callContact(let name, let number):
             self.showAlert(type: .call, title: "Call", message: "Call \(name)?", phoneNumber: number)
         case .findUrgentCare:
